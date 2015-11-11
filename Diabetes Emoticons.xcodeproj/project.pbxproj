@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7013C7761BF3E0CB007BB646 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7013C7751BF3E0CB007BB646 /* AppDelegate.swift */; };
+		7013C7781BF3E0CB007BB646 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7013C7771BF3E0CB007BB646 /* ViewController.swift */; };
+		7013C77B1BF3E0CB007BB646 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7013C7791BF3E0CB007BB646 /* Main.storyboard */; };
+		7013C77E1BF3E0CB007BB646 /* Diabetes_Emoticons.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7013C77C1BF3E0CB007BB646 /* Diabetes_Emoticons.xcdatamodeld */; };
+		7013C7801BF3E0CB007BB646 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7013C77F1BF3E0CB007BB646 /* Assets.xcassets */; };
+		7013C7831BF3E0CB007BB646 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7013C7811BF3E0CB007BB646 /* LaunchScreen.storyboard */; };
+		7013C78E1BF3E0CB007BB646 /* Diabetes_EmoticonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7013C78D1BF3E0CB007BB646 /* Diabetes_EmoticonsTests.swift */; };
+		7013C7991BF3E0CB007BB646 /* Diabetes_EmoticonsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7013C7981BF3E0CB007BB646 /* Diabetes_EmoticonsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7013C78A1BF3E0CB007BB646 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7013C76A1BF3E0CB007BB646 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7013C7711BF3E0CB007BB646;
+			remoteInfo = "Diabetes Emoticons";
+		};
+		7013C7951BF3E0CB007BB646 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7013C76A1BF3E0CB007BB646 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7013C7711BF3E0CB007BB646;
+			remoteInfo = "Diabetes Emoticons";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7013C7721BF3E0CB007BB646 /* Diabetes Emoticons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Diabetes Emoticons.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7013C7751BF3E0CB007BB646 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7013C7771BF3E0CB007BB646 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7013C77A1BF3E0CB007BB646 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7013C77D1BF3E0CB007BB646 /* Diabetes_Emoticons.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Diabetes_Emoticons.xcdatamodel; sourceTree = "<group>"; };
+		7013C77F1BF3E0CB007BB646 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7013C7821BF3E0CB007BB646 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7013C7841BF3E0CB007BB646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7013C7891BF3E0CB007BB646 /* Diabetes EmoticonsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Diabetes EmoticonsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7013C78D1BF3E0CB007BB646 /* Diabetes_EmoticonsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diabetes_EmoticonsTests.swift; sourceTree = "<group>"; };
+		7013C78F1BF3E0CB007BB646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7013C7941BF3E0CB007BB646 /* Diabetes EmoticonsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Diabetes EmoticonsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7013C7981BF3E0CB007BB646 /* Diabetes_EmoticonsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diabetes_EmoticonsUITests.swift; sourceTree = "<group>"; };
+		7013C79A1BF3E0CB007BB646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7013C76F1BF3E0CB007BB646 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7013C7861BF3E0CB007BB646 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7013C7911BF3E0CB007BB646 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7013C7691BF3E0CB007BB646 = {
+			isa = PBXGroup;
+			children = (
+				7013C7741BF3E0CB007BB646 /* Diabetes Emoticons */,
+				7013C78C1BF3E0CB007BB646 /* Diabetes EmoticonsTests */,
+				7013C7971BF3E0CB007BB646 /* Diabetes EmoticonsUITests */,
+				7013C7731BF3E0CB007BB646 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7013C7731BF3E0CB007BB646 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7013C7721BF3E0CB007BB646 /* Diabetes Emoticons.app */,
+				7013C7891BF3E0CB007BB646 /* Diabetes EmoticonsTests.xctest */,
+				7013C7941BF3E0CB007BB646 /* Diabetes EmoticonsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7013C7741BF3E0CB007BB646 /* Diabetes Emoticons */ = {
+			isa = PBXGroup;
+			children = (
+				7013C7751BF3E0CB007BB646 /* AppDelegate.swift */,
+				7013C7771BF3E0CB007BB646 /* ViewController.swift */,
+				7013C7791BF3E0CB007BB646 /* Main.storyboard */,
+				7013C77F1BF3E0CB007BB646 /* Assets.xcassets */,
+				7013C7811BF3E0CB007BB646 /* LaunchScreen.storyboard */,
+				7013C7841BF3E0CB007BB646 /* Info.plist */,
+				7013C77C1BF3E0CB007BB646 /* Diabetes_Emoticons.xcdatamodeld */,
+			);
+			path = "Diabetes Emoticons";
+			sourceTree = "<group>";
+		};
+		7013C78C1BF3E0CB007BB646 /* Diabetes EmoticonsTests */ = {
+			isa = PBXGroup;
+			children = (
+				7013C78D1BF3E0CB007BB646 /* Diabetes_EmoticonsTests.swift */,
+				7013C78F1BF3E0CB007BB646 /* Info.plist */,
+			);
+			path = "Diabetes EmoticonsTests";
+			sourceTree = "<group>";
+		};
+		7013C7971BF3E0CB007BB646 /* Diabetes EmoticonsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7013C7981BF3E0CB007BB646 /* Diabetes_EmoticonsUITests.swift */,
+				7013C79A1BF3E0CB007BB646 /* Info.plist */,
+			);
+			path = "Diabetes EmoticonsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7013C7711BF3E0CB007BB646 /* Diabetes Emoticons */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7013C79D1BF3E0CB007BB646 /* Build configuration list for PBXNativeTarget "Diabetes Emoticons" */;
+			buildPhases = (
+				7013C76E1BF3E0CB007BB646 /* Sources */,
+				7013C76F1BF3E0CB007BB646 /* Frameworks */,
+				7013C7701BF3E0CB007BB646 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Diabetes Emoticons";
+			productName = "Diabetes Emoticons";
+			productReference = 7013C7721BF3E0CB007BB646 /* Diabetes Emoticons.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7013C7881BF3E0CB007BB646 /* Diabetes EmoticonsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7013C7A01BF3E0CB007BB646 /* Build configuration list for PBXNativeTarget "Diabetes EmoticonsTests" */;
+			buildPhases = (
+				7013C7851BF3E0CB007BB646 /* Sources */,
+				7013C7861BF3E0CB007BB646 /* Frameworks */,
+				7013C7871BF3E0CB007BB646 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7013C78B1BF3E0CB007BB646 /* PBXTargetDependency */,
+			);
+			name = "Diabetes EmoticonsTests";
+			productName = "Diabetes EmoticonsTests";
+			productReference = 7013C7891BF3E0CB007BB646 /* Diabetes EmoticonsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7013C7931BF3E0CB007BB646 /* Diabetes EmoticonsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7013C7A31BF3E0CB007BB646 /* Build configuration list for PBXNativeTarget "Diabetes EmoticonsUITests" */;
+			buildPhases = (
+				7013C7901BF3E0CB007BB646 /* Sources */,
+				7013C7911BF3E0CB007BB646 /* Frameworks */,
+				7013C7921BF3E0CB007BB646 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7013C7961BF3E0CB007BB646 /* PBXTargetDependency */,
+			);
+			name = "Diabetes EmoticonsUITests";
+			productName = "Diabetes EmoticonsUITests";
+			productReference = 7013C7941BF3E0CB007BB646 /* Diabetes EmoticonsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7013C76A1BF3E0CB007BB646 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Connor Krupp";
+				TargetAttributes = {
+					7013C7711BF3E0CB007BB646 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					7013C7881BF3E0CB007BB646 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 7013C7711BF3E0CB007BB646;
+					};
+					7013C7931BF3E0CB007BB646 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 7013C7711BF3E0CB007BB646;
+					};
+				};
+			};
+			buildConfigurationList = 7013C76D1BF3E0CB007BB646 /* Build configuration list for PBXProject "Diabetes Emoticons" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7013C7691BF3E0CB007BB646;
+			productRefGroup = 7013C7731BF3E0CB007BB646 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7013C7711BF3E0CB007BB646 /* Diabetes Emoticons */,
+				7013C7881BF3E0CB007BB646 /* Diabetes EmoticonsTests */,
+				7013C7931BF3E0CB007BB646 /* Diabetes EmoticonsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7013C7701BF3E0CB007BB646 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7013C7831BF3E0CB007BB646 /* LaunchScreen.storyboard in Resources */,
+				7013C7801BF3E0CB007BB646 /* Assets.xcassets in Resources */,
+				7013C77B1BF3E0CB007BB646 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7013C7871BF3E0CB007BB646 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7013C7921BF3E0CB007BB646 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7013C76E1BF3E0CB007BB646 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7013C77E1BF3E0CB007BB646 /* Diabetes_Emoticons.xcdatamodeld in Sources */,
+				7013C7781BF3E0CB007BB646 /* ViewController.swift in Sources */,
+				7013C7761BF3E0CB007BB646 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7013C7851BF3E0CB007BB646 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7013C78E1BF3E0CB007BB646 /* Diabetes_EmoticonsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7013C7901BF3E0CB007BB646 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7013C7991BF3E0CB007BB646 /* Diabetes_EmoticonsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7013C78B1BF3E0CB007BB646 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7013C7711BF3E0CB007BB646 /* Diabetes Emoticons */;
+			targetProxy = 7013C78A1BF3E0CB007BB646 /* PBXContainerItemProxy */;
+		};
+		7013C7961BF3E0CB007BB646 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7013C7711BF3E0CB007BB646 /* Diabetes Emoticons */;
+			targetProxy = 7013C7951BF3E0CB007BB646 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7013C7791BF3E0CB007BB646 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7013C77A1BF3E0CB007BB646 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7013C7811BF3E0CB007BB646 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7013C7821BF3E0CB007BB646 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7013C79B1BF3E0CB007BB646 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7013C79C1BF3E0CB007BB646 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7013C79E1BF3E0CB007BB646 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Diabetes Emoticons/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kruppcon.Diabetes-Emoticons";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7013C79F1BF3E0CB007BB646 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Diabetes Emoticons/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kruppcon.Diabetes-Emoticons";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7013C7A11BF3E0CB007BB646 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Diabetes EmoticonsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kruppcon.Diabetes-EmoticonsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Diabetes Emoticons.app/Diabetes Emoticons";
+			};
+			name = Debug;
+		};
+		7013C7A21BF3E0CB007BB646 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Diabetes EmoticonsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kruppcon.Diabetes-EmoticonsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Diabetes Emoticons.app/Diabetes Emoticons";
+			};
+			name = Release;
+		};
+		7013C7A41BF3E0CB007BB646 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Diabetes EmoticonsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kruppcon.Diabetes-EmoticonsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Diabetes Emoticons";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		7013C7A51BF3E0CB007BB646 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Diabetes EmoticonsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kruppcon.Diabetes-EmoticonsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Diabetes Emoticons";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7013C76D1BF3E0CB007BB646 /* Build configuration list for PBXProject "Diabetes Emoticons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7013C79B1BF3E0CB007BB646 /* Debug */,
+				7013C79C1BF3E0CB007BB646 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7013C79D1BF3E0CB007BB646 /* Build configuration list for PBXNativeTarget "Diabetes Emoticons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7013C79E1BF3E0CB007BB646 /* Debug */,
+				7013C79F1BF3E0CB007BB646 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7013C7A01BF3E0CB007BB646 /* Build configuration list for PBXNativeTarget "Diabetes EmoticonsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7013C7A11BF3E0CB007BB646 /* Debug */,
+				7013C7A21BF3E0CB007BB646 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7013C7A31BF3E0CB007BB646 /* Build configuration list for PBXNativeTarget "Diabetes EmoticonsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7013C7A41BF3E0CB007BB646 /* Debug */,
+				7013C7A51BF3E0CB007BB646 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7013C77C1BF3E0CB007BB646 /* Diabetes_Emoticons.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7013C77D1BF3E0CB007BB646 /* Diabetes_Emoticons.xcdatamodel */,
+			);
+			currentVersion = 7013C77D1BF3E0CB007BB646 /* Diabetes_Emoticons.xcdatamodel */;
+			path = Diabetes_Emoticons.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7013C76A1BF3E0CB007BB646 /* Project object */;
+}
