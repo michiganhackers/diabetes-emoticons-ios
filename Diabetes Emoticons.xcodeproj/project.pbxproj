@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		7013C7761BF3E0CB007BB646 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7013C7751BF3E0CB007BB646 /* AppDelegate.swift */; };
-		7013C7781BF3E0CB007BB646 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7013C7771BF3E0CB007BB646 /* ViewController.swift */; };
+		7013C7781BF3E0CB007BB646 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7013C7771BF3E0CB007BB646 /* HomeViewController.swift */; };
 		7013C77B1BF3E0CB007BB646 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7013C7791BF3E0CB007BB646 /* Main.storyboard */; };
 		7013C77E1BF3E0CB007BB646 /* Diabetes_Emoticons.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7013C77C1BF3E0CB007BB646 /* Diabetes_Emoticons.xcdatamodeld */; };
 		7013C7801BF3E0CB007BB646 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7013C77F1BF3E0CB007BB646 /* Assets.xcassets */; };
 		7013C7831BF3E0CB007BB646 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7013C7811BF3E0CB007BB646 /* LaunchScreen.storyboard */; };
 		7013C78E1BF3E0CB007BB646 /* Diabetes_EmoticonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7013C78D1BF3E0CB007BB646 /* Diabetes_EmoticonsTests.swift */; };
 		7013C7991BF3E0CB007BB646 /* Diabetes_EmoticonsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7013C7981BF3E0CB007BB646 /* Diabetes_EmoticonsUITests.swift */; };
+		7013C7A71BF3E2A5007BB646 /* EmoticonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7013C7A61BF3E2A5007BB646 /* EmoticonTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,7 @@
 /* Begin PBXFileReference section */
 		7013C7721BF3E0CB007BB646 /* Diabetes Emoticons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Diabetes Emoticons.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7013C7751BF3E0CB007BB646 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7013C7771BF3E0CB007BB646 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7013C7771BF3E0CB007BB646 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7013C77A1BF3E0CB007BB646 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7013C77D1BF3E0CB007BB646 /* Diabetes_Emoticons.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Diabetes_Emoticons.xcdatamodel; sourceTree = "<group>"; };
 		7013C77F1BF3E0CB007BB646 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		7013C7941BF3E0CB007BB646 /* Diabetes EmoticonsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Diabetes EmoticonsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7013C7981BF3E0CB007BB646 /* Diabetes_EmoticonsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diabetes_EmoticonsUITests.swift; sourceTree = "<group>"; };
 		7013C79A1BF3E0CB007BB646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7013C7A61BF3E2A5007BB646 /* EmoticonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				7013C7751BF3E0CB007BB646 /* AppDelegate.swift */,
-				7013C7771BF3E0CB007BB646 /* ViewController.swift */,
+				7013C7771BF3E0CB007BB646 /* HomeViewController.swift */,
+				7013C7A61BF3E2A5007BB646 /* EmoticonTableViewCell.swift */,
 				7013C7791BF3E0CB007BB646 /* Main.storyboard */,
 				7013C77F1BF3E0CB007BB646 /* Assets.xcassets */,
 				7013C7811BF3E0CB007BB646 /* LaunchScreen.storyboard */,
@@ -260,8 +263,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7013C77E1BF3E0CB007BB646 /* Diabetes_Emoticons.xcdatamodeld in Sources */,
-				7013C7781BF3E0CB007BB646 /* ViewController.swift in Sources */,
+				7013C7781BF3E0CB007BB646 /* HomeViewController.swift in Sources */,
 				7013C7761BF3E0CB007BB646 /* AppDelegate.swift in Sources */,
+				7013C7A71BF3E2A5007BB646 /* EmoticonTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
