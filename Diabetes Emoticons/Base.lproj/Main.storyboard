@@ -6,11 +6,11 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="U1a-oj-uJq">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Rsi-bV-E5Q" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="BWv-QW-azr"/>
+                    <tabBarItem key="tabBarItem" title="Home" id="BWv-QW-azr"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TVa-gU-haI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -204,11 +204,11 @@
             </objects>
             <point key="canvasLocation" x="304" y="423"/>
         </scene>
-        <!--Item-->
+        <!--Recent-->
         <scene sceneID="ng5-vQ-TFe">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mlg-WK-5rW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="ZXQ-rC-6sm"/>
+                    <tabBarItem key="tabBarItem" title="Recent" id="ZXQ-rC-6sm"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="to3-CV-NFz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -224,11 +224,11 @@
             </objects>
             <point key="canvasLocation" x="1130" y="1188"/>
         </scene>
-        <!--Item-->
+        <!--Favorites-->
         <scene sceneID="Gy9-4a-jiK">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RMg-TO-M6H" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="A00-bc-zN7"/>
+                    <tabBarItem key="tabBarItem" title="Favorites" id="A00-bc-zN7"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="q3T-MU-xHI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -276,11 +276,11 @@
             </objects>
             <point key="canvasLocation" x="1942" y="2668"/>
         </scene>
-        <!--Item-->
+        <!--More-->
         <scene sceneID="cdP-jm-DMl">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mWM-cs-8sv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="3uA-LC-Lnf"/>
+                    <tabBarItem key="tabBarItem" title="More" id="3uA-LC-Lnf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vnb-cj-zdO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
