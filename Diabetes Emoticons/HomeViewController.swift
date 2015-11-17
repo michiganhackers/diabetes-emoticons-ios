@@ -27,7 +27,7 @@ class HomeViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCellWithIdentifier("StandardCell", forIndexPath: indexPath) as! EmoticonTableViewCell
         cell.titleLabel.text = "Test"
-        cell.imageView?.image = UIImage(named: "Banana")
+        cell.emoticonImage.image = UIImage(named: "Banana")
         
         return cell
     }

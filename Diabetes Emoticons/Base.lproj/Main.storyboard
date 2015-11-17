@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="69v-6w-Jwo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="69v-6w-Jwo">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -36,32 +36,48 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StandardCell" rowHeight="101" id="C6M-YG-xLO" customClass="EmoticonTableViewCell" customModule="Diabetes_Emoticons" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="600" height="101"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StandardCell" rowHeight="110" id="C6M-YG-xLO" customClass="EmoticonTableViewCell" customModule="Diabetes_Emoticons" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="110"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C6M-YG-xLO" id="BlE-A6-A0d">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="100.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="109.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLk-BH-jpW">
-                                            <rect key="frame" x="124.5" y="40" width="42" height="20.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLk-BH-jpW">
+                                            <rect key="frame" x="120" y="44" width="57" height="20.5"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5a-OT-3FI">
-                                            <rect key="frame" x="514" y="35" width="30" height="30"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5a-OT-3FI">
+                                            <rect key="frame" x="458" y="36" width="42" height="38"/>
                                             <animations/>
-                                            <state key="normal" title="Star"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="38" id="5g9-2d-FD2"/>
+                                                <constraint firstAttribute="width" constant="42" id="7I2-LA-Y6b"/>
+                                            </constraints>
+                                            <state key="normal" image="EmptyStar"/>
                                             <connections>
                                                 <action selector="starPressed:" destination="C6M-YG-xLO" eventType="touchUpInside" id="hZe-ZK-ePG"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8r-wc-R7q">
-                                            <rect key="frame" x="552" y="35" width="40" height="30"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Banana" translatesAutoresizingMaskIntoConstraints="NO" id="tmM-nq-lfv">
+                                            <rect key="frame" x="8" y="15" width="80" height="80"/>
                                             <animations/>
-                                            <state key="normal" title="Share"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="80" id="ByK-A2-8iM"/>
+                                                <constraint firstAttribute="width" constant="80" id="Ulw-i7-yn6"/>
+                                            </constraints>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8r-wc-R7q">
+                                            <rect key="frame" x="530" y="34" width="32" height="42"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="42" id="4Hg-8h-fb3"/>
+                                                <constraint firstAttribute="width" constant="32" id="Kyp-8D-dYz"/>
+                                            </constraints>
+                                            <state key="normal" image="Share"/>
                                             <connections>
                                                 <action selector="sharePressed:" destination="C6M-YG-xLO" eventType="touchUpInside" id="2mH-uE-DtP"/>
                                             </connections>
@@ -69,16 +85,25 @@
                                     </subviews>
                                     <animations/>
                                     <constraints>
-                                        <constraint firstItem="z8r-wc-R7q" firstAttribute="leading" secondItem="Q5a-OT-3FI" secondAttribute="trailing" constant="8" id="JyB-Ft-wRp"/>
+                                        <constraint firstItem="tmM-nq-lfv" firstAttribute="centerY" secondItem="BlE-A6-A0d" secondAttribute="centerY" id="1U3-xa-PLV"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="tmM-nq-lfv" secondAttribute="leading" id="3fP-kG-7Nh"/>
+                                        <constraint firstItem="hLk-BH-jpW" firstAttribute="leading" secondItem="tmM-nq-lfv" secondAttribute="trailing" constant="32" id="HLu-wq-smi"/>
+                                        <constraint firstItem="z8r-wc-R7q" firstAttribute="leading" secondItem="Q5a-OT-3FI" secondAttribute="trailing" constant="30" id="JyB-Ft-wRp"/>
                                         <constraint firstItem="hLk-BH-jpW" firstAttribute="leading" secondItem="BlE-A6-A0d" secondAttribute="leadingMargin" constant="116.5" id="Kmm-ZA-0Pa"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="z8r-wc-R7q" secondAttribute="trailing" id="XHo-t7-jAs"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="z8r-wc-R7q" secondAttribute="trailing" constant="30" id="XHo-t7-jAs"/>
                                         <constraint firstItem="z8r-wc-R7q" firstAttribute="centerY" secondItem="BlE-A6-A0d" secondAttribute="centerY" id="et9-ZH-XFa"/>
                                         <constraint firstItem="hLk-BH-jpW" firstAttribute="centerY" secondItem="BlE-A6-A0d" secondAttribute="centerY" id="l3i-IK-sR3"/>
                                         <constraint firstItem="Q5a-OT-3FI" firstAttribute="centerY" secondItem="z8r-wc-R7q" secondAttribute="centerY" id="qmW-4N-MGF"/>
                                     </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="Kmm-ZA-0Pa"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                                 <animations/>
                                 <connections>
+                                    <outlet property="emoticonImage" destination="tmM-nq-lfv" id="mjV-ou-9X7"/>
                                     <outlet property="titleLabel" destination="hLk-BH-jpW" id="IVM-rZ-9fk"/>
                                 </connections>
                             </tableViewCell>
@@ -272,4 +297,9 @@
             <point key="canvasLocation" x="1130" y="2668"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Banana" width="156" height="137"/>
+        <image name="EmptyStar" width="244" height="233"/>
+        <image name="Share" width="199" height="250"/>
+    </resources>
 </document>

@@ -11,6 +11,7 @@ import UIKit
 class EmoticonTableViewCell: UITableViewCell {
     
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var emoticonImage: UIImageView!
     
     @IBAction func starPressed(sender: UIButton) {
         print("Star")
