@@ -16,7 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        if dataIsEmpty() {
+            importData()
+        }
         return true
     }
 
@@ -105,6 +107,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 abort()
             }
         }
+    }
+    
+    func importData() {
+        // Retrieve data from the source file
+        if let filePath = NSBundle.mainBundle().pathForResource("data", ofType: "json") {
+            let json = JSON(data: (NSData.dataWithContentsOfMappedFile(filePath) as! NSData))
+            for (_,subJson):(String, JSON) in json {
+                let menuItem = NSEntityDescription.insertNewObjectForEntityForName("Emoticon", inManagedObjectContext: managedObjectContext) as! Emoticon
+                menuItem.title = subJson["title"].string!
+                menuItem.image = subJson["image"].string!
+            }
+            
+        }
+    }
+
+    func dataIsEmpty() -> Bool {
+        let personRequest = NSFetchRequest(entityName: "Emoticon")
+        
+        if let personResult = try! managedObjectContext.executeFetchRequest(personRequest) as? [Emoticon] {
+            if personResult.count == 0 {
+                return true
+            } else {
+                return false
+            }
+        } else {
+            return true
+        }
+
     }
 
 }

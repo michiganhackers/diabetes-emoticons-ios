@@ -7,12 +7,28 @@
 //
 
 import UIKit
+import CoreData
 
 class HomeViewController: UITableViewController {
-
+    
+    private var emoticons = [Emoticon]()
+    var fetchResultController: NSFetchedResultsController!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // Load menu items from database
+        if let managedObjectContext = (UIApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext {
+            
+            let fetchRequest = NSFetchRequest(entityName: "Emoticon")
+            do {
+                emoticons = try managedObjectContext.executeFetchRequest(fetchRequest) as! [Emoticon]
+            } catch {
+                print("Failed to retrieve record")
+                print(error)
+            }
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,16 +37,16 @@ class HomeViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 30
+        return emoticons.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCellWithIdentifier("StandardCell", forIndexPath: indexPath) as! EmoticonTableViewCell
-        cell.titleLabel.text = "Test"
-        cell.emoticonImage.image = UIImage(named: "Banana")
+        cell.titleLabel.text = emoticons[indexPath.row].title
+        cell.emoticonImage.image = UIImage(named: emoticons[indexPath.row].image!)
         
         return cell
     }
-
+    
 }
 

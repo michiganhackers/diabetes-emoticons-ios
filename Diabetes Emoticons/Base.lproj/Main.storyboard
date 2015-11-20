@@ -204,11 +204,13 @@
             </objects>
             <point key="canvasLocation" x="304" y="423"/>
         </scene>
-        <!--Recent-->
+        <!--Navigation Controller-->
         <scene sceneID="ng5-vQ-TFe">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mlg-WK-5rW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Recent" id="ZXQ-rC-6sm"/>
+                    <tabBarItem key="tabBarItem" systemItem="recents" id="ZXQ-rC-6sm">
+                        <inset key="imageInsets" minX="50" minY="50" maxX="50" maxY="50"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="to3-CV-NFz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -224,11 +226,13 @@
             </objects>
             <point key="canvasLocation" x="1130" y="1188"/>
         </scene>
-        <!--Favorites-->
+        <!--Navigation Controller-->
         <scene sceneID="Gy9-4a-jiK">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RMg-TO-M6H" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Favorites" id="A00-bc-zN7"/>
+                    <tabBarItem key="tabBarItem" systemItem="topRated" id="A00-bc-zN7">
+                        <inset key="imageInsets" minX="54" minY="52" maxX="54" maxY="52"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="q3T-MU-xHI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -276,11 +280,11 @@
             </objects>
             <point key="canvasLocation" x="1942" y="2668"/>
         </scene>
-        <!--More-->
+        <!--Navigation Controller-->
         <scene sceneID="cdP-jm-DMl">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mWM-cs-8sv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="More" id="3uA-LC-Lnf"/>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="3uA-LC-Lnf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vnb-cj-zdO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

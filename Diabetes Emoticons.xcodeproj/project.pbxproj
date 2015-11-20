@@ -16,6 +16,9 @@
 		7013C78E1BF3E0CB007BB646 /* Diabetes_EmoticonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7013C78D1BF3E0CB007BB646 /* Diabetes_EmoticonsTests.swift */; };
 		7013C7991BF3E0CB007BB646 /* Diabetes_EmoticonsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7013C7981BF3E0CB007BB646 /* Diabetes_EmoticonsUITests.swift */; };
 		7013C7A71BF3E2A5007BB646 /* EmoticonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7013C7A61BF3E2A5007BB646 /* EmoticonTableViewCell.swift */; };
+		708365D81BFED40A00EA9FEC /* Emoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708365D71BFED40A00EA9FEC /* Emoticon.swift */; };
+		708365DA1BFEE44C00EA9FEC /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708365D91BFEE44C00EA9FEC /* SwiftyJSON.swift */; };
+		708365DD1BFEE92700EA9FEC /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 708365DC1BFEE92700EA9FEC /* data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		7013C7981BF3E0CB007BB646 /* Diabetes_EmoticonsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diabetes_EmoticonsUITests.swift; sourceTree = "<group>"; };
 		7013C79A1BF3E0CB007BB646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7013C7A61BF3E2A5007BB646 /* EmoticonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonTableViewCell.swift; sourceTree = "<group>"; };
+		708365D71BFED40A00EA9FEC /* Emoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoticon.swift; sourceTree = "<group>"; };
+		708365D91BFEE44C00EA9FEC /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		708365DC1BFEE92700EA9FEC /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +114,7 @@
 				7013C77F1BF3E0CB007BB646 /* Assets.xcassets */,
 				7013C7811BF3E0CB007BB646 /* LaunchScreen.storyboard */,
 				7013C7841BF3E0CB007BB646 /* Info.plist */,
-				7013C77C1BF3E0CB007BB646 /* Diabetes_Emoticons.xcdatamodeld */,
+				708365DB1BFEE46200EA9FEC /* Core Data */,
 			);
 			path = "Diabetes Emoticons";
 			sourceTree = "<group>";
@@ -129,6 +135,17 @@
 				7013C79A1BF3E0CB007BB646 /* Info.plist */,
 			);
 			path = "Diabetes EmoticonsUITests";
+			sourceTree = "<group>";
+		};
+		708365DB1BFEE46200EA9FEC /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				708365DC1BFEE92700EA9FEC /* data.json */,
+				708365D71BFED40A00EA9FEC /* Emoticon.swift */,
+				7013C77C1BF3E0CB007BB646 /* Diabetes_Emoticons.xcdatamodeld */,
+				708365D91BFEE44C00EA9FEC /* SwiftyJSON.swift */,
+			);
+			name = "Core Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +256,7 @@
 				7013C7831BF3E0CB007BB646 /* LaunchScreen.storyboard in Resources */,
 				7013C7801BF3E0CB007BB646 /* Assets.xcassets in Resources */,
 				7013C77B1BF3E0CB007BB646 /* Main.storyboard in Resources */,
+				708365DD1BFEE92700EA9FEC /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,8 +281,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				708365D81BFED40A00EA9FEC /* Emoticon.swift in Sources */,
 				7013C77E1BF3E0CB007BB646 /* Diabetes_Emoticons.xcdatamodeld in Sources */,
 				7013C7781BF3E0CB007BB646 /* HomeViewController.swift in Sources */,
+				708365DA1BFEE44C00EA9FEC /* SwiftyJSON.swift in Sources */,
 				7013C7761BF3E0CB007BB646 /* AppDelegate.swift in Sources */,
 				7013C7A71BF3E2A5007BB646 /* EmoticonTableViewCell.swift in Sources */,
 			);

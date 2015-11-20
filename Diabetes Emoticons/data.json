@@ -1,0 +1,18 @@
+{
+  "0": {
+    "title": "Banana",
+    "image": "Banana"
+  },
+  "1": {
+    "title": "Blood Glucose High",
+    "image": "BloodGlucoseHigh"
+  },
+  "2": {
+    "title": "Call Parent",
+    "image": "CallParent"
+  },
+  "3": {
+    "title": "Blood Glucose Low",
+    "image": "BloodGlucoseLow"
+  }
+}
