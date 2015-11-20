@@ -1,16 +1,15 @@
 //
-//  HomeViewController.swift
+//  FavoritesTableViewController.swift
 //  Diabetes Emoticons
 //
-//  Created by Connor Krupp on 11/11/15.
+//  Created by Connor Krupp on 11/20/15.
 //  Copyright © 2015 Connor Krupp. All rights reserved.
 //
 
 import UIKit
 import CoreData
 
-class HomeViewController: UITableViewController {
-    
+class FavoritesTableViewController : UITableViewController {
     private var emoticons = [Emoticon]()
     var fetchResultController: NSFetchedResultsController!
     
@@ -27,12 +26,10 @@ class HomeViewController: UITableViewController {
                 print(error)
             }
         }
-    }
-    
-    override func viewDidAppear(animated: Bool) {
+        emoticons = emoticons.filter({ $0.isFavorite == NSNumber(bool: true) })
         tableView.reloadData()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -62,16 +59,10 @@ class HomeViewController: UITableViewController {
         if let managedObjectContext = (UIApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext {
             try! managedObjectContext.save()
         }
+        if emoticons[sender.tag].isFavorite == NSNumber(bool: false) {
+            emoticons.removeAtIndex(sender.tag)
+        }
         self.tableView.reloadData()
     }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "toDetail" {
-            if let detailViewController = segue.destinationViewController as? EmoticonDetailViewController {
-                detailViewController.emoticon = emoticons[tableView.indexPathForSelectedRow!.row]
-            }
-        }
-    }
-    
-}
 
+}

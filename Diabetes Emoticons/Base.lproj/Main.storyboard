@@ -3,7 +3,9 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Home-->
@@ -29,8 +31,9 @@
         <!--Diabetes Emoticons-->
         <scene sceneID="UTA-Oc-EWh">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sjg-MP-X34" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="DXM-Df-fYB" customClass="HomeViewController" customModule="Diabetes_Emoticons" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="101" sectionHeaderHeight="28" sectionFooterHeight="28" id="bdA-C8-UQS">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="110" sectionHeaderHeight="28" sectionFooterHeight="28" id="bdA-C8-UQS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
@@ -58,9 +61,6 @@
                                                 <constraint firstAttribute="width" constant="42" id="7I2-LA-Y6b"/>
                                             </constraints>
                                             <state key="normal" image="EmptyStar"/>
-                                            <connections>
-                                                <action selector="starPressed:" destination="C6M-YG-xLO" eventType="touchUpInside" id="hZe-ZK-ePG"/>
-                                            </connections>
                                         </button>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Banana" translatesAutoresizingMaskIntoConstraints="NO" id="tmM-nq-lfv">
                                             <rect key="frame" x="8" y="15" width="80" height="80"/>
@@ -104,7 +104,9 @@
                                 <animations/>
                                 <connections>
                                     <outlet property="emoticonImage" destination="tmM-nq-lfv" id="mjV-ou-9X7"/>
+                                    <outlet property="favoriteButton" destination="Q5a-OT-3FI" id="3bX-Rc-K1o"/>
                                     <outlet property="titleLabel" destination="hLk-BH-jpW" id="IVM-rZ-9fk"/>
+                                    <segue destination="GEb-ah-xvU" kind="show" identifier="toDetail" id="Jj6-Az-6hU"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -115,29 +117,159 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Diabetes Emoticons" id="HWp-XE-9Av"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sjg-MP-X34" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1942" y="423"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Emoticon Detail View Controller-->
+        <scene sceneID="YlN-N4-2AQ">
+            <objects>
+                <viewController id="GEb-ah-xvU" customClass="EmoticonDetailViewController" customModule="Diabetes_Emoticons" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eFl-Df-L53"/>
+                        <viewControllerLayoutGuide type="bottom" id="cfR-XD-DHu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="md5-65-cWR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6yy-hJ-1JM">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Banana" translatesAutoresizingMaskIntoConstraints="NO" id="sga-gQ-iXh">
+                                        <rect key="frame" x="72" y="0.0" width="156" height="156"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="sga-gQ-iXh" secondAttribute="height" multiplier="1:1" id="JxE-8k-tPb"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DvQ-GS-2wO">
+                                        <rect key="frame" x="178" y="168" width="50" height="50"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="Uai-pP-DnH"/>
+                                            <constraint firstAttribute="width" secondItem="DvQ-GS-2wO" secondAttribute="height" multiplier="1:1" id="g00-ZS-gMl"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="CircleShare"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJ5-nu-aU0">
+                                        <rect key="frame" x="72" y="168" width="50" height="50"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="fJ5-nu-aU0" secondAttribute="height" multiplier="1:1" id="843-l7-IcL"/>
+                                            <constraint firstAttribute="width" constant="50" id="f0K-cf-AGw"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="CircleEmptyStar"/>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="DvQ-GS-2wO" firstAttribute="top" secondItem="sga-gQ-iXh" secondAttribute="bottom" constant="12" id="5Jr-8E-PR8"/>
+                                    <constraint firstItem="fJ5-nu-aU0" firstAttribute="leading" secondItem="sga-gQ-iXh" secondAttribute="leading" id="5y6-lR-iDY"/>
+                                    <constraint firstItem="sga-gQ-iXh" firstAttribute="centerX" secondItem="6yy-hJ-1JM" secondAttribute="centerX" id="8vS-ra-5hi"/>
+                                    <constraint firstItem="DvQ-GS-2wO" firstAttribute="trailing" secondItem="sga-gQ-iXh" secondAttribute="trailing" id="BHa-YO-8v9"/>
+                                    <constraint firstItem="fJ5-nu-aU0" firstAttribute="top" secondItem="sga-gQ-iXh" secondAttribute="bottom" constant="12" id="Hcg-lN-2DB"/>
+                                    <constraint firstItem="sga-gQ-iXh" firstAttribute="top" secondItem="6yy-hJ-1JM" secondAttribute="top" id="y0R-fz-dld"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6yy-hJ-1JM" firstAttribute="centerX" secondItem="md5-65-cWR" secondAttribute="centerX" id="6zL-Je-twe"/>
+                            <constraint firstItem="6yy-hJ-1JM" firstAttribute="height" secondItem="md5-65-cWR" secondAttribute="height" multiplier="0.5" id="Cf0-vT-ac2"/>
+                            <constraint firstItem="6yy-hJ-1JM" firstAttribute="width" secondItem="md5-65-cWR" secondAttribute="width" multiplier="0.5" id="FJP-sB-04E"/>
+                            <constraint firstItem="6yy-hJ-1JM" firstAttribute="centerY" secondItem="md5-65-cWR" secondAttribute="centerY" id="n28-vw-5k1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emoticonImage" destination="sga-gQ-iXh" id="AM1-Ma-jZW"/>
+                        <outlet property="favoriteButton" destination="fJ5-nu-aU0" id="URn-so-xAH"/>
+                        <outlet property="shareButton" destination="DvQ-GS-2wO" id="w0i-vN-hgG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pMy-jI-3kW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2625" y="423"/>
+        </scene>
+        <!--Diabetes Emoticons-->
         <scene sceneID="S7I-dw-5wO">
             <objects>
                 <tableViewController id="NgA-PI-QxD" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ckH-5R-bUu">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="110" sectionHeaderHeight="28" sectionFooterHeight="28" id="ckH-5R-bUu">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="7GX-cI-nsg">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StandardCell" rowHeight="110" id="nbz-E4-Fg1" customClass="EmoticonTableViewCell" customModule="Diabetes_Emoticons" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="110"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7GX-cI-nsg" id="reJ-lW-Au7">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nbz-E4-Fg1" id="wNP-zp-BGu">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="109.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VaL-Hw-Bwc">
+                                            <rect key="frame" x="120" y="44" width="57" height="20.5"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYg-XW-mhL">
+                                            <rect key="frame" x="458" y="36" width="42" height="38"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="42" id="EhV-Rl-MHf"/>
+                                                <constraint firstAttribute="height" constant="38" id="L7c-gb-p5i"/>
+                                            </constraints>
+                                            <state key="normal" image="EmptyStar"/>
+                                        </button>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Banana" translatesAutoresizingMaskIntoConstraints="NO" id="SpO-w2-sai">
+                                            <rect key="frame" x="8" y="15" width="80" height="80"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="80" id="R5A-HJ-79e"/>
+                                                <constraint firstAttribute="width" constant="80" id="iuS-sf-FGM"/>
+                                            </constraints>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ra4-ju-Zei">
+                                            <rect key="frame" x="530" y="34" width="32" height="42"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="32" id="E69-Ju-Uis"/>
+                                                <constraint firstAttribute="height" constant="42" id="gTu-7D-90e"/>
+                                            </constraints>
+                                            <state key="normal" image="Share"/>
+                                            <connections>
+                                                <action selector="sharePressed:" destination="nbz-E4-Fg1" eventType="touchUpInside" id="f1h-O9-Ph5"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
                                     <animations/>
+                                    <constraints>
+                                        <constraint firstItem="VaL-Hw-Bwc" firstAttribute="leading" secondItem="wNP-zp-BGu" secondAttribute="leadingMargin" constant="116.5" id="4Gp-AB-aBI"/>
+                                        <constraint firstItem="VaL-Hw-Bwc" firstAttribute="leading" secondItem="SpO-w2-sai" secondAttribute="trailing" constant="32" id="AEW-cP-nC6"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="SpO-w2-sai" secondAttribute="leading" id="F4t-sh-FbX"/>
+                                        <constraint firstItem="ra4-ju-Zei" firstAttribute="centerY" secondItem="wNP-zp-BGu" secondAttribute="centerY" id="Gzd-sF-Yge"/>
+                                        <constraint firstItem="VaL-Hw-Bwc" firstAttribute="centerY" secondItem="wNP-zp-BGu" secondAttribute="centerY" id="Ijj-eQ-G2o"/>
+                                        <constraint firstItem="SpO-w2-sai" firstAttribute="centerY" secondItem="wNP-zp-BGu" secondAttribute="centerY" id="JIa-xT-Eve"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="ra4-ju-Zei" secondAttribute="trailing" constant="30" id="KaE-E6-sCQ"/>
+                                        <constraint firstItem="ra4-ju-Zei" firstAttribute="leading" secondItem="jYg-XW-mhL" secondAttribute="trailing" constant="30" id="Snn-HE-V9b"/>
+                                        <constraint firstItem="jYg-XW-mhL" firstAttribute="centerY" secondItem="ra4-ju-Zei" secondAttribute="centerY" id="sap-BL-O3L"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="4Gp-AB-aBI"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                                 <animations/>
+                                <connections>
+                                    <outlet property="emoticonImage" destination="SpO-w2-sai" id="6T8-97-eBe"/>
+                                    <outlet property="favoriteButton" destination="jYg-XW-mhL" id="JGj-4u-8uU"/>
+                                    <outlet property="titleLabel" destination="VaL-Hw-Bwc" id="kgT-Sz-Ei6"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -145,31 +277,90 @@
                             <outlet property="delegate" destination="NgA-PI-QxD" id="PE9-p3-vRH"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Gjq-vP-GzI"/>
+                    <navigationItem key="navigationItem" title="Diabetes Emoticons" id="Gjq-vP-GzI"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iJh-iA-R7v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1942" y="1188"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Diabetes Emoticons-->
         <scene sceneID="PiP-bg-7j4">
             <objects>
-                <tableViewController id="B7U-A6-5PO" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ec2-03-7k5">
+                <tableViewController id="B7U-A6-5PO" customClass="FavoritesTableViewController" customModule="Diabetes_Emoticons" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="110" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ec2-03-7k5">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="EDK-1E-Epn">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StandardCell" rowHeight="110" id="6cc-lm-EAZ" customClass="EmoticonTableViewCell" customModule="Diabetes_Emoticons" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="110"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EDK-1E-Epn" id="sbL-aU-OxN">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6cc-lm-EAZ" id="qxg-MW-KKX">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="109.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Eb-2e-d30">
+                                            <rect key="frame" x="120" y="44" width="57" height="20.5"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTj-4i-ike">
+                                            <rect key="frame" x="458" y="36" width="42" height="38"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="42" id="uqt-Ob-Weg"/>
+                                                <constraint firstAttribute="height" constant="38" id="vsI-yC-tX4"/>
+                                            </constraints>
+                                            <state key="normal" image="EmptyStar"/>
+                                        </button>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Banana" translatesAutoresizingMaskIntoConstraints="NO" id="sYW-vz-DWz">
+                                            <rect key="frame" x="8" y="15" width="80" height="80"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="80" id="LTL-Gv-v6z"/>
+                                                <constraint firstAttribute="height" constant="80" id="sY6-Uc-bkZ"/>
+                                            </constraints>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wol-OM-xfo">
+                                            <rect key="frame" x="530" y="34" width="32" height="42"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="32" id="uvi-8H-rxq"/>
+                                                <constraint firstAttribute="height" constant="42" id="wET-YJ-Krk"/>
+                                            </constraints>
+                                            <state key="normal" image="Share"/>
+                                            <connections>
+                                                <action selector="sharePressed:" destination="6cc-lm-EAZ" eventType="touchUpInside" id="9lL-C7-94a"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
                                     <animations/>
+                                    <constraints>
+                                        <constraint firstItem="gTj-4i-ike" firstAttribute="centerY" secondItem="Wol-OM-xfo" secondAttribute="centerY" id="Jb2-GM-MQC"/>
+                                        <constraint firstItem="Wol-OM-xfo" firstAttribute="leading" secondItem="gTj-4i-ike" secondAttribute="trailing" constant="30" id="PZG-kL-csB"/>
+                                        <constraint firstItem="sYW-vz-DWz" firstAttribute="centerY" secondItem="qxg-MW-KKX" secondAttribute="centerY" id="bAA-6G-uRH"/>
+                                        <constraint firstItem="Wol-OM-xfo" firstAttribute="centerY" secondItem="qxg-MW-KKX" secondAttribute="centerY" id="dUC-8C-YdE"/>
+                                        <constraint firstItem="4Eb-2e-d30" firstAttribute="leading" secondItem="sYW-vz-DWz" secondAttribute="trailing" constant="32" id="f8b-rQ-Nbs"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="sYW-vz-DWz" secondAttribute="leading" id="gcb-Ed-33A"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Wol-OM-xfo" secondAttribute="trailing" constant="30" id="kgR-Pc-fJL"/>
+                                        <constraint firstItem="4Eb-2e-d30" firstAttribute="leading" secondItem="qxg-MW-KKX" secondAttribute="leadingMargin" constant="116.5" id="npj-XB-IWk"/>
+                                        <constraint firstItem="4Eb-2e-d30" firstAttribute="centerY" secondItem="qxg-MW-KKX" secondAttribute="centerY" id="sR2-tk-Rr7"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="npj-XB-IWk"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                                 <animations/>
+                                <connections>
+                                    <outlet property="emoticonImage" destination="sYW-vz-DWz" id="zxg-Vi-Gxe"/>
+                                    <outlet property="favoriteButton" destination="gTj-4i-ike" id="hQa-71-d9X"/>
+                                    <outlet property="titleLabel" destination="4Eb-2e-d30" id="WMy-5f-P42"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -177,7 +368,7 @@
                             <outlet property="delegate" destination="B7U-A6-5PO" id="CLX-iz-HfJ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="7YO-mo-RsO"/>
+                    <navigationItem key="navigationItem" title="Diabetes Emoticons" id="7YO-mo-RsO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NS2-KU-pPk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -303,6 +494,8 @@
     </scenes>
     <resources>
         <image name="Banana" width="156" height="137"/>
+        <image name="CircleEmptyStar" width="663" height="663"/>
+        <image name="CircleShare" width="663" height="663"/>
         <image name="EmptyStar" width="244" height="233"/>
         <image name="Share" width="199" height="250"/>
     </resources>
