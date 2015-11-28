@@ -13,4 +13,5 @@ class Emoticon : NSManagedObject {
     @NSManaged var title: String!
     @NSManaged var image: String!
     @NSManaged var isFavorite: NSNumber!
+    @NSManaged var lastAccessed: NSDate!
 }

@@ -21,6 +21,7 @@
 		708365DD1BFEE92700EA9FEC /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 708365DC1BFEE92700EA9FEC /* data.json */; };
 		708365DF1BFF95C800EA9FEC /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708365DE1BFF95C800EA9FEC /* FavoritesTableViewController.swift */; };
 		708365E41BFFAD8C00EA9FEC /* EmoticonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708365E31BFFAD8C00EA9FEC /* EmoticonDetailViewController.swift */; };
+		70BBA02F1C096149009803E9 /* RecentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBA02E1C096149009803E9 /* RecentTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		708365DC1BFEE92700EA9FEC /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		708365DE1BFF95C800EA9FEC /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
 		708365E31BFFAD8C00EA9FEC /* EmoticonDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonDetailViewController.swift; sourceTree = "<group>"; };
+		70BBA02E1C096149009803E9 /* RecentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,8 +115,9 @@
 			children = (
 				7013C7751BF3E0CB007BB646 /* AppDelegate.swift */,
 				7013C7771BF3E0CB007BB646 /* HomeViewController.swift */,
-				708365E31BFFAD8C00EA9FEC /* EmoticonDetailViewController.swift */,
+				70BBA02E1C096149009803E9 /* RecentTableViewController.swift */,
 				708365DE1BFF95C800EA9FEC /* FavoritesTableViewController.swift */,
+				708365E31BFFAD8C00EA9FEC /* EmoticonDetailViewController.swift */,
 				7013C7A61BF3E2A5007BB646 /* EmoticonTableViewCell.swift */,
 				7013C7791BF3E0CB007BB646 /* Main.storyboard */,
 				7013C77F1BF3E0CB007BB646 /* Assets.xcassets */,
@@ -290,6 +293,7 @@
 				708365D81BFED40A00EA9FEC /* Emoticon.swift in Sources */,
 				708365E41BFFAD8C00EA9FEC /* EmoticonDetailViewController.swift in Sources */,
 				7013C77E1BF3E0CB007BB646 /* Diabetes_Emoticons.xcdatamodeld in Sources */,
+				70BBA02F1C096149009803E9 /* RecentTableViewController.swift in Sources */,
 				7013C7781BF3E0CB007BB646 /* HomeViewController.swift in Sources */,
 				708365DA1BFEE44C00EA9FEC /* SwiftyJSON.swift in Sources */,
 				7013C7761BF3E0CB007BB646 /* AppDelegate.swift in Sources */,

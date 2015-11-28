@@ -1,16 +1,21 @@
 //
-//  HomeViewController.swift
+//  RecentTableViewController.swift
 //  Diabetes Emoticons
 //
-//  Created by Connor Krupp on 11/11/15.
+//  Created by Connor Krupp on 11/27/15.
 //  Copyright © 2015 Connor Krupp. All rights reserved.
 //
 
 import UIKit
 import CoreData
 
-class HomeViewController: UITableViewController {
-    
+public func <(lhs: NSDate, rhs: NSDate) -> Bool {
+    return lhs.compare(rhs) == .OrderedAscending
+}
+
+extension NSDate: Comparable { }
+
+class RecentTableViewController : UITableViewController {
     private var emoticons = [Emoticon]()
     var fetchResultController: NSFetchedResultsController!
     
@@ -27,12 +32,11 @@ class HomeViewController: UITableViewController {
                 print(error)
             }
         }
-    }
-    
-    override func viewDidAppear(animated: Bool) {
+        
+        emoticons = emoticons.filter({ $0.lastAccessed.compare(NSDate(timeIntervalSinceNow: NSTimeInterval(-604800))) == NSComparisonResult.OrderedDescending })
         tableView.reloadData()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -49,7 +53,6 @@ class HomeViewController: UITableViewController {
         cell.favoriteButton.addTarget(self, action: "favoritePressed:", forControlEvents: .TouchUpInside)
         cell.shareButton.addTarget(self, action: "sharePressed:", forControlEvents: .TouchUpInside)
         cell.favoriteButton.tag = indexPath.row
-        cell.shareButton.tag = indexPath.row
         
         if Bool(emoticons[indexPath.row].isFavorite!) {
             cell.favoriteButton.setImage(UIImage(named: "FilledStar"), forState: .Normal)
@@ -61,8 +64,6 @@ class HomeViewController: UITableViewController {
     
     @IBAction func favoritePressed(sender: UIButton) {
         emoticons[sender.tag].isFavorite = NSNumber(bool: !Bool(emoticons[sender.tag].isFavorite!))
-        emoticons[sender.tag].lastAccessed = NSDate()
-
         if let managedObjectContext = (UIApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext {
             try! managedObjectContext.save()
         }
@@ -74,7 +75,7 @@ class HomeViewController: UITableViewController {
         if let managedObjectContext = (UIApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext {
             try! managedObjectContext.save()
         }
-
+        
         let objectsToShare = [UIImage(named: emoticons[sender.tag].image)!]
         let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
         
@@ -85,13 +86,4 @@ class HomeViewController: UITableViewController {
         navigationController?.presentViewController(activityVC, animated: true) {}
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "toDetail" {
-            if let detailViewController = segue.destinationViewController as? EmoticonDetailViewController {
-                detailViewController.emoticon = emoticons[tableView.indexPathForSelectedRow!.row]
-            }
-        }
-    }
-    
 }
-

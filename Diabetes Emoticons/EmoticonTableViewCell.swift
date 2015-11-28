@@ -13,8 +13,6 @@ class EmoticonTableViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var emoticonImage: UIImageView!
     @IBOutlet weak var favoriteButton: UIButton!
+    @IBOutlet weak var shareButton: UIButton!
     
-    @IBAction func sharePressed(sender: UIButton) {
-        print("Share")
-    }
 }

@@ -31,7 +31,6 @@
         <!--Diabetes Emoticons-->
         <scene sceneID="UTA-Oc-EWh">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sjg-MP-X34" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="DXM-Df-fYB" customClass="HomeViewController" customModule="Diabetes_Emoticons" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="110" sectionHeaderHeight="28" sectionFooterHeight="28" id="bdA-C8-UQS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -78,9 +77,6 @@
                                                 <constraint firstAttribute="width" constant="32" id="Kyp-8D-dYz"/>
                                             </constraints>
                                             <state key="normal" image="Share"/>
-                                            <connections>
-                                                <action selector="sharePressed:" destination="C6M-YG-xLO" eventType="touchUpInside" id="2mH-uE-DtP"/>
-                                            </connections>
                                         </button>
                                     </subviews>
                                     <animations/>
@@ -105,6 +101,7 @@
                                 <connections>
                                     <outlet property="emoticonImage" destination="tmM-nq-lfv" id="mjV-ou-9X7"/>
                                     <outlet property="favoriteButton" destination="Q5a-OT-3FI" id="3bX-Rc-K1o"/>
+                                    <outlet property="shareButton" destination="z8r-wc-R7q" id="3xb-xP-g4h"/>
                                     <outlet property="titleLabel" destination="hLk-BH-jpW" id="IVM-rZ-9fk"/>
                                     <segue destination="GEb-ah-xvU" kind="show" identifier="toDetail" id="Jj6-Az-6hU"/>
                                 </connections>
@@ -117,6 +114,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Diabetes Emoticons" id="HWp-XE-9Av"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sjg-MP-X34" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1942" y="423"/>
         </scene>
@@ -195,7 +193,7 @@
         <!--Diabetes Emoticons-->
         <scene sceneID="S7I-dw-5wO">
             <objects>
-                <tableViewController id="NgA-PI-QxD" sceneMemberID="viewController">
+                <tableViewController id="NgA-PI-QxD" customClass="RecentTableViewController" customModule="Diabetes_Emoticons" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="110" sectionHeaderHeight="28" sectionFooterHeight="28" id="ckH-5R-bUu">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -241,9 +239,6 @@
                                                 <constraint firstAttribute="height" constant="42" id="gTu-7D-90e"/>
                                             </constraints>
                                             <state key="normal" image="Share"/>
-                                            <connections>
-                                                <action selector="sharePressed:" destination="nbz-E4-Fg1" eventType="touchUpInside" id="f1h-O9-Ph5"/>
-                                            </connections>
                                         </button>
                                     </subviews>
                                     <animations/>
@@ -268,6 +263,7 @@
                                 <connections>
                                     <outlet property="emoticonImage" destination="SpO-w2-sai" id="6T8-97-eBe"/>
                                     <outlet property="favoriteButton" destination="jYg-XW-mhL" id="JGj-4u-8uU"/>
+                                    <outlet property="shareButton" destination="ra4-ju-Zei" id="8pQ-3l-ckn"/>
                                     <outlet property="titleLabel" destination="VaL-Hw-Bwc" id="kgT-Sz-Ei6"/>
                                 </connections>
                             </tableViewCell>
@@ -332,9 +328,6 @@
                                                 <constraint firstAttribute="height" constant="42" id="wET-YJ-Krk"/>
                                             </constraints>
                                             <state key="normal" image="Share"/>
-                                            <connections>
-                                                <action selector="sharePressed:" destination="6cc-lm-EAZ" eventType="touchUpInside" id="9lL-C7-94a"/>
-                                            </connections>
                                         </button>
                                     </subviews>
                                     <animations/>
@@ -359,6 +352,7 @@
                                 <connections>
                                     <outlet property="emoticonImage" destination="sYW-vz-DWz" id="zxg-Vi-Gxe"/>
                                     <outlet property="favoriteButton" destination="gTj-4i-ike" id="hQa-71-d9X"/>
+                                    <outlet property="shareButton" destination="Wol-OM-xfo" id="zsb-Sb-Wwm"/>
                                     <outlet property="titleLabel" destination="4Eb-2e-d30" id="WMy-5f-P42"/>
                                 </connections>
                             </tableViewCell>

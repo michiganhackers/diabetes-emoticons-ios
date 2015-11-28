@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             importData()
         }
         UINavigationBar.appearance().barTintColor = UIColor(red: 254.0/255.0, green: 237.0/255.0, blue: 143.0/255.0, alpha: 1.0)
-        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        UINavigationBar.appearance().tintColor = UIColor.blackColor()
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.blackColor()]
         UITabBar.appearance().barTintColor = UIColor(red: 254.0/255.0, green: 237.0/255.0, blue: 143.0/255.0, alpha: 1.0)
         return true
@@ -122,6 +122,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 menuItem.title = subJson["title"].string!
                 menuItem.image = subJson["image"].string!
                 menuItem.isFavorite = NSNumber(bool: false)
+                menuItem.lastAccessed = NSDate(timeIntervalSince1970: NSTimeInterval(0))
             }
             
         }

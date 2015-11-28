@@ -44,7 +44,9 @@ class FavoritesTableViewController : UITableViewController {
         cell.titleLabel.text = emoticons[indexPath.row].title
         cell.emoticonImage.image = UIImage(named: emoticons[indexPath.row].image)
         cell.favoriteButton.addTarget(self, action: "favoritePressed:", forControlEvents: .TouchUpInside)
+        cell.shareButton.addTarget(self, action: "sharePressed:", forControlEvents: .TouchUpInside)
         cell.favoriteButton.tag = indexPath.row
+        cell.shareButton.tag = indexPath.row
         
         if Bool(emoticons[indexPath.row].isFavorite!) {
             cell.favoriteButton.setImage(UIImage(named: "FilledStar"), forState: .Normal)
@@ -63,6 +65,22 @@ class FavoritesTableViewController : UITableViewController {
             emoticons.removeAtIndex(sender.tag)
         }
         self.tableView.reloadData()
+    }
+    
+    @IBAction func sharePressed(sender: UIButton) {
+        emoticons[sender.tag].lastAccessed = NSDate()
+        if let managedObjectContext = (UIApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext {
+            try! managedObjectContext.save()
+        }
+        
+        let objectsToShare = [UIImage(named: emoticons[sender.tag].image)!]
+        let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
+        
+        //New Excluded Activities Code
+        activityVC.excludedActivityTypes = [UIActivityTypeAirDrop, UIActivityTypeAddToReadingList]
+        //
+        
+        navigationController?.presentViewController(activityVC, animated: true) {}
     }
 
 }

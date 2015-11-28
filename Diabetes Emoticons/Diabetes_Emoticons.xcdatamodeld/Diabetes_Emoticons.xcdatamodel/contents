@@ -3,9 +3,10 @@
     <entity name="Emoticon" representedClassName=".Emoticon" syncable="YES">
         <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="isFavorite" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="lastAccessed" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Emoticon" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="Emoticon" positionX="-63" positionY="-18" width="128" height="105"/>
     </elements>
 </model>
