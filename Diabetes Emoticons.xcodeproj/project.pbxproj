@@ -22,6 +22,10 @@
 		708365DF1BFF95C800EA9FEC /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708365DE1BFF95C800EA9FEC /* FavoritesTableViewController.swift */; };
 		708365E41BFFAD8C00EA9FEC /* EmoticonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708365E31BFFAD8C00EA9FEC /* EmoticonDetailViewController.swift */; };
 		70BBA02F1C096149009803E9 /* RecentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBA02E1C096149009803E9 /* RecentTableViewController.swift */; };
+		70F2BF671C0D486400D05DF1 /* MoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F2BF661C0D486400D05DF1 /* MoreTableViewCell.swift */; };
+		70F2BF691C0D490D00D05DF1 /* MoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F2BF681C0D490D00D05DF1 /* MoreTableViewController.swift */; };
+		70F2BF6B1C0D4BFE00D05DF1 /* WhoAreWeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F2BF6A1C0D4BFE00D05DF1 /* WhoAreWeViewController.swift */; };
+		70F2BF6F1C0D4F3700D05DF1 /* SendMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F2BF6E1C0D4F3700D05DF1 /* SendMessageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,10 @@
 		708365DE1BFF95C800EA9FEC /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
 		708365E31BFFAD8C00EA9FEC /* EmoticonDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonDetailViewController.swift; sourceTree = "<group>"; };
 		70BBA02E1C096149009803E9 /* RecentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentTableViewController.swift; sourceTree = "<group>"; };
+		70F2BF661C0D486400D05DF1 /* MoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreTableViewCell.swift; sourceTree = "<group>"; };
+		70F2BF681C0D490D00D05DF1 /* MoreTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreTableViewController.swift; sourceTree = "<group>"; };
+		70F2BF6A1C0D4BFE00D05DF1 /* WhoAreWeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhoAreWeViewController.swift; sourceTree = "<group>"; };
+		70F2BF6E1C0D4F3700D05DF1 /* SendMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMessageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,16 +122,13 @@
 			isa = PBXGroup;
 			children = (
 				7013C7751BF3E0CB007BB646 /* AppDelegate.swift */,
-				7013C7771BF3E0CB007BB646 /* HomeViewController.swift */,
-				70BBA02E1C096149009803E9 /* RecentTableViewController.swift */,
-				708365DE1BFF95C800EA9FEC /* FavoritesTableViewController.swift */,
-				708365E31BFFAD8C00EA9FEC /* EmoticonDetailViewController.swift */,
-				7013C7A61BF3E2A5007BB646 /* EmoticonTableViewCell.swift */,
+				70F2BF6D1C0D4EEC00D05DF1 /* Emoticon */,
+				70F2BF6C1C0D4ED900D05DF1 /* More */,
+				708365DB1BFEE46200EA9FEC /* Core Data */,
 				7013C7791BF3E0CB007BB646 /* Main.storyboard */,
 				7013C77F1BF3E0CB007BB646 /* Assets.xcassets */,
 				7013C7811BF3E0CB007BB646 /* LaunchScreen.storyboard */,
 				7013C7841BF3E0CB007BB646 /* Info.plist */,
-				708365DB1BFEE46200EA9FEC /* Core Data */,
 			);
 			path = "Diabetes Emoticons";
 			sourceTree = "<group>";
@@ -155,6 +160,29 @@
 				708365D91BFEE44C00EA9FEC /* SwiftyJSON.swift */,
 			);
 			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		70F2BF6C1C0D4ED900D05DF1 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				70F2BF681C0D490D00D05DF1 /* MoreTableViewController.swift */,
+				70F2BF661C0D486400D05DF1 /* MoreTableViewCell.swift */,
+				70F2BF6A1C0D4BFE00D05DF1 /* WhoAreWeViewController.swift */,
+				70F2BF6E1C0D4F3700D05DF1 /* SendMessageViewController.swift */,
+			);
+			name = More;
+			sourceTree = "<group>";
+		};
+		70F2BF6D1C0D4EEC00D05DF1 /* Emoticon */ = {
+			isa = PBXGroup;
+			children = (
+				7013C7771BF3E0CB007BB646 /* HomeViewController.swift */,
+				70BBA02E1C096149009803E9 /* RecentTableViewController.swift */,
+				708365DE1BFF95C800EA9FEC /* FavoritesTableViewController.swift */,
+				7013C7A61BF3E2A5007BB646 /* EmoticonTableViewCell.swift */,
+				708365E31BFFAD8C00EA9FEC /* EmoticonDetailViewController.swift */,
+			);
+			name = Emoticon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,8 +323,12 @@
 				7013C77E1BF3E0CB007BB646 /* Diabetes_Emoticons.xcdatamodeld in Sources */,
 				70BBA02F1C096149009803E9 /* RecentTableViewController.swift in Sources */,
 				7013C7781BF3E0CB007BB646 /* HomeViewController.swift in Sources */,
+				70F2BF691C0D490D00D05DF1 /* MoreTableViewController.swift in Sources */,
 				708365DA1BFEE44C00EA9FEC /* SwiftyJSON.swift in Sources */,
+				70F2BF671C0D486400D05DF1 /* MoreTableViewCell.swift in Sources */,
+				70F2BF6B1C0D4BFE00D05DF1 /* WhoAreWeViewController.swift in Sources */,
 				7013C7761BF3E0CB007BB646 /* AppDelegate.swift in Sources */,
+				70F2BF6F1C0D4F3700D05DF1 /* SendMessageViewController.swift in Sources */,
 				708365DF1BFF95C800EA9FEC /* FavoritesTableViewController.swift in Sources */,
 				7013C7A71BF3E2A5007BB646 /* EmoticonTableViewCell.swift in Sources */,
 			);

@@ -200,7 +200,7 @@
             </objects>
             <point key="canvasLocation" x="2625" y="423"/>
         </scene>
-        <!--Diabetes Emoticons-->
+        <!--Recently Used-->
         <scene sceneID="S7I-dw-5wO">
             <objects>
                 <tableViewController id="NgA-PI-QxD" customClass="RecentTableViewController" customModule="Diabetes_Emoticons" customModuleProvider="target" sceneMemberID="viewController">
@@ -214,7 +214,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9Mh-OP-gzD" id="Tcs-PN-N7q">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banana" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7o8-Oc-5gt">
@@ -292,13 +292,13 @@
                             <outlet property="delegate" destination="NgA-PI-QxD" id="PE9-p3-vRH"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Diabetes Emoticons" id="Gjq-vP-GzI"/>
+                    <navigationItem key="navigationItem" title="Recently Used" id="Gjq-vP-GzI"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iJh-iA-R7v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1942" y="1188"/>
         </scene>
-        <!--Diabetes Emoticons-->
+        <!--Favorites-->
         <scene sceneID="PiP-bg-7j4">
             <objects>
                 <tableViewController id="B7U-A6-5PO" customClass="FavoritesTableViewController" customModule="Diabetes_Emoticons" customModuleProvider="target" sceneMemberID="viewController">
@@ -384,7 +384,7 @@
                             <outlet property="delegate" destination="B7U-A6-5PO" id="CLX-iz-HfJ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Diabetes Emoticons" id="7YO-mo-RsO"/>
+                    <navigationItem key="navigationItem" title="Favorites" id="7YO-mo-RsO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NS2-KU-pPk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -455,25 +455,65 @@
             </objects>
             <point key="canvasLocation" x="1130" y="1946"/>
         </scene>
-        <!--Table View Controller-->
+        <!--More-->
         <scene sceneID="fWE-Cz-n1x">
             <objects>
-                <tableViewController id="lfd-h4-PL7" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="EPZ-lX-Nl2">
+                <tableViewController id="lfd-h4-PL7" customClass="MoreTableViewController" customModule="Diabetes_Emoticons" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="EPZ-lX-Nl2">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Ozd-9i-gHh">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MoreCell" rowHeight="100" id="RxC-wd-Hwx" customClass="MoreTableViewCell" customModule="Diabetes_Emoticons" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ozd-9i-gHh" id="4zd-KA-GlE">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RxC-wd-Hwx" id="SPd-uN-YaO">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F9n-KQ-xME">
+                                            <rect key="frame" x="112" y="39" width="80" height="23"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tppcrit" translatesAutoresizingMaskIntoConstraints="NO" id="t4F-hj-v18">
+                                            <rect key="frame" x="18" y="15" width="70" height="70"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="t4F-hj-v18" secondAttribute="height" multiplier="1:1" id="MBb-ss-52l"/>
+                                                <constraint firstAttribute="width" priority="999" constant="70" id="Z2B-le-Jhb"/>
+                                                <constraint firstAttribute="height" constant="70" id="aQ6-on-N92"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="aQ6-on-N92"/>
+                                                </mask>
+                                            </variation>
+                                        </imageView>
+                                    </subviews>
                                     <animations/>
+                                    <constraints>
+                                        <constraint firstItem="t4F-hj-v18" firstAttribute="width" relation="lessThanOrEqual" secondItem="SPd-uN-YaO" secondAttribute="width" multiplier="0.18" id="2uw-DS-gsX"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="t4F-hj-v18" secondAttribute="leading" constant="-10" id="4As-0y-7Nf"/>
+                                        <constraint firstItem="F9n-KQ-xME" firstAttribute="centerY" secondItem="SPd-uN-YaO" secondAttribute="centerY" id="nCS-IY-H1d"/>
+                                        <constraint firstItem="t4F-hj-v18" firstAttribute="centerY" secondItem="SPd-uN-YaO" secondAttribute="centerY" id="nbx-rN-sMw"/>
+                                        <constraint firstItem="F9n-KQ-xME" firstAttribute="leading" secondItem="SPd-uN-YaO" secondAttribute="leadingMargin" constant="116.5" id="qV2-Xb-8KS"/>
+                                        <constraint firstItem="F9n-KQ-xME" firstAttribute="leading" secondItem="t4F-hj-v18" secondAttribute="trailing" constant="24" id="uHX-k5-6tK"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="qV2-Xb-8KS"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                                 <animations/>
+                                <connections>
+                                    <outlet property="sideImage" destination="t4F-hj-v18" id="xiz-S6-Jif"/>
+                                    <outlet property="titleLabel" destination="F9n-KQ-xME" id="RPb-cr-UN5"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -481,11 +521,49 @@
                             <outlet property="delegate" destination="lfd-h4-PL7" id="S2Z-Yw-mOc"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="PRQ-mm-6tF"/>
+                    <navigationItem key="navigationItem" title="More" id="PRQ-mm-6tF"/>
+                    <connections>
+                        <segue destination="48g-BS-SO0" kind="show" identifier="aboutUs" id="wVy-wh-e9T"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3vx-pe-XPe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1942" y="2668"/>
+        </scene>
+        <!--Who are we?-->
+        <scene sceneID="Rhj-94-9Jg">
+            <objects>
+                <viewController title="Who are we?" id="48g-BS-SO0" customClass="WhoAreWeViewController" customModule="Diabetes_Emoticons" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fNE-vT-hLE"/>
+                        <viewControllerLayoutGuide type="bottom" id="dLc-Oz-zI1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dot-74-8D5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="We8-sc-QCi">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="We8-sc-QCi" firstAttribute="width" secondItem="Dot-74-8D5" secondAttribute="width" id="7XB-1i-zaJ"/>
+                            <constraint firstItem="We8-sc-QCi" firstAttribute="height" secondItem="Dot-74-8D5" secondAttribute="height" id="CnP-MQ-XAR"/>
+                            <constraint firstItem="We8-sc-QCi" firstAttribute="centerY" secondItem="Dot-74-8D5" secondAttribute="centerY" id="Q6P-Gg-Eiq"/>
+                            <constraint firstItem="We8-sc-QCi" firstAttribute="centerX" secondItem="Dot-74-8D5" secondAttribute="centerX" id="Vsx-U0-uvz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="We8-sc-QCi" id="R86-uU-HIH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vsi-OQ-jPz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2625" y="2668"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cdP-jm-DMl">
@@ -662,5 +740,6 @@
         <image name="CircleShare" width="663" height="663"/>
         <image name="EmptyStar" width="244" height="233"/>
         <image name="Share" width="199" height="250"/>
+        <image name="tppcrit" width="112" height="112"/>
     </resources>
 </document>
