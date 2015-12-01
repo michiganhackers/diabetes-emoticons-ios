@@ -125,9 +125,7 @@
 				70F2BF6D1C0D4EEC00D05DF1 /* Emoticon */,
 				70F2BF6C1C0D4ED900D05DF1 /* More */,
 				708365DB1BFEE46200EA9FEC /* Core Data */,
-				7013C7791BF3E0CB007BB646 /* Main.storyboard */,
-				7013C77F1BF3E0CB007BB646 /* Assets.xcassets */,
-				7013C7811BF3E0CB007BB646 /* LaunchScreen.storyboard */,
+				70F2BF701C0D519900D05DF1 /* User Interface */,
 				7013C7841BF3E0CB007BB646 /* Info.plist */,
 			);
 			path = "Diabetes Emoticons";
@@ -183,6 +181,16 @@
 				708365E31BFFAD8C00EA9FEC /* EmoticonDetailViewController.swift */,
 			);
 			name = Emoticon;
+			sourceTree = "<group>";
+		};
+		70F2BF701C0D519900D05DF1 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				7013C7791BF3E0CB007BB646 /* Main.storyboard */,
+				7013C77F1BF3E0CB007BB646 /* Assets.xcassets */,
+				7013C7811BF3E0CB007BB646 /* LaunchScreen.storyboard */,
+			);
+			name = "User Interface";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

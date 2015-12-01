@@ -8,6 +8,14 @@
 
 import UIKit
 
-class SendMessageViewController : UIViewController {
+class SendMessageViewController : UIViewController, UITextViewDelegate {
+    
+    @IBOutlet weak var textView: UITextView!
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
+        textView.becomeFirstResponder()
+    }
+    
     
 }

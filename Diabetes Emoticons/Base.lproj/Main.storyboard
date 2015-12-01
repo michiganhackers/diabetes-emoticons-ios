@@ -214,7 +214,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9Mh-OP-gzD" id="Tcs-PN-N7q">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banana" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7o8-Oc-5gt">
@@ -469,7 +469,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RxC-wd-Hwx" id="SPd-uN-YaO">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F9n-KQ-xME">
@@ -524,6 +524,7 @@
                     <navigationItem key="navigationItem" title="More" id="PRQ-mm-6tF"/>
                     <connections>
                         <segue destination="48g-BS-SO0" kind="show" identifier="aboutUs" id="wVy-wh-e9T"/>
+                        <segue destination="ldC-KK-Oat" kind="show" identifier="toSendMessage" id="1HJ-1U-BmG"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3vx-pe-XPe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -564,6 +565,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vsi-OQ-jPz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2625" y="2668"/>
+        </scene>
+        <!--Send us a message-->
+        <scene sceneID="0bJ-ks-VgE">
+            <objects>
+                <viewController title="Send us a message" id="ldC-KK-Oat" customClass="SendMessageViewController" customModule="Diabetes_Emoticons" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pR9-rU-jv0"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jz2-RZ-U9D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rUB-rc-G5k">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Give feedback or ask for help..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WPb-B8-5Q9">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WPb-B8-5Q9" firstAttribute="width" secondItem="rUB-rc-G5k" secondAttribute="width" id="1ey-7z-QNd"/>
+                            <constraint firstItem="WPb-B8-5Q9" firstAttribute="centerY" secondItem="rUB-rc-G5k" secondAttribute="centerY" id="2Sy-Ir-B5Y"/>
+                            <constraint firstItem="WPb-B8-5Q9" firstAttribute="height" secondItem="rUB-rc-G5k" secondAttribute="height" id="f1E-yR-I6P"/>
+                            <constraint firstItem="WPb-B8-5Q9" firstAttribute="centerX" secondItem="rUB-rc-G5k" secondAttribute="centerX" id="nmm-F4-Dnl"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="textView" destination="WPb-B8-5Q9" id="xSV-00-SKJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CkY-jZ-6iH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2625" y="3444"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cdP-jm-DMl">

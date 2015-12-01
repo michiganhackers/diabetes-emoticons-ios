@@ -12,7 +12,7 @@ class MoreTableViewController : UITableViewController {
     
     let cellTitles = ["About Us", "Feedback", "Share this App"]
     let cellImages = ["Banana", "Banana", "Banana"]
-    let cellSegues = ["aboutUs", "aboutUs", "aboutUs"]
+    let cellSegues = ["aboutUs", "toSendMessage", "aboutUs"]
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cellTitles.count
