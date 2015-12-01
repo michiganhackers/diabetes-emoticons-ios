@@ -42,11 +42,11 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="110"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C6M-YG-xLO" id="BlE-A6-A0d">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="109.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="110"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLk-BH-jpW">
-                                            <rect key="frame" x="120" y="44" width="57" height="20.5"/>
+                                            <rect key="frame" x="120" y="44" width="57" height="21"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -131,42 +131,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6yy-hJ-1JM">
-                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <rect key="frame" x="60" y="150" width="480" height="300"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EbV-6n-ZR0">
+                                        <rect key="frame" x="162" y="210" width="156" height="90"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJ5-nu-aU0">
+                                                <rect key="frame" x="0.0" y="20" width="70" height="70"/>
+                                                <animations/>
+                                                <state key="normal" title="Button" image="CircleEmptyStar"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DvQ-GS-2wO">
+                                                <rect key="frame" x="86" y="20" width="70" height="70"/>
+                                                <animations/>
+                                                <state key="normal" title="Button" image="CircleShare"/>
+                                            </button>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="156" id="DJI-Gk-WqS"/>
+                                            <constraint firstAttribute="height" constant="90" id="mwe-Bw-hnl"/>
+                                        </constraints>
+                                    </view>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Banana" translatesAutoresizingMaskIntoConstraints="NO" id="sga-gQ-iXh">
-                                        <rect key="frame" x="72" y="0.0" width="156" height="156"/>
+                                        <rect key="frame" x="96" y="0.0" width="288" height="288"/>
                                         <animations/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="sga-gQ-iXh" secondAttribute="height" multiplier="1:1" id="JxE-8k-tPb"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DvQ-GS-2wO">
-                                        <rect key="frame" x="178" y="168" width="50" height="50"/>
-                                        <animations/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="Uai-pP-DnH"/>
-                                            <constraint firstAttribute="width" secondItem="DvQ-GS-2wO" secondAttribute="height" multiplier="1:1" id="g00-ZS-gMl"/>
-                                        </constraints>
-                                        <state key="normal" title="Button" image="CircleShare"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJ5-nu-aU0">
-                                        <rect key="frame" x="72" y="168" width="50" height="50"/>
-                                        <animations/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="fJ5-nu-aU0" secondAttribute="height" multiplier="1:1" id="843-l7-IcL"/>
-                                            <constraint firstAttribute="width" constant="50" id="f0K-cf-AGw"/>
-                                        </constraints>
-                                        <state key="normal" title="Button" image="CircleEmptyStar"/>
-                                    </button>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="DvQ-GS-2wO" firstAttribute="top" secondItem="sga-gQ-iXh" secondAttribute="bottom" constant="12" id="5Jr-8E-PR8"/>
-                                    <constraint firstItem="fJ5-nu-aU0" firstAttribute="leading" secondItem="sga-gQ-iXh" secondAttribute="leading" id="5y6-lR-iDY"/>
                                     <constraint firstItem="sga-gQ-iXh" firstAttribute="centerX" secondItem="6yy-hJ-1JM" secondAttribute="centerX" id="8vS-ra-5hi"/>
-                                    <constraint firstItem="DvQ-GS-2wO" firstAttribute="trailing" secondItem="sga-gQ-iXh" secondAttribute="trailing" id="BHa-YO-8v9"/>
-                                    <constraint firstItem="fJ5-nu-aU0" firstAttribute="top" secondItem="sga-gQ-iXh" secondAttribute="bottom" constant="12" id="Hcg-lN-2DB"/>
+                                    <constraint firstItem="EbV-6n-ZR0" firstAttribute="centerX" secondItem="6yy-hJ-1JM" secondAttribute="centerX" id="WYY-wz-27e"/>
+                                    <constraint firstAttribute="bottom" secondItem="EbV-6n-ZR0" secondAttribute="bottom" id="gQY-Nj-gRb"/>
+                                    <constraint firstItem="sga-gQ-iXh" firstAttribute="width" secondItem="6yy-hJ-1JM" secondAttribute="width" multiplier="0.6" id="tEo-iN-onm"/>
                                     <constraint firstItem="sga-gQ-iXh" firstAttribute="top" secondItem="6yy-hJ-1JM" secondAttribute="top" id="y0R-fz-dld"/>
                                 </constraints>
                             </view>
@@ -176,7 +178,7 @@
                         <constraints>
                             <constraint firstItem="6yy-hJ-1JM" firstAttribute="centerX" secondItem="md5-65-cWR" secondAttribute="centerX" id="6zL-Je-twe"/>
                             <constraint firstItem="6yy-hJ-1JM" firstAttribute="height" secondItem="md5-65-cWR" secondAttribute="height" multiplier="0.5" id="Cf0-vT-ac2"/>
-                            <constraint firstItem="6yy-hJ-1JM" firstAttribute="width" secondItem="md5-65-cWR" secondAttribute="width" multiplier="0.5" id="FJP-sB-04E"/>
+                            <constraint firstItem="6yy-hJ-1JM" firstAttribute="width" secondItem="md5-65-cWR" secondAttribute="width" multiplier="0.8" id="FJP-sB-04E"/>
                             <constraint firstItem="6yy-hJ-1JM" firstAttribute="centerY" secondItem="md5-65-cWR" secondAttribute="centerY" id="n28-vw-5k1"/>
                         </constraints>
                     </view>
@@ -204,11 +206,11 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="110"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nbz-E4-Fg1" id="wNP-zp-BGu">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="109.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="110"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VaL-Hw-Bwc">
-                                            <rect key="frame" x="120" y="44" width="57" height="20.5"/>
+                                            <rect key="frame" x="120" y="44" width="57" height="21"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -265,6 +267,7 @@
                                     <outlet property="favoriteButton" destination="jYg-XW-mhL" id="JGj-4u-8uU"/>
                                     <outlet property="shareButton" destination="ra4-ju-Zei" id="8pQ-3l-ckn"/>
                                     <outlet property="titleLabel" destination="VaL-Hw-Bwc" id="kgT-Sz-Ei6"/>
+                                    <segue destination="1wU-0v-sj7" kind="show" identifier="toDetail" id="qzy-mZ-kfL"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -293,11 +296,11 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="110"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6cc-lm-EAZ" id="qxg-MW-KKX">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="109.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="110"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Eb-2e-d30">
-                                            <rect key="frame" x="120" y="44" width="57" height="20.5"/>
+                                            <rect key="frame" x="120" y="44" width="57" height="21"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -354,6 +357,7 @@
                                     <outlet property="favoriteButton" destination="gTj-4i-ike" id="hQa-71-d9X"/>
                                     <outlet property="shareButton" destination="Wol-OM-xfo" id="zsb-Sb-Wwm"/>
                                     <outlet property="titleLabel" destination="4Eb-2e-d30" id="WMy-5f-P42"/>
+                                    <segue destination="z8H-Ya-CAx" kind="show" identifier="toDetail" id="mDg-xm-m7l"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -447,7 +451,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ozd-9i-gHh" id="4zd-KA-GlE">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <animations/>
                                 </tableViewCellContentView>
@@ -484,6 +488,154 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h8r-py-gQw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1130" y="2668"/>
+        </scene>
+        <!--Emoticon Detail View Controller-->
+        <scene sceneID="kI0-fS-GO1">
+            <objects>
+                <viewController id="1wU-0v-sj7" customClass="EmoticonDetailViewController" customModule="Diabetes_Emoticons" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hLa-Yi-JsP"/>
+                        <viewControllerLayoutGuide type="bottom" id="r8k-Zg-s4E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="old-cp-VXC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IPr-jb-Z7e">
+                                <rect key="frame" x="60" y="150" width="480" height="300"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gKx-Nz-bjQ">
+                                        <rect key="frame" x="162" y="210" width="156" height="90"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAE-Lr-Iji">
+                                                <rect key="frame" x="0.0" y="20" width="70" height="70"/>
+                                                <animations/>
+                                                <state key="normal" title="Button" image="CircleEmptyStar"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G16-ME-xJz">
+                                                <rect key="frame" x="86" y="20" width="70" height="70"/>
+                                                <animations/>
+                                                <state key="normal" title="Button" image="CircleShare"/>
+                                            </button>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="LEZ-PP-HNv"/>
+                                            <constraint firstAttribute="width" constant="156" id="UCD-hU-Lj5"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Banana" translatesAutoresizingMaskIntoConstraints="NO" id="blN-Kf-g5r">
+                                        <rect key="frame" x="96" y="0.0" width="288" height="288"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="blN-Kf-g5r" secondAttribute="height" multiplier="1:1" id="7FI-k2-oge"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="blN-Kf-g5r" firstAttribute="centerX" secondItem="IPr-jb-Z7e" secondAttribute="centerX" id="GHv-y5-DaV"/>
+                                    <constraint firstItem="blN-Kf-g5r" firstAttribute="top" secondItem="IPr-jb-Z7e" secondAttribute="top" id="M94-Ls-LsY"/>
+                                    <constraint firstItem="blN-Kf-g5r" firstAttribute="width" secondItem="IPr-jb-Z7e" secondAttribute="width" multiplier="0.6" id="jbd-hV-Hqa"/>
+                                    <constraint firstAttribute="bottom" secondItem="gKx-Nz-bjQ" secondAttribute="bottom" id="oPU-UL-Foa"/>
+                                    <constraint firstItem="gKx-Nz-bjQ" firstAttribute="centerX" secondItem="IPr-jb-Z7e" secondAttribute="centerX" id="rhD-qn-Qds"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IPr-jb-Z7e" firstAttribute="centerX" secondItem="old-cp-VXC" secondAttribute="centerX" id="0Tg-bM-CMb"/>
+                            <constraint firstItem="IPr-jb-Z7e" firstAttribute="centerY" secondItem="old-cp-VXC" secondAttribute="centerY" id="5fc-07-iYF"/>
+                            <constraint firstItem="IPr-jb-Z7e" firstAttribute="height" secondItem="old-cp-VXC" secondAttribute="height" multiplier="0.5" id="WNX-Th-mmg"/>
+                            <constraint firstItem="IPr-jb-Z7e" firstAttribute="width" secondItem="old-cp-VXC" secondAttribute="width" multiplier="0.8" id="bx4-Ll-Pvl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emoticonImage" destination="blN-Kf-g5r" id="ivy-Y7-75B"/>
+                        <outlet property="favoriteButton" destination="pAE-Lr-Iji" id="ruT-dp-ECA"/>
+                        <outlet property="shareButton" destination="G16-ME-xJz" id="7M0-2H-L0u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sfF-Ue-O4X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2625" y="1188"/>
+        </scene>
+        <!--Emoticon Detail View Controller-->
+        <scene sceneID="eRP-me-gds">
+            <objects>
+                <viewController id="z8H-Ya-CAx" customClass="EmoticonDetailViewController" customModule="Diabetes_Emoticons" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KVv-XD-eqs"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZwR-Nd-R6q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZsM-YC-abw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="11h-fp-pkJ">
+                                <rect key="frame" x="60" y="150" width="480" height="300"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hk4-MH-7nq">
+                                        <rect key="frame" x="162" y="210" width="156" height="90"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5GX-ZA-eEM">
+                                                <rect key="frame" x="0.0" y="20" width="70" height="70"/>
+                                                <animations/>
+                                                <state key="normal" title="Button" image="CircleEmptyStar"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qo4-5n-X96">
+                                                <rect key="frame" x="86" y="20" width="70" height="70"/>
+                                                <animations/>
+                                                <state key="normal" title="Button" image="CircleShare"/>
+                                            </button>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="QEs-XX-qip"/>
+                                            <constraint firstAttribute="width" constant="156" id="rTx-av-SrN"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Banana" translatesAutoresizingMaskIntoConstraints="NO" id="6fi-G2-kgC">
+                                        <rect key="frame" x="96" y="0.0" width="288" height="288"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="6fi-G2-kgC" secondAttribute="height" multiplier="1:1" id="yp1-d5-sBU"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="hk4-MH-7nq" secondAttribute="bottom" id="26M-yw-dIb"/>
+                                    <constraint firstItem="6fi-G2-kgC" firstAttribute="width" secondItem="11h-fp-pkJ" secondAttribute="width" multiplier="0.6" id="HBv-p4-07m"/>
+                                    <constraint firstItem="6fi-G2-kgC" firstAttribute="centerX" secondItem="11h-fp-pkJ" secondAttribute="centerX" id="JSK-TU-QgM"/>
+                                    <constraint firstItem="hk4-MH-7nq" firstAttribute="centerX" secondItem="11h-fp-pkJ" secondAttribute="centerX" id="rjX-cf-Nek"/>
+                                    <constraint firstItem="6fi-G2-kgC" firstAttribute="top" secondItem="11h-fp-pkJ" secondAttribute="top" id="tYR-dq-IHZ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="11h-fp-pkJ" firstAttribute="centerY" secondItem="ZsM-YC-abw" secondAttribute="centerY" id="OJd-Rh-WE1"/>
+                            <constraint firstItem="11h-fp-pkJ" firstAttribute="centerX" secondItem="ZsM-YC-abw" secondAttribute="centerX" id="Z2f-PC-goC"/>
+                            <constraint firstItem="11h-fp-pkJ" firstAttribute="width" secondItem="ZsM-YC-abw" secondAttribute="width" multiplier="0.8" id="cil-gq-tMX"/>
+                            <constraint firstItem="11h-fp-pkJ" firstAttribute="height" secondItem="ZsM-YC-abw" secondAttribute="height" multiplier="0.5" id="kEh-iG-dpi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emoticonImage" destination="6fi-G2-kgC" id="HLX-zt-QST"/>
+                        <outlet property="favoriteButton" destination="5GX-ZA-eEM" id="sKO-j5-7yZ"/>
+                        <outlet property="shareButton" destination="qo4-5n-X96" id="Evd-5Z-Z4v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5iA-R0-EHy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2625" y="1946"/>
         </scene>
     </scenes>
     <resources>

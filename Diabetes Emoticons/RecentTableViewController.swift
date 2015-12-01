@@ -34,6 +34,7 @@ class RecentTableViewController : UITableViewController {
         }
         
         emoticons = emoticons.filter({ $0.lastAccessed.compare(NSDate(timeIntervalSinceNow: NSTimeInterval(-604800))) == NSComparisonResult.OrderedDescending })
+        emoticons.sortInPlace({ $0.lastAccessed.compare($1.lastAccessed) == NSComparisonResult.OrderedDescending })
         tableView.reloadData()
     }
     
@@ -84,6 +85,14 @@ class RecentTableViewController : UITableViewController {
         //
         
         navigationController?.presentViewController(activityVC, animated: true) {}
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "toDetail" {
+            if let detailViewController = segue.destinationViewController as? EmoticonDetailViewController {
+                detailViewController.emoticon = emoticons[tableView.indexPathForSelectedRow!.row]
+            }
+        }
     }
     
 }

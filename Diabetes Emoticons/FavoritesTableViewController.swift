@@ -82,5 +82,15 @@ class FavoritesTableViewController : UITableViewController {
         
         navigationController?.presentViewController(activityVC, animated: true) {}
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "toDetail" {
+            if let detailViewController = segue.destinationViewController as? EmoticonDetailViewController {
+                detailViewController.emoticon = emoticons[tableView.indexPathForSelectedRow!.row]
+            }
+        }
+    }
+    
+    
 
 }
