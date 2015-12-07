@@ -21,5 +21,6 @@ class EmoticonDetailViewController : UIViewController {
         
         emoticonImage.image = UIImage(named: emoticon.image)
         self.title = emoticon.title
+        
     }
 }

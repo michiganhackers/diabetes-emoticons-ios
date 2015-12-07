@@ -16,6 +16,31 @@
 		7013C78E1BF3E0CB007BB646 /* Diabetes_EmoticonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7013C78D1BF3E0CB007BB646 /* Diabetes_EmoticonsTests.swift */; };
 		7013C7991BF3E0CB007BB646 /* Diabetes_EmoticonsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7013C7981BF3E0CB007BB646 /* Diabetes_EmoticonsUITests.swift */; };
 		7013C7A71BF3E2A5007BB646 /* EmoticonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7013C7A61BF3E2A5007BB646 /* EmoticonTableViewCell.swift */; };
+		70703C991C161DDD00A8AD83 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F2BF6A1C0D4BFE00D05DF1 /* WebViewController.swift */; };
+		70703C9B1C1622F800A8AD83 /* IconEnumerater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70703C9A1C1622F800A8AD83 /* IconEnumerater.swift */; };
+		70703CE31C16288500A8AD83 /* Banana.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CCC1C16288500A8AD83 /* Banana.png */; };
+		70703CE41C16288500A8AD83 /* Blood Glucose High.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CCD1C16288500A8AD83 /* Blood Glucose High.png */; };
+		70703CE51C16288500A8AD83 /* Blood Glucose Low.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CCE1C16288500A8AD83 /* Blood Glucose Low.png */; };
+		70703CE61C16288500A8AD83 /* Call Parent.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CCF1C16288500A8AD83 /* Call Parent.png */; };
+		70703CE71C16288500A8AD83 /* Check Levels.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CD01C16288500A8AD83 /* Check Levels.png */; };
+		70703CE81C16288500A8AD83 /* Cupcake.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CD11C16288500A8AD83 /* Cupcake.png */; };
+		70703CE91C16288500A8AD83 /* Food.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CD21C16288500A8AD83 /* Food.png */; };
+		70703CEA1C16288500A8AD83 /* Happy.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CD31C16288500A8AD83 /* Happy.png */; };
+		70703CEB1C16288500A8AD83 /* Injection.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CD41C16288500A8AD83 /* Injection.png */; };
+		70703CEC1C16288500A8AD83 /* Juice Box.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CD51C16288500A8AD83 /* Juice Box.png */; };
+		70703CED1C16288500A8AD83 /* Ketone.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CD61C16288500A8AD83 /* Ketone.png */; };
+		70703CEE1C16288500A8AD83 /* Machine.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CD71C16288500A8AD83 /* Machine.png */; };
+		70703CEF1C16288500A8AD83 /* Meh.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CD81C16288500A8AD83 /* Meh.png */; };
+		70703CF01C16288500A8AD83 /* Monitor.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CD91C16288500A8AD83 /* Monitor.png */; };
+		70703CF11C16288500A8AD83 /* Not Sure.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CDA1C16288500A8AD83 /* Not Sure.png */; };
+		70703CF21C16288500A8AD83 /* Pump.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CDB1C16288500A8AD83 /* Pump.png */; };
+		70703CF31C16288500A8AD83 /* Shaky.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CDC1C16288500A8AD83 /* Shaky.png */; };
+		70703CF41C16288500A8AD83 /* Sharp.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CDD1C16288500A8AD83 /* Sharp.png */; };
+		70703CF51C16288500A8AD83 /* Stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CDE1C16288500A8AD83 /* Stop.png */; };
+		70703CF61C16288500A8AD83 /* Thumbs Down.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CDF1C16288500A8AD83 /* Thumbs Down.png */; };
+		70703CF71C16288500A8AD83 /* ThumbsUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CE01C16288500A8AD83 /* ThumbsUp.png */; };
+		70703CF81C16288500A8AD83 /* Toilet.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CE11C16288500A8AD83 /* Toilet.png */; };
+		70703CF91C16288500A8AD83 /* Water.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CE21C16288500A8AD83 /* Water.png */; };
 		708365D81BFED40A00EA9FEC /* Emoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708365D71BFED40A00EA9FEC /* Emoticon.swift */; };
 		708365DA1BFEE44C00EA9FEC /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708365D91BFEE44C00EA9FEC /* SwiftyJSON.swift */; };
 		708365DD1BFEE92700EA9FEC /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 708365DC1BFEE92700EA9FEC /* data.json */; };
@@ -24,7 +49,6 @@
 		70BBA02F1C096149009803E9 /* RecentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBA02E1C096149009803E9 /* RecentTableViewController.swift */; };
 		70F2BF671C0D486400D05DF1 /* MoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F2BF661C0D486400D05DF1 /* MoreTableViewCell.swift */; };
 		70F2BF691C0D490D00D05DF1 /* MoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F2BF681C0D490D00D05DF1 /* MoreTableViewController.swift */; };
-		70F2BF6B1C0D4BFE00D05DF1 /* WhoAreWeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F2BF6A1C0D4BFE00D05DF1 /* WhoAreWeViewController.swift */; };
 		70F2BF6F1C0D4F3700D05DF1 /* SendMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F2BF6E1C0D4F3700D05DF1 /* SendMessageViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +85,30 @@
 		7013C7981BF3E0CB007BB646 /* Diabetes_EmoticonsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diabetes_EmoticonsUITests.swift; sourceTree = "<group>"; };
 		7013C79A1BF3E0CB007BB646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7013C7A61BF3E2A5007BB646 /* EmoticonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonTableViewCell.swift; sourceTree = "<group>"; };
+		70703C9A1C1622F800A8AD83 /* IconEnumerater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconEnumerater.swift; sourceTree = "<group>"; };
+		70703CCC1C16288500A8AD83 /* Banana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Banana.png; sourceTree = "<group>"; };
+		70703CCD1C16288500A8AD83 /* Blood Glucose High.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blood Glucose High.png"; sourceTree = "<group>"; };
+		70703CCE1C16288500A8AD83 /* Blood Glucose Low.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blood Glucose Low.png"; sourceTree = "<group>"; };
+		70703CCF1C16288500A8AD83 /* Call Parent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Call Parent.png"; sourceTree = "<group>"; };
+		70703CD01C16288500A8AD83 /* Check Levels.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Check Levels.png"; sourceTree = "<group>"; };
+		70703CD11C16288500A8AD83 /* Cupcake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cupcake.png; sourceTree = "<group>"; };
+		70703CD21C16288500A8AD83 /* Food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Food.png; sourceTree = "<group>"; };
+		70703CD31C16288500A8AD83 /* Happy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Happy.png; sourceTree = "<group>"; };
+		70703CD41C16288500A8AD83 /* Injection.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Injection.png; sourceTree = "<group>"; };
+		70703CD51C16288500A8AD83 /* Juice Box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Juice Box.png"; sourceTree = "<group>"; };
+		70703CD61C16288500A8AD83 /* Ketone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ketone.png; sourceTree = "<group>"; };
+		70703CD71C16288500A8AD83 /* Machine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Machine.png; sourceTree = "<group>"; };
+		70703CD81C16288500A8AD83 /* Meh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Meh.png; sourceTree = "<group>"; };
+		70703CD91C16288500A8AD83 /* Monitor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Monitor.png; sourceTree = "<group>"; };
+		70703CDA1C16288500A8AD83 /* Not Sure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Not Sure.png"; sourceTree = "<group>"; };
+		70703CDB1C16288500A8AD83 /* Pump.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pump.png; sourceTree = "<group>"; };
+		70703CDC1C16288500A8AD83 /* Shaky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shaky.png; sourceTree = "<group>"; };
+		70703CDD1C16288500A8AD83 /* Sharp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sharp.png; sourceTree = "<group>"; };
+		70703CDE1C16288500A8AD83 /* Stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stop.png; sourceTree = "<group>"; };
+		70703CDF1C16288500A8AD83 /* Thumbs Down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Thumbs Down.png"; sourceTree = "<group>"; };
+		70703CE01C16288500A8AD83 /* ThumbsUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ThumbsUp.png; sourceTree = "<group>"; };
+		70703CE11C16288500A8AD83 /* Toilet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Toilet.png; sourceTree = "<group>"; };
+		70703CE21C16288500A8AD83 /* Water.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Water.png; sourceTree = "<group>"; };
 		708365D71BFED40A00EA9FEC /* Emoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoticon.swift; sourceTree = "<group>"; };
 		708365D91BFEE44C00EA9FEC /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		708365DC1BFEE92700EA9FEC /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
@@ -69,7 +117,7 @@
 		70BBA02E1C096149009803E9 /* RecentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentTableViewController.swift; sourceTree = "<group>"; };
 		70F2BF661C0D486400D05DF1 /* MoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreTableViewCell.swift; sourceTree = "<group>"; };
 		70F2BF681C0D490D00D05DF1 /* MoreTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreTableViewController.swift; sourceTree = "<group>"; };
-		70F2BF6A1C0D4BFE00D05DF1 /* WhoAreWeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhoAreWeViewController.swift; sourceTree = "<group>"; };
+		70F2BF6A1C0D4BFE00D05DF1 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		70F2BF6E1C0D4F3700D05DF1 /* SendMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMessageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +149,7 @@
 		7013C7691BF3E0CB007BB646 = {
 			isa = PBXGroup;
 			children = (
+				70703CCB1C16288500A8AD83 /* Library */,
 				7013C7741BF3E0CB007BB646 /* Diabetes Emoticons */,
 				7013C78C1BF3E0CB007BB646 /* Diabetes EmoticonsTests */,
 				7013C7971BF3E0CB007BB646 /* Diabetes EmoticonsUITests */,
@@ -149,9 +198,41 @@
 			path = "Diabetes EmoticonsUITests";
 			sourceTree = "<group>";
 		};
+		70703CCB1C16288500A8AD83 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				70703CCC1C16288500A8AD83 /* Banana.png */,
+				70703CCD1C16288500A8AD83 /* Blood Glucose High.png */,
+				70703CCE1C16288500A8AD83 /* Blood Glucose Low.png */,
+				70703CCF1C16288500A8AD83 /* Call Parent.png */,
+				70703CD01C16288500A8AD83 /* Check Levels.png */,
+				70703CD11C16288500A8AD83 /* Cupcake.png */,
+				70703CD21C16288500A8AD83 /* Food.png */,
+				70703CD31C16288500A8AD83 /* Happy.png */,
+				70703CD41C16288500A8AD83 /* Injection.png */,
+				70703CD51C16288500A8AD83 /* Juice Box.png */,
+				70703CD61C16288500A8AD83 /* Ketone.png */,
+				70703CD71C16288500A8AD83 /* Machine.png */,
+				70703CD81C16288500A8AD83 /* Meh.png */,
+				70703CD91C16288500A8AD83 /* Monitor.png */,
+				70703CDA1C16288500A8AD83 /* Not Sure.png */,
+				70703CDB1C16288500A8AD83 /* Pump.png */,
+				70703CDC1C16288500A8AD83 /* Shaky.png */,
+				70703CDD1C16288500A8AD83 /* Sharp.png */,
+				70703CDE1C16288500A8AD83 /* Stop.png */,
+				70703CDF1C16288500A8AD83 /* Thumbs Down.png */,
+				70703CE01C16288500A8AD83 /* ThumbsUp.png */,
+				70703CE11C16288500A8AD83 /* Toilet.png */,
+				70703CE21C16288500A8AD83 /* Water.png */,
+			);
+			name = Library;
+			path = "Diabetes Emoticons/Library";
+			sourceTree = "<group>";
+		};
 		708365DB1BFEE46200EA9FEC /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
+				70703C9A1C1622F800A8AD83 /* IconEnumerater.swift */,
 				708365DC1BFEE92700EA9FEC /* data.json */,
 				708365D71BFED40A00EA9FEC /* Emoticon.swift */,
 				7013C77C1BF3E0CB007BB646 /* Diabetes_Emoticons.xcdatamodeld */,
@@ -165,7 +246,7 @@
 			children = (
 				70F2BF681C0D490D00D05DF1 /* MoreTableViewController.swift */,
 				70F2BF661C0D486400D05DF1 /* MoreTableViewCell.swift */,
-				70F2BF6A1C0D4BFE00D05DF1 /* WhoAreWeViewController.swift */,
+				70F2BF6A1C0D4BFE00D05DF1 /* WebViewController.swift */,
 				70F2BF6E1C0D4F3700D05DF1 /* SendMessageViewController.swift */,
 			);
 			name = More;
@@ -298,10 +379,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70703CE61C16288500A8AD83 /* Call Parent.png in Resources */,
+				70703CE71C16288500A8AD83 /* Check Levels.png in Resources */,
+				70703CF31C16288500A8AD83 /* Shaky.png in Resources */,
 				7013C7831BF3E0CB007BB646 /* LaunchScreen.storyboard in Resources */,
+				70703CEE1C16288500A8AD83 /* Machine.png in Resources */,
+				70703CF61C16288500A8AD83 /* Thumbs Down.png in Resources */,
+				70703CE41C16288500A8AD83 /* Blood Glucose High.png in Resources */,
+				70703CF41C16288500A8AD83 /* Sharp.png in Resources */,
+				70703CE91C16288500A8AD83 /* Food.png in Resources */,
+				70703CE81C16288500A8AD83 /* Cupcake.png in Resources */,
+				70703CF81C16288500A8AD83 /* Toilet.png in Resources */,
+				70703CEA1C16288500A8AD83 /* Happy.png in Resources */,
 				7013C7801BF3E0CB007BB646 /* Assets.xcassets in Resources */,
+				70703CEB1C16288500A8AD83 /* Injection.png in Resources */,
+				70703CEC1C16288500A8AD83 /* Juice Box.png in Resources */,
+				70703CE31C16288500A8AD83 /* Banana.png in Resources */,
+				70703CF01C16288500A8AD83 /* Monitor.png in Resources */,
+				70703CE51C16288500A8AD83 /* Blood Glucose Low.png in Resources */,
+				70703CF91C16288500A8AD83 /* Water.png in Resources */,
+				70703CF71C16288500A8AD83 /* ThumbsUp.png in Resources */,
 				7013C77B1BF3E0CB007BB646 /* Main.storyboard in Resources */,
 				708365DD1BFEE92700EA9FEC /* data.json in Resources */,
+				70703CF51C16288500A8AD83 /* Stop.png in Resources */,
+				70703CF11C16288500A8AD83 /* Not Sure.png in Resources */,
+				70703CF21C16288500A8AD83 /* Pump.png in Resources */,
+				70703CED1C16288500A8AD83 /* Ketone.png in Resources */,
+				70703CEF1C16288500A8AD83 /* Meh.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +430,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70703C9B1C1622F800A8AD83 /* IconEnumerater.swift in Sources */,
+				70703C991C161DDD00A8AD83 /* WebViewController.swift in Sources */,
 				708365D81BFED40A00EA9FEC /* Emoticon.swift in Sources */,
 				708365E41BFFAD8C00EA9FEC /* EmoticonDetailViewController.swift in Sources */,
 				7013C77E1BF3E0CB007BB646 /* Diabetes_Emoticons.xcdatamodeld in Sources */,
@@ -334,7 +440,6 @@
 				70F2BF691C0D490D00D05DF1 /* MoreTableViewController.swift in Sources */,
 				708365DA1BFEE44C00EA9FEC /* SwiftyJSON.swift in Sources */,
 				70F2BF671C0D486400D05DF1 /* MoreTableViewCell.swift in Sources */,
-				70F2BF6B1C0D4BFE00D05DF1 /* WhoAreWeViewController.swift in Sources */,
 				7013C7761BF3E0CB007BB646 /* AppDelegate.swift in Sources */,
 				70F2BF6F1C0D4F3700D05DF1 /* SendMessageViewController.swift in Sources */,
 				708365DF1BFF95C800EA9FEC /* FavoritesTableViewController.swift in Sources */,

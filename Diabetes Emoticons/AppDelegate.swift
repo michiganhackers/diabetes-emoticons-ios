@@ -115,17 +115,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func importData() {
         // Retrieve data from the source file
-        if let filePath = NSBundle.mainBundle().pathForResource("data", ofType: "json") {
-            let json = JSON(data: (NSData.dataWithContentsOfMappedFile(filePath) as! NSData))
-            for (_,subJson):(String, JSON) in json {
-                let menuItem = NSEntityDescription.insertNewObjectForEntityForName("Emoticon", inManagedObjectContext: managedObjectContext) as! Emoticon
-                menuItem.title = subJson["title"].string!
-                menuItem.image = subJson["image"].string!
-                menuItem.isFavorite = NSNumber(bool: false)
-                menuItem.lastAccessed = NSDate(timeIntervalSince1970: NSTimeInterval(0))
-            }
-            
+        
+        for (iconTitle, iconFile) in IconEnumerator().icons() {
+            let menuItem = NSEntityDescription.insertNewObjectForEntityForName("Emoticon", inManagedObjectContext: managedObjectContext) as! Emoticon
+            menuItem.title = iconTitle
+            menuItem.image = iconFile
+            menuItem.isFavorite = NSNumber(bool: false)
+            menuItem.lastAccessed = NSDate(timeIntervalSince1970: NSTimeInterval(0))
         }
+   
     }
 
     func dataIsEmpty() -> Bool {

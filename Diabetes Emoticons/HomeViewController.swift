@@ -11,8 +11,12 @@ import CoreData
 
 class HomeViewController: UITableViewController {
     
+    // MARK: Initialize variables
+
     private var emoticons = [Emoticon]()
     var fetchResultController: NSFetchedResultsController!
+    
+    // MARK: View Controller Lifecycle
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(true)
@@ -31,12 +35,19 @@ class HomeViewController: UITableViewController {
     
     override func viewDidAppear(animated: Bool) {
         tableView.reloadData()
+        
+        for (_,file) in IconEnumerator().icons() {
+            print(file)
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    // MARK: UITableView DataSource
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return emoticons.count
@@ -58,6 +69,8 @@ class HomeViewController: UITableViewController {
         }
         return cell
     }
+    
+    // MARK: UITableViewDelegate
     
     @IBAction func favoritePressed(sender: UIButton) {
         emoticons[sender.tag].isFavorite = NSNumber(bool: !Bool(emoticons[sender.tag].isFavorite!))
@@ -84,6 +97,8 @@ class HomeViewController: UITableViewController {
         
         navigationController?.presentViewController(activityVC, animated: true) {}
     }
+    
+    // MARK: Segue Handling
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "toDetail" {
