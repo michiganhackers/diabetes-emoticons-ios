@@ -42,7 +42,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C6M-YG-xLO" id="BlE-A6-A0d">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banana" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hLk-BH-jpW">
@@ -148,11 +148,17 @@
                                                 <rect key="frame" x="0.0" y="20" width="70" height="70"/>
                                                 <animations/>
                                                 <state key="normal" title="Button" image="CircleEmptyStar"/>
+                                                <connections>
+                                                    <action selector="favorite" destination="GEb-ah-xvU" eventType="touchUpInside" id="K37-Bg-KMW"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DvQ-GS-2wO">
                                                 <rect key="frame" x="86" y="20" width="70" height="70"/>
                                                 <animations/>
                                                 <state key="normal" title="Button" image="CircleShare"/>
+                                                <connections>
+                                                    <action selector="share" destination="GEb-ah-xvU" eventType="touchUpInside" id="Yea-Kd-W7Q"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <animations/>
@@ -193,7 +199,6 @@
                     <connections>
                         <outlet property="emoticonImage" destination="sga-gQ-iXh" id="AM1-Ma-jZW"/>
                         <outlet property="favoriteButton" destination="fJ5-nu-aU0" id="URn-so-xAH"/>
-                        <outlet property="shareButton" destination="DvQ-GS-2wO" id="w0i-vN-hgG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pMy-jI-3kW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -214,7 +219,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9Mh-OP-gzD" id="Tcs-PN-N7q">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banana" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7o8-Oc-5gt">
@@ -312,7 +317,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UzW-oP-dHx" id="QKX-nG-kXI">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1qr-Ez-zrO">
@@ -469,7 +474,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RxC-wd-Hwx" id="SPd-uN-YaO">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F9n-KQ-xME">
@@ -549,17 +554,24 @@
                                 <animations/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                             </webView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="3v2-Sh-jHU">
+                                <rect key="frame" x="290" y="290" width="20" height="20"/>
+                                <animations/>
+                            </activityIndicatorView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="3v2-Sh-jHU" firstAttribute="centerX" secondItem="Dot-74-8D5" secondAttribute="centerX" id="4YH-1n-uRp"/>
                             <constraint firstItem="We8-sc-QCi" firstAttribute="width" secondItem="Dot-74-8D5" secondAttribute="width" id="7XB-1i-zaJ"/>
                             <constraint firstItem="We8-sc-QCi" firstAttribute="height" secondItem="Dot-74-8D5" secondAttribute="height" id="CnP-MQ-XAR"/>
                             <constraint firstItem="We8-sc-QCi" firstAttribute="centerY" secondItem="Dot-74-8D5" secondAttribute="centerY" id="Q6P-Gg-Eiq"/>
                             <constraint firstItem="We8-sc-QCi" firstAttribute="centerX" secondItem="Dot-74-8D5" secondAttribute="centerX" id="Vsx-U0-uvz"/>
+                            <constraint firstItem="3v2-Sh-jHU" firstAttribute="centerY" secondItem="Dot-74-8D5" secondAttribute="centerY" id="YVz-mL-3lr"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="indicator" destination="3v2-Sh-jHU" id="cJP-PB-MgB"/>
                         <outlet property="webView" destination="We8-sc-QCi" id="Vg9-Ye-cjL"/>
                     </connections>
                 </viewController>
@@ -616,7 +628,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dFr-AB-wH1" id="g08-S6-lE3">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="plb-EN-xGz">
@@ -757,11 +769,17 @@
                                                 <rect key="frame" x="0.0" y="20" width="70" height="70"/>
                                                 <animations/>
                                                 <state key="normal" title="Button" image="CircleEmptyStar"/>
+                                                <connections>
+                                                    <action selector="favorite" destination="1wU-0v-sj7" eventType="touchUpInside" id="4SN-VY-8nE"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G16-ME-xJz">
                                                 <rect key="frame" x="86" y="20" width="70" height="70"/>
                                                 <animations/>
                                                 <state key="normal" title="Button" image="CircleShare"/>
+                                                <connections>
+                                                    <action selector="share" destination="1wU-0v-sj7" eventType="touchUpInside" id="Ow2-fh-yYT"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <animations/>
@@ -827,15 +845,21 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hk4-MH-7nq">
                                         <rect key="frame" x="162" y="210" width="156" height="90"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5GX-ZA-eEM">
-                                                <rect key="frame" x="0.0" y="20" width="70" height="70"/>
-                                                <animations/>
-                                                <state key="normal" title="Button" image="CircleEmptyStar"/>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qo4-5n-X96">
                                                 <rect key="frame" x="86" y="20" width="70" height="70"/>
                                                 <animations/>
                                                 <state key="normal" title="Button" image="CircleShare"/>
+                                                <connections>
+                                                    <action selector="share" destination="z8H-Ya-CAx" eventType="touchUpInside" id="Zug-XS-pr6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5GX-ZA-eEM">
+                                                <rect key="frame" x="0.0" y="20" width="70" height="70"/>
+                                                <animations/>
+                                                <state key="normal" title="Button" image="CircleFilledStar"/>
+                                                <connections>
+                                                    <action selector="favorite" destination="z8H-Ya-CAx" eventType="touchUpInside" id="XTw-9j-d75"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <animations/>
@@ -875,8 +899,7 @@
                     </view>
                     <connections>
                         <outlet property="emoticonImage" destination="6fi-G2-kgC" id="HLX-zt-QST"/>
-                        <outlet property="favoriteButton" destination="5GX-ZA-eEM" id="sKO-j5-7yZ"/>
-                        <outlet property="shareButton" destination="qo4-5n-X96" id="Evd-5Z-Z4v"/>
+                        <outlet property="favoriteButton" destination="5GX-ZA-eEM" id="4Qr-8w-lh8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5iA-R0-EHy" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -887,6 +910,7 @@
     <resources>
         <image name="Banana" width="156" height="137"/>
         <image name="CircleEmptyStar" width="663" height="663"/>
+        <image name="CircleFilledStar" width="663" height="663"/>
         <image name="CircleShare" width="663" height="663"/>
         <image name="EmptyStar" width="244" height="233"/>
         <image name="Share" width="199" height="250"/>

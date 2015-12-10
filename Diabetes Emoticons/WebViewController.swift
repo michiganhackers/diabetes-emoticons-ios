@@ -11,6 +11,7 @@ import UIKit
 class WebViewController : UIViewController, UIWebViewDelegate {
     
     @IBOutlet weak var webView: UIWebView!
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
     
     var url = "http://healthdesignby.us"
     
@@ -19,5 +20,16 @@ class WebViewController : UIViewController, UIWebViewDelegate {
         
         let request = NSURLRequest(URL: NSURL(string: url)!)
         webView.loadRequest(request)
+        webView.delegate = self
+    }
+    
+    func webViewDidStartLoad(webView: UIWebView) {
+        print("start")
+        indicator.startAnimating()
+    }
+    
+    func webViewDidFinishLoad(webView: UIWebView) {
+        print("done")
+        indicator.stopAnimating()
     }
 }

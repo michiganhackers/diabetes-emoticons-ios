@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import MessageUI
 
 class FavoritesTableViewController : UITableViewController {
     private var emoticons = [Emoticon]()
