@@ -38,7 +38,7 @@
 		70703CF41C16288500A8AD83 /* Sharp.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CDD1C16288500A8AD83 /* Sharp.png */; };
 		70703CF51C16288500A8AD83 /* Stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CDE1C16288500A8AD83 /* Stop.png */; };
 		70703CF61C16288500A8AD83 /* Thumbs Down.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CDF1C16288500A8AD83 /* Thumbs Down.png */; };
-		70703CF71C16288500A8AD83 /* ThumbsUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CE01C16288500A8AD83 /* ThumbsUp.png */; };
+		70703CF71C16288500A8AD83 /* Thumbs Up.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CE01C16288500A8AD83 /* Thumbs Up.png */; };
 		70703CF81C16288500A8AD83 /* Toilet.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CE11C16288500A8AD83 /* Toilet.png */; };
 		70703CF91C16288500A8AD83 /* Water.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CE21C16288500A8AD83 /* Water.png */; };
 		708365D81BFED40A00EA9FEC /* Emoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708365D71BFED40A00EA9FEC /* Emoticon.swift */; };
@@ -106,7 +106,7 @@
 		70703CDD1C16288500A8AD83 /* Sharp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sharp.png; sourceTree = "<group>"; };
 		70703CDE1C16288500A8AD83 /* Stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stop.png; sourceTree = "<group>"; };
 		70703CDF1C16288500A8AD83 /* Thumbs Down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Thumbs Down.png"; sourceTree = "<group>"; };
-		70703CE01C16288500A8AD83 /* ThumbsUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ThumbsUp.png; sourceTree = "<group>"; };
+		70703CE01C16288500A8AD83 /* Thumbs Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Thumbs Up.png"; sourceTree = "<group>"; };
 		70703CE11C16288500A8AD83 /* Toilet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Toilet.png; sourceTree = "<group>"; };
 		70703CE21C16288500A8AD83 /* Water.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Water.png; sourceTree = "<group>"; };
 		708365D71BFED40A00EA9FEC /* Emoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoticon.swift; sourceTree = "<group>"; };
@@ -221,7 +221,7 @@
 				70703CDD1C16288500A8AD83 /* Sharp.png */,
 				70703CDE1C16288500A8AD83 /* Stop.png */,
 				70703CDF1C16288500A8AD83 /* Thumbs Down.png */,
-				70703CE01C16288500A8AD83 /* ThumbsUp.png */,
+				70703CE01C16288500A8AD83 /* Thumbs Up.png */,
 				70703CE11C16288500A8AD83 /* Toilet.png */,
 				70703CE21C16288500A8AD83 /* Water.png */,
 			);
@@ -398,7 +398,7 @@
 				70703CF01C16288500A8AD83 /* Monitor.png in Resources */,
 				70703CE51C16288500A8AD83 /* Blood Glucose Low.png in Resources */,
 				70703CF91C16288500A8AD83 /* Water.png in Resources */,
-				70703CF71C16288500A8AD83 /* ThumbsUp.png in Resources */,
+				70703CF71C16288500A8AD83 /* Thumbs Up.png in Resources */,
 				7013C77B1BF3E0CB007BB646 /* Main.storyboard in Resources */,
 				708365DD1BFEE92700EA9FEC /* data.json in Resources */,
 				70703CF51C16288500A8AD83 /* Stop.png in Resources */,

@@ -24,12 +24,10 @@ class WebViewController : UIViewController, UIWebViewDelegate {
     }
     
     func webViewDidStartLoad(webView: UIWebView) {
-        print("start")
         indicator.startAnimating()
     }
     
     func webViewDidFinishLoad(webView: UIWebView) {
-        print("done")
         indicator.stopAnimating()
     }
 }

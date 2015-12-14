@@ -7,16 +7,19 @@
 //
 
 import UIKit
+import Social
+import MessageUI
 
-class MoreTableViewController : UITableViewController {
+class MoreTableViewController : UITableViewController, MFMailComposeViewControllerDelegate {
     
-    let moreData = [(title: "About Us", image: "Banana", segue: "toWeb"),
-                    (title: "Feedback", image: "Banana", segue: "toSendMessage"),
-                    (title: "Share this App", image: "Banana", segue: "toShare")]
+    let moreData = [(title: "About Us", image: "icon_healthdesign", segue: "toWeb"),
+                    (title: "Feedback", image: "icon_feedback", segue: "toSendMessage"),
+                    (title: "Share this App", image: "share_blue", segue: "toShare")]
     
-    let shareData = [(title: "Facebook", image: "Banana", segue: "toWeb", url: "http://facebook.com"),
-        (title: "Twitter", image: "Banana", segue: "toWeb", url: "http://twitter.com"),
-        (title: "Google+", image: "Banana", segue: "toWeb", url: "http://google.com")]
+    let shareData = [(title: "Facebook", image: "circle_fb", call: shareFB),
+        (title: "Twitter", image: "circle_twitter", call: shareTwitter),
+        (title: "Mail", image: "circle_email", call: shareMail),
+        (title: "Others", image: "circle_share", call: shareOthers)]
     
     var isShareVC = false
     
@@ -32,12 +35,16 @@ class MoreTableViewController : UITableViewController {
         
         cell.titleLabel.text = isShareVC ? shareData[indexPath.row].title : moreData[indexPath.row].title
         cell.sideImage.image = UIImage(named: isShareVC ? shareData[indexPath.row].image : moreData[indexPath.row].image)
-        
+        cell.selectionStyle = .None
         return cell
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        performSegueWithIdentifier( isShareVC ? shareData[indexPath.row].segue : moreData[indexPath.row].segue, sender: self)
+        if isShareVC {
+            shareData[indexPath.row].call(self)()
+        } else {
+            performSegueWithIdentifier( moreData[indexPath.row].segue, sender: self)
+        }
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -45,13 +52,62 @@ class MoreTableViewController : UITableViewController {
             if let detailViewController = segue.destinationViewController as? MoreTableViewController {
                 detailViewController.isShareVC = true
             }
-        } 
-        
-        if segue.identifier == "toWeb" && isShareVC {
-            if let webViewController = segue.destinationViewController as? WebViewController {
-                webViewController.url = shareData[tableView.indexPathForSelectedRow!.row].url
-            }
         }
+    }
+    
+    func shareOthers() {
+        let objectsToShare = ["Check out this cool app: bit.ly/diabetesemoticons!"]
+        let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
+        
+        //New Excluded Activities Code
+        activityVC.excludedActivityTypes = [UIActivityTypeAirDrop, UIActivityTypeAddToReadingList]
+        //
+        
+        navigationController?.presentViewController(activityVC, animated: true) {}
+
+    }
+    
+    func shareFB() {
+        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook) {
+            let fbShare:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+            fbShare.setInitialText("Check out this cool app: bit.ly/diabetesemoticons!")
+            self.presentViewController(fbShare, animated: true, completion: nil)
+            
+        } else {
+            let alert = UIAlertController(title: "You're not logged in!", message: "Please login to a Facebook account in the Settings app to share", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            alert.addAction(UIAlertAction(title: "Will Do!", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
+    }
+    
+    func shareTwitter() {
+        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter) {
+            let tweetShare:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+            tweetShare.setInitialText("Check out this cool app: bit.ly/diabetesemoticons!")
+            self.presentViewController(tweetShare, animated: true, completion: nil)
+        } else {
+            let alert = UIAlertController(title: "You're not logged in!", message: "Please login to a Twitter account in the Settings app to tweet", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "Will Do!", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
+    }
+    
+    func shareMail() {
+        let emailTitle = "Awesome Diabetes App"
+        // Email Content
+        let messageBody = "Check out this cool app: bit.ly/diabetesemoticons!"
+        // To address
+        
+        let mc = MFMailComposeViewController()
+        mc.mailComposeDelegate = self;
+        mc.setSubject(emailTitle)
+        mc.setMessageBody(messageBody, isHTML: false)
+        self.presentViewController(mc, animated: true, completion: nil)
+    }
+    
+    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
 }

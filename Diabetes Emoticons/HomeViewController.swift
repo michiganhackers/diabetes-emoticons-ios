@@ -32,14 +32,8 @@ class HomeViewController: UITableViewController {
                 print(error)
             }
         }
-    }
-    
-    override func viewDidAppear(animated: Bool) {
+        emoticons.sortInPlace({ $0.title < $1.title })
         tableView.reloadData()
-        
-        for (_,file) in IconEnumerator().icons() {
-            print(file)
-        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -64,9 +58,9 @@ class HomeViewController: UITableViewController {
         cell.shareButton.tag = indexPath.row
         
         if Bool(emoticons[indexPath.row].isFavorite!) {
-            cell.favoriteButton.setImage(UIImage(named: "FilledStar"), forState: .Normal)
+            cell.favoriteButton.setImage(UIImage(named: "star_blue_filled"), forState: .Normal)
         } else {
-            cell.favoriteButton.setImage(UIImage(named: "EmptyStar"), forState: .Normal)
+            cell.favoriteButton.setImage(UIImage(named: "star_notfilled"), forState: .Normal)
         }
         return cell
     }
@@ -75,7 +69,6 @@ class HomeViewController: UITableViewController {
     
     @IBAction func favoritePressed(sender: UIButton) {
         emoticons[sender.tag].isFavorite = NSNumber(bool: !Bool(emoticons[sender.tag].isFavorite!))
-        emoticons[sender.tag].lastAccessed = NSDate()
 
         if let managedObjectContext = (UIApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext {
             try! managedObjectContext.save()
@@ -104,6 +97,10 @@ class HomeViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "toDetail" {
             if let detailViewController = segue.destinationViewController as? EmoticonDetailViewController {
+                emoticons[tableView.indexPathForSelectedRow!.row].lastAccessed = NSDate()
+                if let managedObjectContext = (UIApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext {
+                    try! managedObjectContext.save()
+                }
                 detailViewController.emoticon = emoticons[tableView.indexPathForSelectedRow!.row]
             }
         }

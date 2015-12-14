@@ -24,6 +24,10 @@ class EmoticonDetailViewController : UIViewController {
         layoutView()
     }
     
+    override func viewDidAppear(animated: Bool) {
+        layoutView()
+    }
+    
     
     @IBAction func share() {
         emoticon.lastAccessed = NSDate()
@@ -52,9 +56,9 @@ class EmoticonDetailViewController : UIViewController {
     
     func layoutView() {
         if emoticon.isFavorite == NSNumber(bool: false) {
-            favoriteButton.setImage(UIImage(named: "CircleEmptyStar"), forState: .Normal)
+            favoriteButton.setImage(UIImage(named: "star_circle_empty"), forState: .Normal)
         } else {
-            favoriteButton.setImage(UIImage(named: "CircleFilledStar"), forState: .Normal)
+            favoriteButton.setImage(UIImage(named: "star_circle_yellowfilled"), forState: .Normal)
         }
     }
 }

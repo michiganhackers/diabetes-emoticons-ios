@@ -34,8 +34,7 @@ class SendMessageViewController : UIViewController, UITextViewDelegate, MFMailCo
         let y = self.view.frame.height - 80 - self.tabBarController!.tabBar.frame.height
         print(self.tabBarController!.view.frame.height)
         let button = UIButton(frame: CGRect(x: x, y: y, width: 60, height: 60))
-        button.setTitle("Send", forState: .Normal)
-        button.setTitleColor(UIColor.blackColor(), forState: .Normal)
+        button.setImage(UIImage(named: "circle_send_text"), forState: .Normal)
         button.tag = 1
         button.addTarget(self, action: "sendMessage:", forControlEvents: .TouchUpInside)
         self.view.addSubview(button)
@@ -43,11 +42,11 @@ class SendMessageViewController : UIViewController, UITextViewDelegate, MFMailCo
     }
     
     func sendMessage(_: UIButton) {
-        let emailTitle = "Test Email"
+        let emailTitle = "Diabetes Emoticons Feedback"
         // Email Content
         let messageBody = textView.text
         // To address
-        let toRecipents = ["support@test.com"]
+        let toRecipents = ["test@healthdesignby.us"]
         
         let mc = MFMailComposeViewController()
         mc.mailComposeDelegate = self;
@@ -56,6 +55,10 @@ class SendMessageViewController : UIViewController, UITextViewDelegate, MFMailCo
         mc.setToRecipients(toRecipents)
         self.presentViewController(mc, animated: true, completion: nil)
 
+    }
+    
+    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     func keyboardWillShow(notification: NSNotification) {

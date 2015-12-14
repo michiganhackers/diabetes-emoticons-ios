@@ -57,9 +57,9 @@ class RecentTableViewController : UITableViewController {
         cell.favoriteButton.tag = indexPath.row
         
         if Bool(emoticons[indexPath.row].isFavorite!) {
-            cell.favoriteButton.setImage(UIImage(named: "FilledStar"), forState: .Normal)
+            cell.favoriteButton.setImage(UIImage(named: "star_blue_filled"), forState: .Normal)
         } else {
-            cell.favoriteButton.setImage(UIImage(named: "EmptyStar"), forState: .Normal)
+            cell.favoriteButton.setImage(UIImage(named: "star_notfilled"), forState: .Normal)
         }
         return cell
     }
@@ -91,6 +91,10 @@ class RecentTableViewController : UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "toDetail" {
             if let detailViewController = segue.destinationViewController as? EmoticonDetailViewController {
+                emoticons[tableView.indexPathForSelectedRow!.row].lastAccessed = NSDate()
+                if let managedObjectContext = (UIApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext {
+                    try! managedObjectContext.save()
+                }
                 detailViewController.emoticon = emoticons[tableView.indexPathForSelectedRow!.row]
             }
         }
