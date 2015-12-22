@@ -20,6 +20,7 @@ class IconEnumerator {
             if item.hasSuffix(".png") {
                 let fileName = item.substringToIndex(item.rangeOfString(".")!.startIndex)
                 icons.append((title: fileName, file: item))
+                print(item)
             }
         }
         return icons

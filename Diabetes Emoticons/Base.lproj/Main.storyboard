@@ -30,8 +30,8 @@
         <!--Diabetes Emoticons-->
         <scene sceneID="UTA-Oc-EWh">
             <objects>
-                <tableViewController id="DXM-Df-fYB" customClass="HomeViewController" customModule="Diabetes_Emoticons" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="110" sectionHeaderHeight="28" sectionFooterHeight="28" id="bdA-C8-UQS">
+                <tableViewController id="DXM-Df-fYB" customClass="EmoticonTableViewController" customModule="Diabetes_Emoticons" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" tag="1" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="110" sectionHeaderHeight="28" sectionFooterHeight="28" id="bdA-C8-UQS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -214,8 +214,8 @@
         <!--Recently Used-->
         <scene sceneID="S7I-dw-5wO">
             <objects>
-                <tableViewController id="NgA-PI-QxD" customClass="RecentTableViewController" customModule="Diabetes_Emoticons" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="110" sectionHeaderHeight="28" sectionFooterHeight="28" id="ckH-5R-bUu">
+                <tableViewController id="NgA-PI-QxD" customClass="EmoticonTableViewController" customModule="Diabetes_Emoticons" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" tag="2" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="110" sectionHeaderHeight="28" sectionFooterHeight="28" id="ckH-5R-bUu">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -305,8 +305,8 @@
         <!--Favorites-->
         <scene sceneID="PiP-bg-7j4">
             <objects>
-                <tableViewController id="B7U-A6-5PO" customClass="FavoritesTableViewController" customModule="Diabetes_Emoticons" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="110" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ec2-03-7k5">
+                <tableViewController id="B7U-A6-5PO" customClass="EmoticonTableViewController" customModule="Diabetes_Emoticons" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" tag="3" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="110" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ec2-03-7k5">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         if dataIsEmpty() {
             importData()
+
         }
         UINavigationBar.appearance().barTintColor = UIColor(red: 254.0/255.0, green: 237.0/255.0, blue: 143.0/255.0, alpha: 1.0)
         UINavigationBar.appearance().tintColor = UIColor.blackColor()
@@ -117,11 +118,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Retrieve data from the source file
         
         for (iconTitle, iconFile) in IconEnumerator().icons() {
-            let menuItem = NSEntityDescription.insertNewObjectForEntityForName("Emoticon", inManagedObjectContext: managedObjectContext) as! Emoticon
-            menuItem.title = iconTitle
-            menuItem.image = iconFile
-            menuItem.isFavorite = NSNumber(bool: false)
-            menuItem.lastAccessed = NSDate(timeIntervalSince1970: NSTimeInterval(0))
+            print("\(iconTitle) is \(iconFile)")
+            if !iconTitle.hasPrefix("AppIcon") {
+                let menuItem = NSEntityDescription.insertNewObjectForEntityForName("Emoticon", inManagedObjectContext: managedObjectContext) as! Emoticon
+                menuItem.title = iconTitle
+                menuItem.image = iconFile
+                menuItem.isFavorite = NSNumber(bool: false)
+                menuItem.lastAccessed = NSDate(timeIntervalSince1970: NSTimeInterval(0))
+            }
         }
    
     }

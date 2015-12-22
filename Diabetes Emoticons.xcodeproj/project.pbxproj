@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7013C7761BF3E0CB007BB646 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7013C7751BF3E0CB007BB646 /* AppDelegate.swift */; };
-		7013C7781BF3E0CB007BB646 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7013C7771BF3E0CB007BB646 /* HomeViewController.swift */; };
 		7013C77B1BF3E0CB007BB646 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7013C7791BF3E0CB007BB646 /* Main.storyboard */; };
 		7013C77E1BF3E0CB007BB646 /* Diabetes_Emoticons.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7013C77C1BF3E0CB007BB646 /* Diabetes_Emoticons.xcdatamodeld */; };
 		7013C7801BF3E0CB007BB646 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7013C77F1BF3E0CB007BB646 /* Assets.xcassets */; };
@@ -41,12 +40,9 @@
 		70703CF71C16288500A8AD83 /* Thumbs Up.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CE01C16288500A8AD83 /* Thumbs Up.png */; };
 		70703CF81C16288500A8AD83 /* Toilet.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CE11C16288500A8AD83 /* Toilet.png */; };
 		70703CF91C16288500A8AD83 /* Water.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CE21C16288500A8AD83 /* Water.png */; };
+		708110A61C290917008624CE /* EmoticonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708110A51C290917008624CE /* EmoticonTableViewController.swift */; };
 		708365D81BFED40A00EA9FEC /* Emoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708365D71BFED40A00EA9FEC /* Emoticon.swift */; };
-		708365DA1BFEE44C00EA9FEC /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708365D91BFEE44C00EA9FEC /* SwiftyJSON.swift */; };
-		708365DD1BFEE92700EA9FEC /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 708365DC1BFEE92700EA9FEC /* data.json */; };
-		708365DF1BFF95C800EA9FEC /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708365DE1BFF95C800EA9FEC /* FavoritesTableViewController.swift */; };
 		708365E41BFFAD8C00EA9FEC /* EmoticonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708365E31BFFAD8C00EA9FEC /* EmoticonDetailViewController.swift */; };
-		70BBA02F1C096149009803E9 /* RecentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBA02E1C096149009803E9 /* RecentTableViewController.swift */; };
 		70F2BF671C0D486400D05DF1 /* MoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F2BF661C0D486400D05DF1 /* MoreTableViewCell.swift */; };
 		70F2BF691C0D490D00D05DF1 /* MoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F2BF681C0D490D00D05DF1 /* MoreTableViewController.swift */; };
 		70F2BF6F1C0D4F3700D05DF1 /* SendMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F2BF6E1C0D4F3700D05DF1 /* SendMessageViewController.swift */; };
@@ -72,7 +68,6 @@
 /* Begin PBXFileReference section */
 		7013C7721BF3E0CB007BB646 /* Diabetes Emoticons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Diabetes Emoticons.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7013C7751BF3E0CB007BB646 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7013C7771BF3E0CB007BB646 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7013C77A1BF3E0CB007BB646 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7013C77D1BF3E0CB007BB646 /* Diabetes_Emoticons.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Diabetes_Emoticons.xcdatamodel; sourceTree = "<group>"; };
 		7013C77F1BF3E0CB007BB646 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -109,12 +104,9 @@
 		70703CE01C16288500A8AD83 /* Thumbs Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Thumbs Up.png"; sourceTree = "<group>"; };
 		70703CE11C16288500A8AD83 /* Toilet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Toilet.png; sourceTree = "<group>"; };
 		70703CE21C16288500A8AD83 /* Water.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Water.png; sourceTree = "<group>"; };
+		708110A51C290917008624CE /* EmoticonTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonTableViewController.swift; sourceTree = "<group>"; };
 		708365D71BFED40A00EA9FEC /* Emoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoticon.swift; sourceTree = "<group>"; };
-		708365D91BFEE44C00EA9FEC /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
-		708365DC1BFEE92700EA9FEC /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
-		708365DE1BFF95C800EA9FEC /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
 		708365E31BFFAD8C00EA9FEC /* EmoticonDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonDetailViewController.swift; sourceTree = "<group>"; };
-		70BBA02E1C096149009803E9 /* RecentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentTableViewController.swift; sourceTree = "<group>"; };
 		70F2BF661C0D486400D05DF1 /* MoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreTableViewCell.swift; sourceTree = "<group>"; };
 		70F2BF681C0D490D00D05DF1 /* MoreTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreTableViewController.swift; sourceTree = "<group>"; };
 		70F2BF6A1C0D4BFE00D05DF1 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
@@ -233,10 +225,8 @@
 			isa = PBXGroup;
 			children = (
 				70703C9A1C1622F800A8AD83 /* IconEnumerater.swift */,
-				708365DC1BFEE92700EA9FEC /* data.json */,
 				708365D71BFED40A00EA9FEC /* Emoticon.swift */,
 				7013C77C1BF3E0CB007BB646 /* Diabetes_Emoticons.xcdatamodeld */,
-				708365D91BFEE44C00EA9FEC /* SwiftyJSON.swift */,
 			);
 			name = "Core Data";
 			sourceTree = "<group>";
@@ -255,9 +245,7 @@
 		70F2BF6D1C0D4EEC00D05DF1 /* Emoticon */ = {
 			isa = PBXGroup;
 			children = (
-				7013C7771BF3E0CB007BB646 /* HomeViewController.swift */,
-				70BBA02E1C096149009803E9 /* RecentTableViewController.swift */,
-				708365DE1BFF95C800EA9FEC /* FavoritesTableViewController.swift */,
+				708110A51C290917008624CE /* EmoticonTableViewController.swift */,
 				7013C7A61BF3E2A5007BB646 /* EmoticonTableViewCell.swift */,
 				708365E31BFFAD8C00EA9FEC /* EmoticonDetailViewController.swift */,
 			);
@@ -342,7 +330,7 @@
 				TargetAttributes = {
 					7013C7711BF3E0CB007BB646 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = CEWLU6JPW3;
+						DevelopmentTeam = 52KZ534T78;
 					};
 					7013C7881BF3E0CB007BB646 = {
 						CreatedOnToolsVersion = 7.1;
@@ -400,7 +388,6 @@
 				70703CF91C16288500A8AD83 /* Water.png in Resources */,
 				70703CF71C16288500A8AD83 /* Thumbs Up.png in Resources */,
 				7013C77B1BF3E0CB007BB646 /* Main.storyboard in Resources */,
-				708365DD1BFEE92700EA9FEC /* data.json in Resources */,
 				70703CF51C16288500A8AD83 /* Stop.png in Resources */,
 				70703CF11C16288500A8AD83 /* Not Sure.png in Resources */,
 				70703CF21C16288500A8AD83 /* Pump.png in Resources */,
@@ -435,15 +422,12 @@
 				708365D81BFED40A00EA9FEC /* Emoticon.swift in Sources */,
 				708365E41BFFAD8C00EA9FEC /* EmoticonDetailViewController.swift in Sources */,
 				7013C77E1BF3E0CB007BB646 /* Diabetes_Emoticons.xcdatamodeld in Sources */,
-				70BBA02F1C096149009803E9 /* RecentTableViewController.swift in Sources */,
-				7013C7781BF3E0CB007BB646 /* HomeViewController.swift in Sources */,
 				70F2BF691C0D490D00D05DF1 /* MoreTableViewController.swift in Sources */,
-				708365DA1BFEE44C00EA9FEC /* SwiftyJSON.swift in Sources */,
 				70F2BF671C0D486400D05DF1 /* MoreTableViewCell.swift in Sources */,
 				7013C7761BF3E0CB007BB646 /* AppDelegate.swift in Sources */,
 				70F2BF6F1C0D4F3700D05DF1 /* SendMessageViewController.swift in Sources */,
-				708365DF1BFF95C800EA9FEC /* FavoritesTableViewController.swift in Sources */,
 				7013C7A71BF3E2A5007BB646 /* EmoticonTableViewCell.swift in Sources */,
+				708110A61C290917008624CE /* EmoticonTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,7 +573,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Diabetes Emoticons/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kruppcon.Diabetes-Emoticons";
+				PRODUCT_BUNDLE_IDENTIFIER = com.doctorasdesigner.diabetesemoticons;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -603,7 +587,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Diabetes Emoticons/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kruppcon.Diabetes-Emoticons";
+				PRODUCT_BUNDLE_IDENTIFIER = com.doctorasdesigner.diabetesemoticons;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
