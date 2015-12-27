@@ -9,18 +9,17 @@
 import Foundation
 
 class IconEnumerator {    
-    func icons() -> [(title: String, file: String)] {
-        var icons = [(title: String, file: String)]()
+    func icons() -> [String] {
+        var icons = [String]()
         
         let fm = NSFileManager.defaultManager()
         let path = NSBundle.mainBundle().resourcePath!
         let items = try! fm.contentsOfDirectoryAtPath(path)
         
         for item in items {
-            if item.hasSuffix(".png") {
+            if item.hasSuffix(".png") && !item.hasPrefix("AppIcon") {
                 let fileName = item.substringToIndex(item.rangeOfString(".")!.startIndex)
-                icons.append((title: fileName, file: item))
-                print(item)
+                icons.append(fileName)
             }
         }
         return icons

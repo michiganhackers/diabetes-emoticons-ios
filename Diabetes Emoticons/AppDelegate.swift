@@ -16,10 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        if dataIsEmpty() {
-            importData()
-
-        }
+        importData()
         UINavigationBar.appearance().barTintColor = UIColor(red: 254.0/255.0, green: 237.0/255.0, blue: 143.0/255.0, alpha: 1.0)
         UINavigationBar.appearance().tintColor = UIColor.blackColor()
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.blackColor()]
@@ -117,32 +114,51 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func importData() {
         // Retrieve data from the source file
         
-        for (iconTitle, iconFile) in IconEnumerator().icons() {
-            print("\(iconTitle) is \(iconFile)")
-            if !iconTitle.hasPrefix("AppIcon") {
-                let menuItem = NSEntityDescription.insertNewObjectForEntityForName("Emoticon", inManagedObjectContext: managedObjectContext) as! Emoticon
-                menuItem.title = iconTitle
-                menuItem.image = iconFile
-                menuItem.isFavorite = NSNumber(bool: false)
-                menuItem.lastAccessed = NSDate(timeIntervalSince1970: NSTimeInterval(0))
+        // Get current emoticons in store
+        var emoticons = [Emoticon]()
+        if let managedObjectContext = (UIApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext {
+            let fetchRequest = NSFetchRequest(entityName: "Emoticon")
+            do {
+                emoticons = try managedObjectContext.executeFetchRequest(fetchRequest) as! [Emoticon]
+            } catch {
+                print("ERROR READING DATABASE")
             }
         }
-   
-    }
-
-    func dataIsEmpty() -> Bool {
-        let personRequest = NSFetchRequest(entityName: "Emoticon")
         
-        if let personResult = try! managedObjectContext.executeFetchRequest(personRequest) as? [Emoticon] {
-            if personResult.count == 0 {
-                return true
-            } else {
-                return false
+        let icons = IconEnumerator().icons()
+        
+        // Delete database items no longer in Library
+        for emoticon in emoticons {
+            if !icons.contains(emoticon.title) {
+                managedObjectContext.deleteObject(emoticon)
             }
-        } else {
-            return true
         }
-
+        
+        // Refresh emoticons in store
+        if let managedObjectContext = (UIApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext {
+            let fetchRequest = NSFetchRequest(entityName: "Emoticon")
+            do {
+                emoticons = try managedObjectContext.executeFetchRequest(fetchRequest) as! [Emoticon]
+            } catch {
+                print("ERROR READING DATABASE")
+            }
+        }
+        
+        // Add items not in database
+        var titles = [String]()
+        for emoticon in emoticons {
+            titles.append(emoticon.title)
+        }
+        
+        for icon in icons {
+            if !titles.contains(icon) {
+                let newItem = NSEntityDescription.insertNewObjectForEntityForName("Emoticon", inManagedObjectContext: managedObjectContext) as! Emoticon
+                newItem.title = icon
+                newItem.image = icon + ".png"
+                newItem.isFavorite = NSNumber(bool: false)
+                newItem.lastAccessed = NSDate(timeIntervalSince1970: NSTimeInterval(0))
+            }
+        }
     }
 
 }

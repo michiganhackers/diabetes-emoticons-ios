@@ -15,11 +15,11 @@
 		7013C78E1BF3E0CB007BB646 /* Diabetes_EmoticonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7013C78D1BF3E0CB007BB646 /* Diabetes_EmoticonsTests.swift */; };
 		7013C7991BF3E0CB007BB646 /* Diabetes_EmoticonsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7013C7981BF3E0CB007BB646 /* Diabetes_EmoticonsUITests.swift */; };
 		7013C7A71BF3E2A5007BB646 /* EmoticonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7013C7A61BF3E2A5007BB646 /* EmoticonTableViewCell.swift */; };
+		7023FB511C307E00002010C9 /* Banana.png in Resources */ = {isa = PBXBuildFile; fileRef = 7023FB4F1C307E00002010C9 /* Banana.png */; };
+		7023FB521C307E00002010C9 /* Blood Glucose Low.png in Resources */ = {isa = PBXBuildFile; fileRef = 7023FB501C307E00002010C9 /* Blood Glucose Low.png */; };
 		70703C991C161DDD00A8AD83 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F2BF6A1C0D4BFE00D05DF1 /* WebViewController.swift */; };
 		70703C9B1C1622F800A8AD83 /* IconEnumerater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70703C9A1C1622F800A8AD83 /* IconEnumerater.swift */; };
-		70703CE31C16288500A8AD83 /* Banana.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CCC1C16288500A8AD83 /* Banana.png */; };
 		70703CE41C16288500A8AD83 /* Blood Glucose High.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CCD1C16288500A8AD83 /* Blood Glucose High.png */; };
-		70703CE51C16288500A8AD83 /* Blood Glucose Low.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CCE1C16288500A8AD83 /* Blood Glucose Low.png */; };
 		70703CE61C16288500A8AD83 /* Call Parent.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CCF1C16288500A8AD83 /* Call Parent.png */; };
 		70703CE71C16288500A8AD83 /* Check Levels.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CD01C16288500A8AD83 /* Check Levels.png */; };
 		70703CE81C16288500A8AD83 /* Cupcake.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CD11C16288500A8AD83 /* Cupcake.png */; };
@@ -80,10 +80,10 @@
 		7013C7981BF3E0CB007BB646 /* Diabetes_EmoticonsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diabetes_EmoticonsUITests.swift; sourceTree = "<group>"; };
 		7013C79A1BF3E0CB007BB646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7013C7A61BF3E2A5007BB646 /* EmoticonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonTableViewCell.swift; sourceTree = "<group>"; };
+		7023FB4F1C307E00002010C9 /* Banana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Banana.png; sourceTree = "<group>"; };
+		7023FB501C307E00002010C9 /* Blood Glucose Low.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blood Glucose Low.png"; sourceTree = "<group>"; };
 		70703C9A1C1622F800A8AD83 /* IconEnumerater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconEnumerater.swift; sourceTree = "<group>"; };
-		70703CCC1C16288500A8AD83 /* Banana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Banana.png; sourceTree = "<group>"; };
 		70703CCD1C16288500A8AD83 /* Blood Glucose High.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blood Glucose High.png"; sourceTree = "<group>"; };
-		70703CCE1C16288500A8AD83 /* Blood Glucose Low.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blood Glucose Low.png"; sourceTree = "<group>"; };
 		70703CCF1C16288500A8AD83 /* Call Parent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Call Parent.png"; sourceTree = "<group>"; };
 		70703CD01C16288500A8AD83 /* Check Levels.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Check Levels.png"; sourceTree = "<group>"; };
 		70703CD11C16288500A8AD83 /* Cupcake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cupcake.png; sourceTree = "<group>"; };
@@ -193,9 +193,9 @@
 		70703CCB1C16288500A8AD83 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				70703CCC1C16288500A8AD83 /* Banana.png */,
+				7023FB4F1C307E00002010C9 /* Banana.png */,
+				7023FB501C307E00002010C9 /* Blood Glucose Low.png */,
 				70703CCD1C16288500A8AD83 /* Blood Glucose High.png */,
-				70703CCE1C16288500A8AD83 /* Blood Glucose Low.png */,
 				70703CCF1C16288500A8AD83 /* Call Parent.png */,
 				70703CD01C16288500A8AD83 /* Check Levels.png */,
 				70703CD11C16288500A8AD83 /* Cupcake.png */,
@@ -371,9 +371,11 @@
 				70703CE71C16288500A8AD83 /* Check Levels.png in Resources */,
 				70703CF31C16288500A8AD83 /* Shaky.png in Resources */,
 				7013C7831BF3E0CB007BB646 /* LaunchScreen.storyboard in Resources */,
+				7023FB521C307E00002010C9 /* Blood Glucose Low.png in Resources */,
 				70703CEE1C16288500A8AD83 /* Machine.png in Resources */,
 				70703CF61C16288500A8AD83 /* Thumbs Down.png in Resources */,
 				70703CE41C16288500A8AD83 /* Blood Glucose High.png in Resources */,
+				7023FB511C307E00002010C9 /* Banana.png in Resources */,
 				70703CF41C16288500A8AD83 /* Sharp.png in Resources */,
 				70703CE91C16288500A8AD83 /* Food.png in Resources */,
 				70703CE81C16288500A8AD83 /* Cupcake.png in Resources */,
@@ -382,9 +384,7 @@
 				7013C7801BF3E0CB007BB646 /* Assets.xcassets in Resources */,
 				70703CEB1C16288500A8AD83 /* Injection.png in Resources */,
 				70703CEC1C16288500A8AD83 /* Juice Box.png in Resources */,
-				70703CE31C16288500A8AD83 /* Banana.png in Resources */,
 				70703CF01C16288500A8AD83 /* Monitor.png in Resources */,
-				70703CE51C16288500A8AD83 /* Blood Glucose Low.png in Resources */,
 				70703CF91C16288500A8AD83 /* Water.png in Resources */,
 				70703CF71C16288500A8AD83 /* Thumbs Up.png in Resources */,
 				7013C77B1BF3E0CB007BB646 /* Main.storyboard in Resources */,
