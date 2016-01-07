@@ -32,7 +32,6 @@ class SendMessageViewController : UIViewController, UITextViewDelegate, MFMailCo
        
         let x = self.view.frame.width - 80
         let y = self.view.frame.height - 80 - self.tabBarController!.tabBar.frame.height
-        print(self.tabBarController!.view.frame.height)
         let button = UIButton(frame: CGRect(x: x, y: y, width: 60, height: 60))
         button.setImage(UIImage(named: "circle_send_text"), forState: .Normal)
         button.tag = 1
@@ -46,7 +45,7 @@ class SendMessageViewController : UIViewController, UITextViewDelegate, MFMailCo
         // Email Content
         let messageBody = textView.text
         // To address
-        let toRecipents = ["test@healthdesignby.us"]
+        let toRecipents = ["healthdesignbyus@gmail.com"]
         
         let mc = MFMailComposeViewController()
         mc.mailComposeDelegate = self;

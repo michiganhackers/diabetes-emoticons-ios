@@ -26,6 +26,9 @@ class EmoticonDetailViewController : UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         layoutView()
+        let button = UIBarButtonItem()
+        button.title = "Back"
+        self.navigationItem.backBarButtonItem = button
     }
     
     
