@@ -42,7 +42,7 @@ class EmoticonDetailViewController : UIViewController {
         let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
         
         //New Excluded Activities Code
-        activityVC.excludedActivityTypes = [UIActivityTypeAirDrop, UIActivityTypeAddToReadingList]
+        activityVC.excludedActivityTypes = [UIActivityTypeAirDrop, UIActivityTypeAddToReadingList, UIActivityTypeOpenInIBooks, UIActivityTypePostToVimeo, UIActivityTypeAddToReadingList]
         //
         
         navigationController?.presentViewController(activityVC, animated: true) {}
