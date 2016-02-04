@@ -15,32 +15,47 @@
 		7013C78E1BF3E0CB007BB646 /* Diabetes_EmoticonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7013C78D1BF3E0CB007BB646 /* Diabetes_EmoticonsTests.swift */; };
 		7013C7991BF3E0CB007BB646 /* Diabetes_EmoticonsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7013C7981BF3E0CB007BB646 /* Diabetes_EmoticonsUITests.swift */; };
 		7013C7A71BF3E2A5007BB646 /* EmoticonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7013C7A61BF3E2A5007BB646 /* EmoticonTableViewCell.swift */; };
-		7023FB511C307E00002010C9 /* Banana.png in Resources */ = {isa = PBXBuildFile; fileRef = 7023FB4F1C307E00002010C9 /* Banana.png */; };
-		7023FB521C307E00002010C9 /* Blood Glucose Low.png in Resources */ = {isa = PBXBuildFile; fileRef = 7023FB501C307E00002010C9 /* Blood Glucose Low.png */; };
 		70703C991C161DDD00A8AD83 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F2BF6A1C0D4BFE00D05DF1 /* WebViewController.swift */; };
 		70703C9B1C1622F800A8AD83 /* IconEnumerater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70703C9A1C1622F800A8AD83 /* IconEnumerater.swift */; };
-		70703CE41C16288500A8AD83 /* Blood Glucose High.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CCD1C16288500A8AD83 /* Blood Glucose High.png */; };
-		70703CE61C16288500A8AD83 /* Call Parent.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CCF1C16288500A8AD83 /* Call Parent.png */; };
-		70703CE71C16288500A8AD83 /* Check Levels.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CD01C16288500A8AD83 /* Check Levels.png */; };
-		70703CE81C16288500A8AD83 /* Cupcake.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CD11C16288500A8AD83 /* Cupcake.png */; };
-		70703CE91C16288500A8AD83 /* Food.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CD21C16288500A8AD83 /* Food.png */; };
-		70703CEA1C16288500A8AD83 /* Happy.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CD31C16288500A8AD83 /* Happy.png */; };
-		70703CEB1C16288500A8AD83 /* Injection.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CD41C16288500A8AD83 /* Injection.png */; };
-		70703CEC1C16288500A8AD83 /* Juice Box.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CD51C16288500A8AD83 /* Juice Box.png */; };
-		70703CED1C16288500A8AD83 /* Ketone.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CD61C16288500A8AD83 /* Ketone.png */; };
-		70703CEE1C16288500A8AD83 /* Machine.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CD71C16288500A8AD83 /* Machine.png */; };
-		70703CEF1C16288500A8AD83 /* Meh.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CD81C16288500A8AD83 /* Meh.png */; };
-		70703CF01C16288500A8AD83 /* Monitor.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CD91C16288500A8AD83 /* Monitor.png */; };
-		70703CF11C16288500A8AD83 /* Not Sure.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CDA1C16288500A8AD83 /* Not Sure.png */; };
-		70703CF21C16288500A8AD83 /* Pump.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CDB1C16288500A8AD83 /* Pump.png */; };
-		70703CF31C16288500A8AD83 /* Shaky.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CDC1C16288500A8AD83 /* Shaky.png */; };
-		70703CF41C16288500A8AD83 /* Sharp.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CDD1C16288500A8AD83 /* Sharp.png */; };
-		70703CF51C16288500A8AD83 /* Stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CDE1C16288500A8AD83 /* Stop.png */; };
-		70703CF61C16288500A8AD83 /* Thumbs Down.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CDF1C16288500A8AD83 /* Thumbs Down.png */; };
-		70703CF71C16288500A8AD83 /* Thumbs Up.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CE01C16288500A8AD83 /* Thumbs Up.png */; };
-		70703CF81C16288500A8AD83 /* Toilet.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CE11C16288500A8AD83 /* Toilet.png */; };
-		70703CF91C16288500A8AD83 /* Water.png in Resources */ = {isa = PBXBuildFile; fileRef = 70703CE21C16288500A8AD83 /* Water.png */; };
 		708110A61C290917008624CE /* EmoticonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708110A51C290917008624CE /* EmoticonTableViewController.swift */; };
+		7083147E1C63E200005712AA /* BG All Over the Board.png in Resources */ = {isa = PBXBuildFile; fileRef = 708314581C63E200005712AA /* BG All Over the Board.png */; };
+		7083147F1C63E200005712AA /* BG in 15 min.png in Resources */ = {isa = PBXBuildFile; fileRef = 708314591C63E200005712AA /* BG in 15 min.png */; };
+		708314801C63E200005712AA /* BG Meter.png in Resources */ = {isa = PBXBuildFile; fileRef = 7083145A1C63E200005712AA /* BG Meter.png */; };
+		708314811C63E200005712AA /* Call.png in Resources */ = {isa = PBXBuildFile; fileRef = 7083145B1C63E200005712AA /* Call.png */; };
+		708314821C63E200005712AA /* CGM.png in Resources */ = {isa = PBXBuildFile; fileRef = 7083145C1C63E200005712AA /* CGM.png */; };
+		708314831C63E200005712AA /* Cupcake.png in Resources */ = {isa = PBXBuildFile; fileRef = 7083145D1C63E200005712AA /* Cupcake.png */; };
+		708314841C63E200005712AA /* Diet Soda.png in Resources */ = {isa = PBXBuildFile; fileRef = 7083145E1C63E200005712AA /* Diet Soda.png */; };
+		708314851C63E200005712AA /* Donut.png in Resources */ = {isa = PBXBuildFile; fileRef = 7083145F1C63E200005712AA /* Donut.png */; };
+		708314861C63E200005712AA /* Driving BG Check.png in Resources */ = {isa = PBXBuildFile; fileRef = 708314601C63E200005712AA /* Driving BG Check.png */; };
+		708314871C63E200005712AA /* Exam BG Check.png in Resources */ = {isa = PBXBuildFile; fileRef = 708314611C63E200005712AA /* Exam BG Check.png */; };
+		708314881C63E200005712AA /* Feeling Bad.png in Resources */ = {isa = PBXBuildFile; fileRef = 708314621C63E200005712AA /* Feeling Bad.png */; };
+		708314891C63E200005712AA /* Feeling Good.png in Resources */ = {isa = PBXBuildFile; fileRef = 708314631C63E200005712AA /* Feeling Good.png */; };
+		7083148A1C63E200005712AA /* Feeling Shaky.png in Resources */ = {isa = PBXBuildFile; fileRef = 708314641C63E200005712AA /* Feeling Shaky.png */; };
+		7083148B1C63E200005712AA /* Feeling So-So.png in Resources */ = {isa = PBXBuildFile; fileRef = 708314651C63E200005712AA /* Feeling So-So.png */; };
+		7083148C1C63E200005712AA /* Field Trip BG Check.png in Resources */ = {isa = PBXBuildFile; fileRef = 708314661C63E200005712AA /* Field Trip BG Check.png */; };
+		7083148D1C63E200005712AA /* Glucose Tablet.png in Resources */ = {isa = PBXBuildFile; fileRef = 708314671C63E200005712AA /* Glucose Tablet.png */; };
+		7083148E1C63E200005712AA /* Healthy Snack.png in Resources */ = {isa = PBXBuildFile; fileRef = 708314681C63E200005712AA /* Healthy Snack.png */; };
+		7083148F1C63E200005712AA /* High BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 708314691C63E200005712AA /* High BG.png */; };
+		708314901C63E200005712AA /* Hungry.png in Resources */ = {isa = PBXBuildFile; fileRef = 7083146A1C63E200005712AA /* Hungry.png */; };
+		708314911C63E200005712AA /* Insulin Pump.png in Resources */ = {isa = PBXBuildFile; fileRef = 7083146B1C63E200005712AA /* Insulin Pump.png */; };
+		708314921C63E200005712AA /* Insulin Shot (Pen).png in Resources */ = {isa = PBXBuildFile; fileRef = 7083146C1C63E200005712AA /* Insulin Shot (Pen).png */; };
+		708314931C63E200005712AA /* Juice Box.png in Resources */ = {isa = PBXBuildFile; fileRef = 7083146D1C63E200005712AA /* Juice Box.png */; };
+		708314941C63E200005712AA /* Ketone Time.png in Resources */ = {isa = PBXBuildFile; fileRef = 7083146E1C63E200005712AA /* Ketone Time.png */; };
+		708314951C63E200005712AA /* Low BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 7083146F1C63E200005712AA /* Low BG.png */; };
+		708314961C63E200005712AA /* Need A Break.png in Resources */ = {isa = PBXBuildFile; fileRef = 708314701C63E200005712AA /* Need A Break.png */; };
+		708314971C63E200005712AA /* Nurse.png in Resources */ = {isa = PBXBuildFile; fileRef = 708314711C63E200005712AA /* Nurse.png */; };
+		708314981C63E200005712AA /* PE Class.png in Resources */ = {isa = PBXBuildFile; fileRef = 708314721C63E200005712AA /* PE Class.png */; };
+		708314991C63E200005712AA /* Perfect BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 708314731C63E200005712AA /* Perfect BG.png */; };
+		7083149A1C63E200005712AA /* Pizza.png in Resources */ = {isa = PBXBuildFile; fileRef = 708314741C63E200005712AA /* Pizza.png */; };
+		7083149B1C63E200005712AA /* Potty Time.png in Resources */ = {isa = PBXBuildFile; fileRef = 708314751C63E200005712AA /* Potty Time.png */; };
+		7083149C1C63E200005712AA /* Regular Soda.png in Resources */ = {isa = PBXBuildFile; fileRef = 708314761C63E200005712AA /* Regular Soda.png */; };
+		7083149D1C63E200005712AA /* Site Change.png in Resources */ = {isa = PBXBuildFile; fileRef = 708314771C63E200005712AA /* Site Change.png */; };
+		7083149E1C63E200005712AA /* Sleepover-Final.png in Resources */ = {isa = PBXBuildFile; fileRef = 708314781C63E200005712AA /* Sleepover-Final.png */; };
+		7083149F1C63E200005712AA /* Sleepy.png in Resources */ = {isa = PBXBuildFile; fileRef = 708314791C63E200005712AA /* Sleepy.png */; };
+		708314A01C63E200005712AA /* Syringe.png in Resources */ = {isa = PBXBuildFile; fileRef = 7083147A1C63E200005712AA /* Syringe.png */; };
+		708314A11C63E200005712AA /* Thirsty.png in Resources */ = {isa = PBXBuildFile; fileRef = 7083147B1C63E200005712AA /* Thirsty.png */; };
+		708314A21C63E200005712AA /* Took Care of It.png in Resources */ = {isa = PBXBuildFile; fileRef = 7083147C1C63E200005712AA /* Took Care of It.png */; };
+		708314A31C63E200005712AA /* Water.png in Resources */ = {isa = PBXBuildFile; fileRef = 7083147D1C63E200005712AA /* Water.png */; };
 		708365D81BFED40A00EA9FEC /* Emoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708365D71BFED40A00EA9FEC /* Emoticon.swift */; };
 		708365E41BFFAD8C00EA9FEC /* EmoticonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708365E31BFFAD8C00EA9FEC /* EmoticonDetailViewController.swift */; };
 		70F2BF671C0D486400D05DF1 /* MoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F2BF661C0D486400D05DF1 /* MoreTableViewCell.swift */; };
@@ -80,31 +95,46 @@
 		7013C7981BF3E0CB007BB646 /* Diabetes_EmoticonsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diabetes_EmoticonsUITests.swift; sourceTree = "<group>"; };
 		7013C79A1BF3E0CB007BB646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7013C7A61BF3E2A5007BB646 /* EmoticonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonTableViewCell.swift; sourceTree = "<group>"; };
-		7023FB4F1C307E00002010C9 /* Banana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Banana.png; sourceTree = "<group>"; };
-		7023FB501C307E00002010C9 /* Blood Glucose Low.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blood Glucose Low.png"; sourceTree = "<group>"; };
 		70703C9A1C1622F800A8AD83 /* IconEnumerater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconEnumerater.swift; sourceTree = "<group>"; };
-		70703CCD1C16288500A8AD83 /* Blood Glucose High.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blood Glucose High.png"; sourceTree = "<group>"; };
-		70703CCF1C16288500A8AD83 /* Call Parent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Call Parent.png"; sourceTree = "<group>"; };
-		70703CD01C16288500A8AD83 /* Check Levels.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Check Levels.png"; sourceTree = "<group>"; };
-		70703CD11C16288500A8AD83 /* Cupcake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cupcake.png; sourceTree = "<group>"; };
-		70703CD21C16288500A8AD83 /* Food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Food.png; sourceTree = "<group>"; };
-		70703CD31C16288500A8AD83 /* Happy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Happy.png; sourceTree = "<group>"; };
-		70703CD41C16288500A8AD83 /* Injection.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Injection.png; sourceTree = "<group>"; };
-		70703CD51C16288500A8AD83 /* Juice Box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Juice Box.png"; sourceTree = "<group>"; };
-		70703CD61C16288500A8AD83 /* Ketone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ketone.png; sourceTree = "<group>"; };
-		70703CD71C16288500A8AD83 /* Machine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Machine.png; sourceTree = "<group>"; };
-		70703CD81C16288500A8AD83 /* Meh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Meh.png; sourceTree = "<group>"; };
-		70703CD91C16288500A8AD83 /* Monitor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Monitor.png; sourceTree = "<group>"; };
-		70703CDA1C16288500A8AD83 /* Not Sure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Not Sure.png"; sourceTree = "<group>"; };
-		70703CDB1C16288500A8AD83 /* Pump.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pump.png; sourceTree = "<group>"; };
-		70703CDC1C16288500A8AD83 /* Shaky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shaky.png; sourceTree = "<group>"; };
-		70703CDD1C16288500A8AD83 /* Sharp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sharp.png; sourceTree = "<group>"; };
-		70703CDE1C16288500A8AD83 /* Stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stop.png; sourceTree = "<group>"; };
-		70703CDF1C16288500A8AD83 /* Thumbs Down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Thumbs Down.png"; sourceTree = "<group>"; };
-		70703CE01C16288500A8AD83 /* Thumbs Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Thumbs Up.png"; sourceTree = "<group>"; };
-		70703CE11C16288500A8AD83 /* Toilet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Toilet.png; sourceTree = "<group>"; };
-		70703CE21C16288500A8AD83 /* Water.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Water.png; sourceTree = "<group>"; };
 		708110A51C290917008624CE /* EmoticonTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonTableViewController.swift; sourceTree = "<group>"; };
+		708314581C63E200005712AA /* BG All Over the Board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BG All Over the Board.png"; path = "Library/BG All Over the Board.png"; sourceTree = "<group>"; };
+		708314591C63E200005712AA /* BG in 15 min.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BG in 15 min.png"; path = "Library/BG in 15 min.png"; sourceTree = "<group>"; };
+		7083145A1C63E200005712AA /* BG Meter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BG Meter.png"; path = "Library/BG Meter.png"; sourceTree = "<group>"; };
+		7083145B1C63E200005712AA /* Call.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Call.png; path = Library/Call.png; sourceTree = "<group>"; };
+		7083145C1C63E200005712AA /* CGM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CGM.png; path = Library/CGM.png; sourceTree = "<group>"; };
+		7083145D1C63E200005712AA /* Cupcake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Cupcake.png; path = Library/Cupcake.png; sourceTree = "<group>"; };
+		7083145E1C63E200005712AA /* Diet Soda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Diet Soda.png"; path = "Library/Diet Soda.png"; sourceTree = "<group>"; };
+		7083145F1C63E200005712AA /* Donut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Donut.png; path = Library/Donut.png; sourceTree = "<group>"; };
+		708314601C63E200005712AA /* Driving BG Check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Driving BG Check.png"; path = "Library/Driving BG Check.png"; sourceTree = "<group>"; };
+		708314611C63E200005712AA /* Exam BG Check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Exam BG Check.png"; path = "Library/Exam BG Check.png"; sourceTree = "<group>"; };
+		708314621C63E200005712AA /* Feeling Bad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Feeling Bad.png"; path = "Library/Feeling Bad.png"; sourceTree = "<group>"; };
+		708314631C63E200005712AA /* Feeling Good.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Feeling Good.png"; path = "Library/Feeling Good.png"; sourceTree = "<group>"; };
+		708314641C63E200005712AA /* Feeling Shaky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Feeling Shaky.png"; path = "Library/Feeling Shaky.png"; sourceTree = "<group>"; };
+		708314651C63E200005712AA /* Feeling So-So.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Feeling So-So.png"; path = "Library/Feeling So-So.png"; sourceTree = "<group>"; };
+		708314661C63E200005712AA /* Field Trip BG Check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Field Trip BG Check.png"; path = "Library/Field Trip BG Check.png"; sourceTree = "<group>"; };
+		708314671C63E200005712AA /* Glucose Tablet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Glucose Tablet.png"; path = "Library/Glucose Tablet.png"; sourceTree = "<group>"; };
+		708314681C63E200005712AA /* Healthy Snack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Healthy Snack.png"; path = "Library/Healthy Snack.png"; sourceTree = "<group>"; };
+		708314691C63E200005712AA /* High BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "High BG.png"; path = "Library/High BG.png"; sourceTree = "<group>"; };
+		7083146A1C63E200005712AA /* Hungry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Hungry.png; path = Library/Hungry.png; sourceTree = "<group>"; };
+		7083146B1C63E200005712AA /* Insulin Pump.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Insulin Pump.png"; path = "Library/Insulin Pump.png"; sourceTree = "<group>"; };
+		7083146C1C63E200005712AA /* Insulin Shot (Pen).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Insulin Shot (Pen).png"; path = "Library/Insulin Shot (Pen).png"; sourceTree = "<group>"; };
+		7083146D1C63E200005712AA /* Juice Box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Juice Box.png"; path = "Library/Juice Box.png"; sourceTree = "<group>"; };
+		7083146E1C63E200005712AA /* Ketone Time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Ketone Time.png"; path = "Library/Ketone Time.png"; sourceTree = "<group>"; };
+		7083146F1C63E200005712AA /* Low BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Low BG.png"; path = "Library/Low BG.png"; sourceTree = "<group>"; };
+		708314701C63E200005712AA /* Need A Break.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Need A Break.png"; path = "Library/Need A Break.png"; sourceTree = "<group>"; };
+		708314711C63E200005712AA /* Nurse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Nurse.png; path = Library/Nurse.png; sourceTree = "<group>"; };
+		708314721C63E200005712AA /* PE Class.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "PE Class.png"; path = "Library/PE Class.png"; sourceTree = "<group>"; };
+		708314731C63E200005712AA /* Perfect BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Perfect BG.png"; path = "Library/Perfect BG.png"; sourceTree = "<group>"; };
+		708314741C63E200005712AA /* Pizza.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Pizza.png; path = Library/Pizza.png; sourceTree = "<group>"; };
+		708314751C63E200005712AA /* Potty Time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Potty Time.png"; path = "Library/Potty Time.png"; sourceTree = "<group>"; };
+		708314761C63E200005712AA /* Regular Soda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Regular Soda.png"; path = "Library/Regular Soda.png"; sourceTree = "<group>"; };
+		708314771C63E200005712AA /* Site Change.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Site Change.png"; path = "Library/Site Change.png"; sourceTree = "<group>"; };
+		708314781C63E200005712AA /* Sleepover-Final.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Sleepover-Final.png"; path = "Library/Sleepover-Final.png"; sourceTree = "<group>"; };
+		708314791C63E200005712AA /* Sleepy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Sleepy.png; path = Library/Sleepy.png; sourceTree = "<group>"; };
+		7083147A1C63E200005712AA /* Syringe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Syringe.png; path = Library/Syringe.png; sourceTree = "<group>"; };
+		7083147B1C63E200005712AA /* Thirsty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Thirsty.png; path = Library/Thirsty.png; sourceTree = "<group>"; };
+		7083147C1C63E200005712AA /* Took Care of It.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Took Care of It.png"; path = "Library/Took Care of It.png"; sourceTree = "<group>"; };
+		7083147D1C63E200005712AA /* Water.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Water.png; path = Library/Water.png; sourceTree = "<group>"; };
 		708365D71BFED40A00EA9FEC /* Emoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoticon.swift; sourceTree = "<group>"; };
 		708365E31BFFAD8C00EA9FEC /* EmoticonDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonDetailViewController.swift; sourceTree = "<group>"; };
 		70F2BF661C0D486400D05DF1 /* MoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreTableViewCell.swift; sourceTree = "<group>"; };
@@ -141,7 +171,6 @@
 		7013C7691BF3E0CB007BB646 = {
 			isa = PBXGroup;
 			children = (
-				70703CCB1C16288500A8AD83 /* Library */,
 				7013C7741BF3E0CB007BB646 /* Diabetes Emoticons */,
 				7013C78C1BF3E0CB007BB646 /* Diabetes EmoticonsTests */,
 				7013C7971BF3E0CB007BB646 /* Diabetes EmoticonsUITests */,
@@ -162,6 +191,7 @@
 		7013C7741BF3E0CB007BB646 /* Diabetes Emoticons */ = {
 			isa = PBXGroup;
 			children = (
+				708314571C63E1EE005712AA /* Library */,
 				7013C7751BF3E0CB007BB646 /* AppDelegate.swift */,
 				70F2BF6D1C0D4EEC00D05DF1 /* Emoticon */,
 				70F2BF6C1C0D4ED900D05DF1 /* More */,
@@ -190,35 +220,49 @@
 			path = "Diabetes EmoticonsUITests";
 			sourceTree = "<group>";
 		};
-		70703CCB1C16288500A8AD83 /* Library */ = {
+		708314571C63E1EE005712AA /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				7023FB4F1C307E00002010C9 /* Banana.png */,
-				7023FB501C307E00002010C9 /* Blood Glucose Low.png */,
-				70703CCD1C16288500A8AD83 /* Blood Glucose High.png */,
-				70703CCF1C16288500A8AD83 /* Call Parent.png */,
-				70703CD01C16288500A8AD83 /* Check Levels.png */,
-				70703CD11C16288500A8AD83 /* Cupcake.png */,
-				70703CD21C16288500A8AD83 /* Food.png */,
-				70703CD31C16288500A8AD83 /* Happy.png */,
-				70703CD41C16288500A8AD83 /* Injection.png */,
-				70703CD51C16288500A8AD83 /* Juice Box.png */,
-				70703CD61C16288500A8AD83 /* Ketone.png */,
-				70703CD71C16288500A8AD83 /* Machine.png */,
-				70703CD81C16288500A8AD83 /* Meh.png */,
-				70703CD91C16288500A8AD83 /* Monitor.png */,
-				70703CDA1C16288500A8AD83 /* Not Sure.png */,
-				70703CDB1C16288500A8AD83 /* Pump.png */,
-				70703CDC1C16288500A8AD83 /* Shaky.png */,
-				70703CDD1C16288500A8AD83 /* Sharp.png */,
-				70703CDE1C16288500A8AD83 /* Stop.png */,
-				70703CDF1C16288500A8AD83 /* Thumbs Down.png */,
-				70703CE01C16288500A8AD83 /* Thumbs Up.png */,
-				70703CE11C16288500A8AD83 /* Toilet.png */,
-				70703CE21C16288500A8AD83 /* Water.png */,
+				708314581C63E200005712AA /* BG All Over the Board.png */,
+				708314591C63E200005712AA /* BG in 15 min.png */,
+				7083145A1C63E200005712AA /* BG Meter.png */,
+				7083145B1C63E200005712AA /* Call.png */,
+				7083145C1C63E200005712AA /* CGM.png */,
+				7083145D1C63E200005712AA /* Cupcake.png */,
+				7083145E1C63E200005712AA /* Diet Soda.png */,
+				7083145F1C63E200005712AA /* Donut.png */,
+				708314601C63E200005712AA /* Driving BG Check.png */,
+				708314611C63E200005712AA /* Exam BG Check.png */,
+				708314621C63E200005712AA /* Feeling Bad.png */,
+				708314631C63E200005712AA /* Feeling Good.png */,
+				708314641C63E200005712AA /* Feeling Shaky.png */,
+				708314651C63E200005712AA /* Feeling So-So.png */,
+				708314661C63E200005712AA /* Field Trip BG Check.png */,
+				708314671C63E200005712AA /* Glucose Tablet.png */,
+				708314681C63E200005712AA /* Healthy Snack.png */,
+				708314691C63E200005712AA /* High BG.png */,
+				7083146A1C63E200005712AA /* Hungry.png */,
+				7083146B1C63E200005712AA /* Insulin Pump.png */,
+				7083146C1C63E200005712AA /* Insulin Shot (Pen).png */,
+				7083146D1C63E200005712AA /* Juice Box.png */,
+				7083146E1C63E200005712AA /* Ketone Time.png */,
+				7083146F1C63E200005712AA /* Low BG.png */,
+				708314701C63E200005712AA /* Need A Break.png */,
+				708314711C63E200005712AA /* Nurse.png */,
+				708314721C63E200005712AA /* PE Class.png */,
+				708314731C63E200005712AA /* Perfect BG.png */,
+				708314741C63E200005712AA /* Pizza.png */,
+				708314751C63E200005712AA /* Potty Time.png */,
+				708314761C63E200005712AA /* Regular Soda.png */,
+				708314771C63E200005712AA /* Site Change.png */,
+				708314781C63E200005712AA /* Sleepover-Final.png */,
+				708314791C63E200005712AA /* Sleepy.png */,
+				7083147A1C63E200005712AA /* Syringe.png */,
+				7083147B1C63E200005712AA /* Thirsty.png */,
+				7083147C1C63E200005712AA /* Took Care of It.png */,
+				7083147D1C63E200005712AA /* Water.png */,
 			);
 			name = Library;
-			path = "Diabetes Emoticons/Library";
 			sourceTree = "<group>";
 		};
 		708365DB1BFEE46200EA9FEC /* Core Data */ = {
@@ -367,32 +411,47 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70703CE61C16288500A8AD83 /* Call Parent.png in Resources */,
-				70703CE71C16288500A8AD83 /* Check Levels.png in Resources */,
-				70703CF31C16288500A8AD83 /* Shaky.png in Resources */,
+				708314A21C63E200005712AA /* Took Care of It.png in Resources */,
+				7083148F1C63E200005712AA /* High BG.png in Resources */,
+				708314941C63E200005712AA /* Ketone Time.png in Resources */,
+				708314981C63E200005712AA /* PE Class.png in Resources */,
+				7083149F1C63E200005712AA /* Sleepy.png in Resources */,
+				708314951C63E200005712AA /* Low BG.png in Resources */,
+				708314911C63E200005712AA /* Insulin Pump.png in Resources */,
+				708314891C63E200005712AA /* Feeling Good.png in Resources */,
+				708314831C63E200005712AA /* Cupcake.png in Resources */,
+				708314991C63E200005712AA /* Perfect BG.png in Resources */,
+				708314861C63E200005712AA /* Driving BG Check.png in Resources */,
+				708314921C63E200005712AA /* Insulin Shot (Pen).png in Resources */,
+				7083149C1C63E200005712AA /* Regular Soda.png in Resources */,
+				708314A11C63E200005712AA /* Thirsty.png in Resources */,
+				7083149A1C63E200005712AA /* Pizza.png in Resources */,
+				7083148E1C63E200005712AA /* Healthy Snack.png in Resources */,
+				708314961C63E200005712AA /* Need A Break.png in Resources */,
+				708314A31C63E200005712AA /* Water.png in Resources */,
+				7083149E1C63E200005712AA /* Sleepover-Final.png in Resources */,
+				7083147F1C63E200005712AA /* BG in 15 min.png in Resources */,
+				708314901C63E200005712AA /* Hungry.png in Resources */,
+				7083149B1C63E200005712AA /* Potty Time.png in Resources */,
+				708314821C63E200005712AA /* CGM.png in Resources */,
 				7013C7831BF3E0CB007BB646 /* LaunchScreen.storyboard in Resources */,
-				7023FB521C307E00002010C9 /* Blood Glucose Low.png in Resources */,
-				70703CEE1C16288500A8AD83 /* Machine.png in Resources */,
-				70703CF61C16288500A8AD83 /* Thumbs Down.png in Resources */,
-				70703CE41C16288500A8AD83 /* Blood Glucose High.png in Resources */,
-				7023FB511C307E00002010C9 /* Banana.png in Resources */,
-				70703CF41C16288500A8AD83 /* Sharp.png in Resources */,
-				70703CE91C16288500A8AD83 /* Food.png in Resources */,
-				70703CE81C16288500A8AD83 /* Cupcake.png in Resources */,
-				70703CF81C16288500A8AD83 /* Toilet.png in Resources */,
-				70703CEA1C16288500A8AD83 /* Happy.png in Resources */,
+				7083148B1C63E200005712AA /* Feeling So-So.png in Resources */,
 				7013C7801BF3E0CB007BB646 /* Assets.xcassets in Resources */,
-				70703CEB1C16288500A8AD83 /* Injection.png in Resources */,
-				70703CEC1C16288500A8AD83 /* Juice Box.png in Resources */,
-				70703CF01C16288500A8AD83 /* Monitor.png in Resources */,
-				70703CF91C16288500A8AD83 /* Water.png in Resources */,
-				70703CF71C16288500A8AD83 /* Thumbs Up.png in Resources */,
+				708314801C63E200005712AA /* BG Meter.png in Resources */,
 				7013C77B1BF3E0CB007BB646 /* Main.storyboard in Resources */,
-				70703CF51C16288500A8AD83 /* Stop.png in Resources */,
-				70703CF11C16288500A8AD83 /* Not Sure.png in Resources */,
-				70703CF21C16288500A8AD83 /* Pump.png in Resources */,
-				70703CED1C16288500A8AD83 /* Ketone.png in Resources */,
-				70703CEF1C16288500A8AD83 /* Meh.png in Resources */,
+				708314A01C63E200005712AA /* Syringe.png in Resources */,
+				7083148C1C63E200005712AA /* Field Trip BG Check.png in Resources */,
+				708314851C63E200005712AA /* Donut.png in Resources */,
+				708314931C63E200005712AA /* Juice Box.png in Resources */,
+				708314881C63E200005712AA /* Feeling Bad.png in Resources */,
+				708314971C63E200005712AA /* Nurse.png in Resources */,
+				708314841C63E200005712AA /* Diet Soda.png in Resources */,
+				708314871C63E200005712AA /* Exam BG Check.png in Resources */,
+				7083149D1C63E200005712AA /* Site Change.png in Resources */,
+				7083148D1C63E200005712AA /* Glucose Tablet.png in Resources */,
+				7083147E1C63E200005712AA /* BG All Over the Board.png in Resources */,
+				7083148A1C63E200005712AA /* Feeling Shaky.png in Resources */,
+				708314811C63E200005712AA /* Call.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
