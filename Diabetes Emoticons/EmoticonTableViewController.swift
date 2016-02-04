@@ -146,6 +146,7 @@ class EmoticonTableViewController: UITableViewController {
             vc = .Home
         }
     }
+    
     func filterEmoticons() {
         switch vc {
         case .Home:

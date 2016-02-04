@@ -10,15 +10,20 @@ import UIKit
 import MessageUI
 
 class EmoticonDetailViewController : UIViewController {
-    
+
+    // MARK: IBOutlets
+
     @IBOutlet weak var emoticonImage: UIImageView!
     @IBOutlet weak var favoriteButton: UIButton!
-    
+
+    // MARK: Class Variables
+
     var emoticon: Emoticon!
-    
+
+    // MARK: View Controller Lifecycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         emoticonImage.image = UIImage(named: emoticon.image)
         self.title = emoticon.title
         layoutView()
@@ -30,8 +35,9 @@ class EmoticonDetailViewController : UIViewController {
         button.title = "Back"
         self.navigationItem.backBarButtonItem = button
     }
-    
-    
+
+    // MARK: IBActions
+
     @IBAction func share() {
         emoticon.lastAccessed = NSDate()
         if let managedObjectContext = (UIApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext {
@@ -43,10 +49,8 @@ class EmoticonDetailViewController : UIViewController {
         
         //New Excluded Activities Code
         activityVC.excludedActivityTypes = [UIActivityTypeAirDrop, UIActivityTypeAddToReadingList, UIActivityTypeOpenInIBooks, UIActivityTypePostToVimeo, UIActivityTypeAddToReadingList]
-        //
-        
-        navigationController?.presentViewController(activityVC, animated: true) {}
 
+        navigationController?.presentViewController(activityVC, animated: true) {}
     }
     
     @IBAction func favorite() {
@@ -56,12 +60,11 @@ class EmoticonDetailViewController : UIViewController {
         }
         layoutView()
     }
-    
+
+    // MARK: Layout UI
+
     func layoutView() {
-        if emoticon.isFavorite == NSNumber(bool: false) {
-            favoriteButton.setImage(UIImage(named: "star_circle_empty"), forState: .Normal)
-        } else {
-            favoriteButton.setImage(UIImage(named: "star_circle_yellowfilled"), forState: .Normal)
-        }
+        // If isFavorite, set the star circle to filled
+        favoriteButton.setImage(UIImage(named: emoticon.isFavorite == NSNumber(bool: false) ? "star_circle_empty" : "star_cicle_yellowfilled"), forState: .Normal)
     }
 }

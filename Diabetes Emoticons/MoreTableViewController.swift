@@ -11,7 +11,9 @@ import Social
 import MessageUI
 
 class MoreTableViewController : UITableViewController, MFMailComposeViewControllerDelegate {
-    
+
+    // MARK: Table View Data
+
     let moreData = [(title: "About Us", image: "icon_healthdesign", segue: "toWeb"),
                     (title: "Feedback", image: "icon_feedback", segue: "toSendMessage"),
                     (title: "Share this App", image: "share_blue", segue: "toShare")]
@@ -22,7 +24,9 @@ class MoreTableViewController : UITableViewController, MFMailComposeViewControll
         (title: "Others", image: "circle_share", call: shareOthers)]
     
     var isShareVC = false
-    
+
+    // MARK: UITableView DataSource
+
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if isShareVC {
             return shareData.count
@@ -38,7 +42,9 @@ class MoreTableViewController : UITableViewController, MFMailComposeViewControll
         cell.selectionStyle = .None
         return cell
     }
-    
+
+    // MARK: UITableView Delegate
+
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if isShareVC {
             shareData[indexPath.row].call(self)()
@@ -46,7 +52,9 @@ class MoreTableViewController : UITableViewController, MFMailComposeViewControll
             performSegueWithIdentifier( moreData[indexPath.row].segue, sender: self)
         }
     }
-    
+
+    // MARK: Segue Handling
+
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "toShare" {
             if let detailViewController = segue.destinationViewController as? MoreTableViewController {
@@ -54,14 +62,17 @@ class MoreTableViewController : UITableViewController, MFMailComposeViewControll
             }
         }
     }
-    
+
+    // MARK: Social Handling
+
+    // TODO: Condense these functions
+
     func shareOthers() {
         let objectsToShare = ["Check out this cool app: bit.ly/diabetesemoticons!"]
         let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
         
         //New Excluded Activities Code
         activityVC.excludedActivityTypes = [UIActivityTypeAirDrop, UIActivityTypeAddToReadingList]
-        //
         
         navigationController?.presentViewController(activityVC, animated: true) {}
 

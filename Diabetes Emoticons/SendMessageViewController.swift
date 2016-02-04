@@ -10,9 +10,13 @@ import UIKit
 import MessageUI
 
 class SendMessageViewController : UIViewController, UITextViewDelegate, MFMailComposeViewControllerDelegate {
+
+    // MARK: IBOutlets
     
     @IBOutlet weak var textView: UITextView!
-    
+
+    // MARK: View Controller Lifecycle
+
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(true)
         
@@ -27,6 +31,7 @@ class SendMessageViewController : UIViewController, UITextViewDelegate, MFMailCo
         NSNotificationCenter.defaultCenter().removeObserver(self)
     }
 
+    // MARK: Layout UI
     
     func placeButton() {
        
@@ -39,7 +44,9 @@ class SendMessageViewController : UIViewController, UITextViewDelegate, MFMailCo
         self.view.addSubview(button)
     
     }
-    
+
+    // MARK: MailCompose Delegate
+
     func sendMessage(_: UIButton) {
         let emailTitle = "Diabetes Emoticons Feedback"
         // Email Content
@@ -59,7 +66,9 @@ class SendMessageViewController : UIViewController, UITextViewDelegate, MFMailCo
     func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
-    
+
+    // MARK: Keyboard Delegate
+
     func keyboardWillShow(notification: NSNotification) {
         if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue() {
             let button = self.view.viewWithTag(1) as! UIButton
@@ -69,7 +78,7 @@ class SendMessageViewController : UIViewController, UITextViewDelegate, MFMailCo
 
         }
     }
-    
+
     func keyboardWillHide(notification: NSNotification) {
         let button = self.view.viewWithTag(1) as! UIButton
         let x = self.view.frame.width - 80
