@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DXM-Df-fYB">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Diabetes Emoticons-->
+        <scene sceneID="UTA-Oc-EWh">
+            <objects>
+                <tableViewController id="DXM-Df-fYB" customClass="EmoticonTableViewController" customModule="Diabetes_Emoticons" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" tag="1" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="110" sectionHeaderHeight="28" sectionFooterHeight="28" id="bdA-C8-UQS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StandardCell" rowHeight="100" id="C6M-YG-xLO" customClass="EmoticonTableViewCell" customModule="Diabetes_Emoticons" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C6M-YG-xLO" id="BlE-A6-A0d">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banana" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hLk-BH-jpW">
+                                            <rect key="frame" x="112" y="39" width="360" height="23"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5a-OT-3FI">
+                                            <rect key="frame" x="492" y="35" width="34" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="5g9-2d-FD2"/>
+                                                <constraint firstAttribute="width" constant="34" id="7I2-LA-Y6b"/>
+                                            </constraints>
+                                            <state key="normal" image="star_notfilled"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8r-wc-R7q">
+                                            <rect key="frame" x="546" y="33" width="26" height="34"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="34" id="4Hg-8h-fb3"/>
+                                                <constraint firstAttribute="width" constant="26" id="Kyp-8D-dYz"/>
+                                            </constraints>
+                                            <state key="normal" image="send"/>
+                                        </button>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Banana" translatesAutoresizingMaskIntoConstraints="NO" id="tmM-nq-lfv">
+                                            <rect key="frame" x="18" y="15" width="70" height="70"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="tmM-nq-lfv" secondAttribute="height" multiplier="1:1" id="61j-9M-bnM"/>
+                                                <constraint firstAttribute="width" priority="999" constant="70" id="Ulw-i7-yn6"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="tmM-nq-lfv" firstAttribute="centerY" secondItem="BlE-A6-A0d" secondAttribute="centerY" id="1U3-xa-PLV"/>
+                                        <constraint firstItem="tmM-nq-lfv" firstAttribute="width" relation="lessThanOrEqual" secondItem="BlE-A6-A0d" secondAttribute="width" multiplier="0.18" id="3H0-SR-uCE"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="tmM-nq-lfv" secondAttribute="leading" constant="-10" id="3fP-kG-7Nh"/>
+                                        <constraint firstItem="hLk-BH-jpW" firstAttribute="leading" secondItem="tmM-nq-lfv" secondAttribute="trailing" constant="24" id="HLu-wq-smi"/>
+                                        <constraint firstItem="z8r-wc-R7q" firstAttribute="leading" secondItem="Q5a-OT-3FI" secondAttribute="trailing" constant="20" id="JyB-Ft-wRp"/>
+                                        <constraint firstItem="hLk-BH-jpW" firstAttribute="leading" secondItem="BlE-A6-A0d" secondAttribute="leadingMargin" constant="116.5" id="Kmm-ZA-0Pa"/>
+                                        <constraint firstItem="Q5a-OT-3FI" firstAttribute="leading" secondItem="hLk-BH-jpW" secondAttribute="trailing" constant="20" id="Q04-j7-m18"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="z8r-wc-R7q" secondAttribute="trailing" constant="20" id="XHo-t7-jAs"/>
+                                        <constraint firstItem="z8r-wc-R7q" firstAttribute="centerY" secondItem="BlE-A6-A0d" secondAttribute="centerY" id="et9-ZH-XFa"/>
+                                        <constraint firstItem="hLk-BH-jpW" firstAttribute="centerY" secondItem="BlE-A6-A0d" secondAttribute="centerY" id="l3i-IK-sR3"/>
+                                        <constraint firstItem="Q5a-OT-3FI" firstAttribute="centerY" secondItem="z8r-wc-R7q" secondAttribute="centerY" id="qmW-4N-MGF"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="Kmm-ZA-0Pa"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="emoticonImage" destination="tmM-nq-lfv" id="mjV-ou-9X7"/>
+                                    <outlet property="favoriteButton" destination="Q5a-OT-3FI" id="3bX-Rc-K1o"/>
+                                    <outlet property="shareButton" destination="z8r-wc-R7q" id="3xb-xP-g4h"/>
+                                    <outlet property="titleLabel" destination="hLk-BH-jpW" id="IVM-rZ-9fk"/>
+                                    <segue destination="GEb-ah-xvU" kind="show" identifier="toDetail" id="Jj6-Az-6hU"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="DXM-Df-fYB" id="P01-wG-BkR"/>
+                            <outlet property="delegate" destination="DXM-Df-fYB" id="oWM-V0-TTK"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Diabetes Emoticons" id="HWp-XE-9Av"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sjg-MP-X34" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1942" y="423"/>
+        </scene>
+        <!--Emoticon Detail View Controller-->
+        <scene sceneID="YlN-N4-2AQ">
+            <objects>
+                <viewController id="GEb-ah-xvU" customClass="EmoticonDetailViewController" customModule="Diabetes_Emoticons" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eFl-Df-L53"/>
+                        <viewControllerLayoutGuide type="bottom" id="cfR-XD-DHu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="md5-65-cWR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6yy-hJ-1JM">
+                                <rect key="frame" x="60" y="150" width="480" height="300"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EbV-6n-ZR0">
+                                        <rect key="frame" x="162" y="210" width="156" height="90"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJ5-nu-aU0">
+                                                <rect key="frame" x="0.0" y="20" width="70" height="70"/>
+                                                <state key="normal" title="Button" image="star_circle_empty"/>
+                                                <connections>
+                                                    <action selector="favorite" destination="GEb-ah-xvU" eventType="touchUpInside" id="K37-Bg-KMW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DvQ-GS-2wO">
+                                                <rect key="frame" x="86" y="20" width="70" height="70"/>
+                                                <state key="normal" title="Button" image="send_circle"/>
+                                                <connections>
+                                                    <action selector="share" destination="GEb-ah-xvU" eventType="touchUpInside" id="Yea-Kd-W7Q"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="156" id="DJI-Gk-WqS"/>
+                                            <constraint firstAttribute="height" constant="90" id="mwe-Bw-hnl"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Banana" translatesAutoresizingMaskIntoConstraints="NO" id="sga-gQ-iXh">
+                                        <rect key="frame" x="150" y="0.0" width="180" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="125" id="D8m-f3-89r"/>
+                                            <constraint firstAttribute="width" secondItem="sga-gQ-iXh" secondAttribute="height" multiplier="1:1" id="JxE-8k-tPb"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="125" id="Mlu-5z-7X1"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="D8m-f3-89r"/>
+                                                <exclude reference="Mlu-5z-7X1"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="sga-gQ-iXh" firstAttribute="centerX" secondItem="6yy-hJ-1JM" secondAttribute="centerX" id="8vS-ra-5hi"/>
+                                    <constraint firstItem="sga-gQ-iXh" firstAttribute="height" secondItem="6yy-hJ-1JM" secondAttribute="height" multiplier="0.6" priority="999" id="WMx-7F-X3c"/>
+                                    <constraint firstItem="EbV-6n-ZR0" firstAttribute="centerX" secondItem="6yy-hJ-1JM" secondAttribute="centerX" id="WYY-wz-27e"/>
+                                    <constraint firstAttribute="bottom" secondItem="EbV-6n-ZR0" secondAttribute="bottom" id="gQY-Nj-gRb"/>
+                                    <constraint firstItem="sga-gQ-iXh" firstAttribute="height" secondItem="6yy-hJ-1JM" secondAttribute="height" multiplier="0.6" id="sIu-Ae-So4"/>
+                                    <constraint firstItem="sga-gQ-iXh" firstAttribute="width" secondItem="6yy-hJ-1JM" secondAttribute="width" multiplier="0.6" priority="999" id="tEo-iN-onm"/>
+                                    <constraint firstItem="sga-gQ-iXh" firstAttribute="top" secondItem="6yy-hJ-1JM" secondAttribute="top" id="y0R-fz-dld"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="sIu-Ae-So4"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="sIu-Ae-So4"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6yy-hJ-1JM" firstAttribute="centerX" secondItem="md5-65-cWR" secondAttribute="centerX" id="6zL-Je-twe"/>
+                            <constraint firstItem="6yy-hJ-1JM" firstAttribute="height" secondItem="md5-65-cWR" secondAttribute="height" multiplier="0.5" id="Cf0-vT-ac2"/>
+                            <constraint firstItem="6yy-hJ-1JM" firstAttribute="width" secondItem="md5-65-cWR" secondAttribute="width" multiplier="0.8" id="FJP-sB-04E"/>
+                            <constraint firstItem="6yy-hJ-1JM" firstAttribute="centerY" secondItem="md5-65-cWR" secondAttribute="centerY" id="n28-vw-5k1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emoticonImage" destination="sga-gQ-iXh" id="AM1-Ma-jZW"/>
+                        <outlet property="favoriteButton" destination="fJ5-nu-aU0" id="URn-so-xAH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pMy-jI-3kW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2625" y="423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Banana" width="156" height="137"/>
+        <image name="send" width="199" height="250"/>
+        <image name="send_circle" width="663" height="663"/>
+        <image name="star_circle_empty" width="663" height="663"/>
+        <image name="star_notfilled" width="244" height="233"/>
+    </resources>
+</document>

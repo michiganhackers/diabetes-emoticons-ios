@@ -15,14 +15,14 @@ class WebViewController : UIViewController, UIWebViewDelegate {
     @IBOutlet weak var webView: UIWebView!
     @IBOutlet weak var indicator: UIActivityIndicatorView!
 
-    // MARK: Class Variables
+    // MARK: Properties
     
     var url = "http://healthdesignby.us"
 
     // MARK: View Controller Lifecycle
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
         
         let request = NSURLRequest(URL: NSURL(string: url)!)
         webView.loadRequest(request)

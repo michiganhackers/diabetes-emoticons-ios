@@ -28,13 +28,6 @@ class EmoticonDetailViewController : UIViewController {
         self.title = emoticon.title
         layoutView()
     }
-    
-    override func viewDidAppear(animated: Bool) {
-        layoutView()
-        let button = UIBarButtonItem()
-        button.title = "Back"
-        self.navigationItem.backBarButtonItem = button
-    }
 
     // MARK: IBActions
 
@@ -65,6 +58,6 @@ class EmoticonDetailViewController : UIViewController {
 
     func layoutView() {
         // If isFavorite, set the star circle to filled
-        favoriteButton.setImage(UIImage(named: emoticon.isFavorite == NSNumber(bool: false) ? "star_circle_empty" : "star_cicle_yellowfilled"), forState: .Normal)
+        favoriteButton.setImage(UIImage(named: emoticon.isFavorite == NSNumber(bool: false) ? "star_circle_empty" : "star_circle_yellowfilled"), forState: .Normal)
     }
 }

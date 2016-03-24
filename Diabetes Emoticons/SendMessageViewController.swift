@@ -20,8 +20,8 @@ class SendMessageViewController : UIViewController, UITextViewDelegate, MFMailCo
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(true)
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(SendMessageViewController.keyboardWillShow(_:)), name: UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(SendMessageViewController.keyboardWillHide(_:)), name: UIKeyboardWillHideNotification, object: nil)
         
         placeButton()
         textView.becomeFirstResponder()
@@ -40,7 +40,7 @@ class SendMessageViewController : UIViewController, UITextViewDelegate, MFMailCo
         let button = UIButton(frame: CGRect(x: x, y: y, width: 60, height: 60))
         button.setImage(UIImage(named: "circle_send_text"), forState: .Normal)
         button.tag = 1
-        button.addTarget(self, action: "sendMessage:", forControlEvents: .TouchUpInside)
+        button.addTarget(self, action: #selector(SendMessageViewController.sendMessage(_:)), forControlEvents: .TouchUpInside)
         self.view.addSubview(button)
     
     }

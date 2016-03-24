@@ -39,7 +39,6 @@ class MoreTableViewController : UITableViewController, MFMailComposeViewControll
         
         cell.titleLabel.text = isShareVC ? shareData[indexPath.row].title : moreData[indexPath.row].title
         cell.sideImage.image = UIImage(named: isShareVC ? shareData[indexPath.row].image : moreData[indexPath.row].image)
-        cell.selectionStyle = .None
         return cell
     }
 

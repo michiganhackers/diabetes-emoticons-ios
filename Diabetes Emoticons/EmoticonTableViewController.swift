@@ -18,38 +18,41 @@ public func <(lhs: NSDate, rhs: NSDate) -> Bool {
 extension NSDate: Comparable { }
 
 class EmoticonTableViewController: UITableViewController {
-    
-    
-    enum ViewController {
-        case Home
+
+    // MARK: Properties
+
+    enum ViewController: Int {
+        case Home = 0
         case Recent
-        case Favorite
+        case Favorites
     }
     
     var vc = ViewController.Home
-    
-    // MARK: Initialize variables
-    
-    private var emoticons = [Emoticon]()
+
+    var emoticons = [Emoticon]()
     var fetchResultController: NSFetchedResultsController!
     
     // MARK: View Controller Lifecycle
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(true)
-        // Load menu items from database
-        assignVCType()
+
+        self.title = "\(vc)"
         if let managedObjectContext = (UIApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext {
             let fetchRequest = NSFetchRequest(entityName: "Emoticon")
             do {
                 emoticons = try managedObjectContext.executeFetchRequest(fetchRequest) as! [Emoticon]
             } catch {
-                print("Failed to retrieve record")
-                print(error)
+                print("Failed to retrieve record: \(error)")
             }
         }
+        
         filterEmoticons()
         tableView.reloadData()
+    }
+
+    override func viewWillDisappear(animated: Bool) {
+        self.title = ""
     }
     
     // MARK: UITableView DataSource
@@ -66,8 +69,8 @@ class EmoticonTableViewController: UITableViewController {
         cell.emoticonImage.image = UIImage(named: emoticons[indexPath.row].image)
         
         // Add actions for favorite and share
-        cell.favoriteButton.addTarget(self, action: "favoritePressed:", forControlEvents: .TouchUpInside)
-        cell.shareButton.addTarget(self, action: "sharePressed:", forControlEvents: .TouchUpInside)
+        cell.favoriteButton.addTarget(self, action: #selector(EmoticonTableViewController.favoritePressed(_:)), forControlEvents: .TouchUpInside)
+        cell.shareButton.addTarget(self, action: #selector(EmoticonTableViewController.sharePressed(_:)), forControlEvents: .TouchUpInside)
         
         // Add tags to identify favorite and share
         cell.favoriteButton.tag = indexPath.row
@@ -89,7 +92,7 @@ class EmoticonTableViewController: UITableViewController {
             try! managedObjectContext.save()
         }
         
-        if vc == .Favorite {
+        if vc == .Favorites {
             if emoticons[sender.tag].isFavorite == NSNumber(bool: false) {
                 emoticons.removeAtIndex(sender.tag)
                 let indexPath = tableView.indexPathForCell(sender.superview?.superview as! EmoticonTableViewCell)
@@ -134,19 +137,6 @@ class EmoticonTableViewController: UITableViewController {
     
     // MARK: Data Handling
     
-    func assignVCType() {
-        switch self.tableView.tag {
-        case 1:
-            vc = .Home
-        case 2:
-            vc = .Recent
-        case 3:
-            vc = .Favorite
-        default:
-            vc = .Home
-        }
-    }
-    
     func filterEmoticons() {
         switch vc {
         case .Home:
@@ -154,7 +144,7 @@ class EmoticonTableViewController: UITableViewController {
         case .Recent:
             emoticons = emoticons.filter({ $0.lastAccessed.compare(NSDate(timeIntervalSinceNow: NSTimeInterval(-604800))) == NSComparisonResult.OrderedDescending })
             emoticons.sortInPlace({ $0.lastAccessed.compare($1.lastAccessed) == NSComparisonResult.OrderedDescending })
-        case .Favorite:
+        case .Favorites:
             emoticons = emoticons.filter({ $0.isFavorite == NSNumber(bool: true) })
             emoticons.sortInPlace( { $0.title < $1.title })
         }

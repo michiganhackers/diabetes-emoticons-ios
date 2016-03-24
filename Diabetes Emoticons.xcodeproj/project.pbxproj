@@ -50,7 +50,7 @@
 		7083149B1C63E200005712AA /* Potty Time.png in Resources */ = {isa = PBXBuildFile; fileRef = 708314751C63E200005712AA /* Potty Time.png */; };
 		7083149C1C63E200005712AA /* Regular Soda.png in Resources */ = {isa = PBXBuildFile; fileRef = 708314761C63E200005712AA /* Regular Soda.png */; };
 		7083149D1C63E200005712AA /* Site Change.png in Resources */ = {isa = PBXBuildFile; fileRef = 708314771C63E200005712AA /* Site Change.png */; };
-		7083149E1C63E200005712AA /* Sleepover-Final.png in Resources */ = {isa = PBXBuildFile; fileRef = 708314781C63E200005712AA /* Sleepover-Final.png */; };
+		7083149E1C63E200005712AA /* Sleepover.png in Resources */ = {isa = PBXBuildFile; fileRef = 708314781C63E200005712AA /* Sleepover.png */; };
 		7083149F1C63E200005712AA /* Sleepy.png in Resources */ = {isa = PBXBuildFile; fileRef = 708314791C63E200005712AA /* Sleepy.png */; };
 		708314A01C63E200005712AA /* Syringe.png in Resources */ = {isa = PBXBuildFile; fileRef = 7083147A1C63E200005712AA /* Syringe.png */; };
 		708314A11C63E200005712AA /* Thirsty.png in Resources */ = {isa = PBXBuildFile; fileRef = 7083147B1C63E200005712AA /* Thirsty.png */; };
@@ -61,6 +61,8 @@
 		70F2BF671C0D486400D05DF1 /* MoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F2BF661C0D486400D05DF1 /* MoreTableViewCell.swift */; };
 		70F2BF691C0D490D00D05DF1 /* MoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F2BF681C0D490D00D05DF1 /* MoreTableViewController.swift */; };
 		70F2BF6F1C0D4F3700D05DF1 /* SendMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F2BF6E1C0D4F3700D05DF1 /* SendMessageViewController.swift */; };
+		70F4F9BE1CA3A29D006CFA14 /* Emoticon.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70F4F9BC1CA3A29D006CFA14 /* Emoticon.storyboard */; };
+		70F4F9C01CA3A4D1006CFA14 /* EmoticonTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F4F9BF1CA3A4D1006CFA14 /* EmoticonTabViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,7 +131,7 @@
 		708314751C63E200005712AA /* Potty Time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Potty Time.png"; path = "Library/Potty Time.png"; sourceTree = "<group>"; };
 		708314761C63E200005712AA /* Regular Soda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Regular Soda.png"; path = "Library/Regular Soda.png"; sourceTree = "<group>"; };
 		708314771C63E200005712AA /* Site Change.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Site Change.png"; path = "Library/Site Change.png"; sourceTree = "<group>"; };
-		708314781C63E200005712AA /* Sleepover-Final.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Sleepover-Final.png"; path = "Library/Sleepover-Final.png"; sourceTree = "<group>"; };
+		708314781C63E200005712AA /* Sleepover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Sleepover.png; path = Library/Sleepover.png; sourceTree = "<group>"; };
 		708314791C63E200005712AA /* Sleepy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Sleepy.png; path = Library/Sleepy.png; sourceTree = "<group>"; };
 		7083147A1C63E200005712AA /* Syringe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Syringe.png; path = Library/Syringe.png; sourceTree = "<group>"; };
 		7083147B1C63E200005712AA /* Thirsty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Thirsty.png; path = Library/Thirsty.png; sourceTree = "<group>"; };
@@ -141,6 +143,8 @@
 		70F2BF681C0D490D00D05DF1 /* MoreTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreTableViewController.swift; sourceTree = "<group>"; };
 		70F2BF6A1C0D4BFE00D05DF1 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		70F2BF6E1C0D4F3700D05DF1 /* SendMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMessageViewController.swift; sourceTree = "<group>"; };
+		70F4F9BD1CA3A29D006CFA14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Emoticon.storyboard; sourceTree = "<group>"; };
+		70F4F9BF1CA3A4D1006CFA14 /* EmoticonTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonTabViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,7 +259,7 @@
 				708314751C63E200005712AA /* Potty Time.png */,
 				708314761C63E200005712AA /* Regular Soda.png */,
 				708314771C63E200005712AA /* Site Change.png */,
-				708314781C63E200005712AA /* Sleepover-Final.png */,
+				708314781C63E200005712AA /* Sleepover.png */,
 				708314791C63E200005712AA /* Sleepy.png */,
 				7083147A1C63E200005712AA /* Syringe.png */,
 				7083147B1C63E200005712AA /* Thirsty.png */,
@@ -289,6 +293,7 @@
 		70F2BF6D1C0D4EEC00D05DF1 /* Emoticon */ = {
 			isa = PBXGroup;
 			children = (
+				70F4F9BF1CA3A4D1006CFA14 /* EmoticonTabViewController.swift */,
 				708110A51C290917008624CE /* EmoticonTableViewController.swift */,
 				7013C7A61BF3E2A5007BB646 /* EmoticonTableViewCell.swift */,
 				708365E31BFFAD8C00EA9FEC /* EmoticonDetailViewController.swift */,
@@ -300,6 +305,7 @@
 			isa = PBXGroup;
 			children = (
 				7013C7791BF3E0CB007BB646 /* Main.storyboard */,
+				70F4F9BC1CA3A29D006CFA14 /* Emoticon.storyboard */,
 				7013C77F1BF3E0CB007BB646 /* Assets.xcassets */,
 				7013C7811BF3E0CB007BB646 /* LaunchScreen.storyboard */,
 			);
@@ -429,7 +435,8 @@
 				7083148E1C63E200005712AA /* Healthy Snack.png in Resources */,
 				708314961C63E200005712AA /* Need A Break.png in Resources */,
 				708314A31C63E200005712AA /* Water.png in Resources */,
-				7083149E1C63E200005712AA /* Sleepover-Final.png in Resources */,
+				70F4F9BE1CA3A29D006CFA14 /* Emoticon.storyboard in Resources */,
+				7083149E1C63E200005712AA /* Sleepover.png in Resources */,
 				7083147F1C63E200005712AA /* BG in 15 min.png in Resources */,
 				708314901C63E200005712AA /* Hungry.png in Resources */,
 				7083149B1C63E200005712AA /* Potty Time.png in Resources */,
@@ -482,6 +489,7 @@
 				708365E41BFFAD8C00EA9FEC /* EmoticonDetailViewController.swift in Sources */,
 				7013C77E1BF3E0CB007BB646 /* Diabetes_Emoticons.xcdatamodeld in Sources */,
 				70F2BF691C0D490D00D05DF1 /* MoreTableViewController.swift in Sources */,
+				70F4F9C01CA3A4D1006CFA14 /* EmoticonTabViewController.swift in Sources */,
 				70F2BF671C0D486400D05DF1 /* MoreTableViewCell.swift in Sources */,
 				7013C7761BF3E0CB007BB646 /* AppDelegate.swift in Sources */,
 				70F2BF6F1C0D4F3700D05DF1 /* SendMessageViewController.swift in Sources */,
@@ -536,6 +544,14 @@
 				7013C7821BF3E0CB007BB646 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		70F4F9BC1CA3A29D006CFA14 /* Emoticon.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70F4F9BD1CA3A29D006CFA14 /* Base */,
+			);
+			name = Emoticon.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
