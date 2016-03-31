@@ -48,18 +48,24 @@ class SendMessageViewController : UIViewController, UITextViewDelegate, MFMailCo
     // MARK: MailCompose Delegate
 
     func sendMessage(_: UIButton) {
-        let emailTitle = "Diabetes Emoticons Feedback"
-        // Email Content
-        let messageBody = textView.text
-        // To address
-        let toRecipents = ["healthdesignbyus@gmail.com"]
-        
-        let mc = MFMailComposeViewController()
-        mc.mailComposeDelegate = self;
-        mc.setSubject(emailTitle)
-        mc.setMessageBody(messageBody, isHTML: false)
-        mc.setToRecipients(toRecipents)
-        self.presentViewController(mc, animated: true, completion: nil)
+        if MFMailComposeViewController.canSendMail() {
+            let emailTitle = "Diabetes Emoticons Feedback"
+            // Email Content
+            let messageBody = textView.text
+            // To address
+            let toRecipents = ["doctorasdesigner@gmail.com"]
+
+            let mc = MFMailComposeViewController()
+            mc.mailComposeDelegate = self;
+            mc.setSubject(emailTitle)
+            mc.setMessageBody(messageBody, isHTML: false)
+            mc.setToRecipients(toRecipents)
+            self.presentViewController(mc, animated: true, completion: nil)
+        } else {
+            let alert = UIAlertController(title: "You don't have any Mail Accounts", message: "Please setup a Mail account", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "Will Do!", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
 
     }
     

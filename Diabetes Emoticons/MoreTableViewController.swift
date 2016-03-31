@@ -37,7 +37,7 @@ class MoreTableViewController : UITableViewController, MFMailComposeViewControll
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCellWithIdentifier("MoreCell", forIndexPath: indexPath) as! MoreTableViewCell
         
-        cell.titleLabel.text = isShareVC ? shareData[indexPath.row].title : moreData[indexPath.row].title
+        cell.titleLabel.text = NSLocalizedString(isShareVC ? shareData[indexPath.row].title : moreData[indexPath.row].title, comment: "More Cell Title")
         cell.sideImage.image = UIImage(named: isShareVC ? shareData[indexPath.row].image : moreData[indexPath.row].image)
         return cell
     }
@@ -67,22 +67,21 @@ class MoreTableViewController : UITableViewController, MFMailComposeViewControll
     // TODO: Condense these functions
 
     func shareOthers() {
-        let objectsToShare = ["Check out this cool app: bit.ly/diabetesemoticons!"]
+        let objectsToShare = ["Check out this cool app: http://www.healthdesignby.us/diabetesemoticons!"]
         let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
-        
+
+        activityVC.popoverPresentationController?.sourceView = tableView
         //New Excluded Activities Code
         activityVC.excludedActivityTypes = [UIActivityTypeAirDrop, UIActivityTypeAddToReadingList]
         
         navigationController?.presentViewController(activityVC, animated: true) {}
-
     }
     
     func shareFB() {
         if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook) {
-            let fbShare:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
-            fbShare.setInitialText("Check out this cool app: bit.ly/diabetesemoticons!")
+            let fbShare = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+            fbShare.setInitialText("Check out this cool app: http://www.healthdesignby.us/diabetesemoticons!")
             self.presentViewController(fbShare, animated: true, completion: nil)
-            
         } else {
             let alert = UIAlertController(title: "You're not logged in!", message: "Please login to a Facebook account in the Settings app to share", preferredStyle: UIAlertControllerStyle.Alert)
             
@@ -93,8 +92,8 @@ class MoreTableViewController : UITableViewController, MFMailComposeViewControll
     
     func shareTwitter() {
         if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter) {
-            let tweetShare:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
-            tweetShare.setInitialText("Check out this cool app: bit.ly/diabetesemoticons!")
+            let tweetShare = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+            tweetShare.setInitialText(NSLocalizedString("Check out this cool app: ", comment: "bodymessage") + "http://www.healthdesignby.us/diabetesemoticons!")
             self.presentViewController(tweetShare, animated: true, completion: nil)
         } else {
             let alert = UIAlertController(title: "You're not logged in!", message: "Please login to a Twitter account in the Settings app to tweet", preferredStyle: UIAlertControllerStyle.Alert)
@@ -104,16 +103,23 @@ class MoreTableViewController : UITableViewController, MFMailComposeViewControll
     }
     
     func shareMail() {
-        let emailTitle = "Awesome Diabetes App"
-        // Email Content
-        let messageBody = "Check out this cool app: bit.ly/diabetesemoticons!"
-        // To address
-        
-        let mc = MFMailComposeViewController()
-        mc.mailComposeDelegate = self;
-        mc.setSubject(emailTitle)
-        mc.setMessageBody(messageBody, isHTML: false)
-        self.presentViewController(mc, animated: true, completion: nil)
+        if MFMailComposeViewController.canSendMail() {
+            let emailTitle = NSLocalizedString("Awesome Diabetes App", comment: "Email Title")
+            // Email Content
+            let messageBody = NSLocalizedString("Check out this cool app: ", comment: "bodymessage") + "http://www.healthdesignby.us/diabetesemoticons!"
+            // To address
+
+            let mc = MFMailComposeViewController()
+            mc.mailComposeDelegate = self;
+            mc.setSubject(emailTitle)
+            mc.setMessageBody(messageBody, isHTML: false)
+            self.presentViewController(mc, animated: true, completion: nil)
+
+        } else {
+            let alert = UIAlertController(title: "You don't have any Mail Accounts", message: "Please setup a Mail account", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "Will Do!", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
     }
     
     func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {

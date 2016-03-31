@@ -25,13 +25,13 @@ class EmoticonDetailViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         emoticonImage.image = UIImage(named: emoticon.image)
-        self.title = emoticon.title
+        self.title = NSLocalizedString(emoticon.title, comment: "Emoticon Title")
         layoutView()
     }
 
     // MARK: IBActions
 
-    @IBAction func share() {
+    @IBAction func share(sender: UIButton) {
         emoticon.lastAccessed = NSDate()
         if let managedObjectContext = (UIApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext {
             try! managedObjectContext.save()
@@ -39,7 +39,8 @@ class EmoticonDetailViewController : UIViewController {
         
         let objectsToShare = [UIImage(named: emoticon.image)!]
         let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
-        
+        activityVC.popoverPresentationController?.sourceView = sender
+
         //New Excluded Activities Code
         activityVC.excludedActivityTypes = [UIActivityTypeAirDrop, UIActivityTypeAddToReadingList, UIActivityTypeOpenInIBooks, UIActivityTypePostToVimeo, UIActivityTypeAddToReadingList]
 

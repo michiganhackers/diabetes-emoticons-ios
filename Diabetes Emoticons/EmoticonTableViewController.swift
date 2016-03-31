@@ -37,7 +37,7 @@ class EmoticonTableViewController: UITableViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(true)
 
-        self.title = "\(vc)"
+        self.title = NSLocalizedString("\(vc)", comment: "Title")
         if let managedObjectContext = (UIApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext {
             let fetchRequest = NSFetchRequest(entityName: "Emoticon")
             do {
@@ -52,7 +52,7 @@ class EmoticonTableViewController: UITableViewController {
     }
 
     override func viewWillDisappear(animated: Bool) {
-        self.title = ""
+        self.navigationItem.title = ""
     }
     
     // MARK: UITableView DataSource
@@ -65,7 +65,7 @@ class EmoticonTableViewController: UITableViewController {
         let cell = self.tableView.dequeueReusableCellWithIdentifier("StandardCell", forIndexPath: indexPath) as! EmoticonTableViewCell
         
         // Set cell data
-        cell.titleLabel.text = emoticons[indexPath.row].title
+        cell.titleLabel.text = NSLocalizedString(emoticons[indexPath.row].title, comment: "Emoticon Cell Title")
         cell.emoticonImage.image = UIImage(named: emoticons[indexPath.row].image)
         
         // Add actions for favorite and share
@@ -113,7 +113,8 @@ class EmoticonTableViewController: UITableViewController {
         // Add emoticon image to share sheet
         let objectsToShare = [UIImage(named: emoticons[sender.tag].image)!]
         let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
-        
+
+        activityVC.popoverPresentationController?.sourceView = sender
         // Disable AirDrop and AddtoReadingList
         activityVC.excludedActivityTypes = [UIActivityTypeAirDrop, UIActivityTypeAddToReadingList]
         
